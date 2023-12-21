@@ -1,2 +1,2 @@
 12/19 ~
-헤드 작성 중
+12/22 index header, footer 완성
