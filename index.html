@@ -15,7 +15,9 @@
             <div class="top_left">
                 <h1><a href="./index.html"><img src="./images/index/logo_white.png" alt="오설록"></a></h1>
                 <nav>
-                <!-- 제품 -->
+                    <!-- nav 배경색 -->
+                    <div class="nav_bg"></div>
+                    <!-- 제품 -->
                     <ul>
                         <li>
                             <a href="#">제품</a>
@@ -117,7 +119,9 @@
                             <fieldset>
                                 <legend class="skip">검색양식</legend>
                                 <input type="text" placeholder="검색어를 입력해주세요.">
-                                <button type="button" class="fa-solid fa-magnifying-glass"></button>
+                                <button type="button" class="search_btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
                             </fieldset>
                         </form>
                         <!-- 검색버튼 눌렀을 때 데스크 -->
@@ -206,7 +210,9 @@
                                     <fieldset>
                                         <legend class="skip">검색양식</legend>
                                         <input type="text" placeholder="검색어를 입력해주세요.">
-                                        <button type="button" class="fa-solid fa-magnifying-glass"></button>
+                                        <button type="button" class="search_btn">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
                                     </fieldset>
                                 </form>
                             </div>
@@ -384,7 +390,7 @@
         <main id="go_top">
             <div class="main_all">
                 <!-- 올라가기 btn -->
-                <a href="#go_top"><img src="./images/index/btn_goTop.png" alt="맨 위로 올라가기"></a>
+                <a href="#go_top" id="top"><img src="./images/index/btn_goTop.png" alt="맨 위로 올라가기"></a>
                 <!-- 배너 창 데스크-->
                 <div class="bg">
                     <div class="slide">
@@ -431,14 +437,12 @@
                             </div>
                         </a>
                     </div>
-                    <div class="bg_last">
-                        <a href="#" class="event_all">이벤트 전체보기</a>
-                        <div class="bg_control">
-                            <div class="bg_go"></div>
-                            <div class="bg_playback">
-                                <img src="./images/index/icon_btn_play.png" alt="재생">
-                                <img src="./images/index/icon_btn_pause.png" alt="멈추기">
-                            </div>
+                    <a href="#" class="event_all">이벤트 전체보기</a>
+                    <div class="bg_control">
+                        <div class="bg_go"></div>
+                        <div class="bg_playback">
+                            <img src="./images/index/icon_btn_play.png" alt="재생">
+                            <img src="./images/index/icon_btn_pause.png" alt="멈추기">
                         </div>
                     </div>
                 </div>
@@ -572,13 +576,13 @@
                         <div class="text">
                             <!-- 시간이 지나감 -->
                             <p class="time">08.23.09</p>
-                            <h3>오늘만 이가격</h3>
+                            <h2>오늘만 이가격</h2>
                             <h3>세작 80g</h3>
-                            <span>
+                            <div class="option">
                                 <del>40,000원</del>
-                                <em>28,000원</em>
-                                <span>30%</span>
-                            </span>
+                                <em class="price">28,000원</em>
+                                <span class="sale">30%</span>
+                            </div>
                         </div>
                     </a>
                 </div>
