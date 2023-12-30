@@ -215,6 +215,7 @@
                                         <legend class="skip">검색양식</legend>
                                         <input type="text" placeholder="검색어를 입력해주세요." class="text">
                                         <button type="button" class="search_btn"></button>
+                                    </fieldset>
                                 </form>
                             </div>
                             <!-- 검색 나가는 버튼 -->
@@ -284,8 +285,6 @@
                     </div>
                     <!-- 장바구니 -->
                     <a href="#" class="cart">
-                        <img src="./images/index/icon_cart_white.png" alt="장바구니로 가기" class="cart_white">
-                        <img src="./images/index/icon_cart_black.png" alt="장바구니로 가기" class="cart_black">
                         <span>0</span>
                     </a>
                     <!-- 목록 -->
@@ -293,14 +292,15 @@
                         <a href="#" class="more">
                             <img src="./images/index/icon_more_white.png" alt="목록" class="more_white">
                             <img src="./images/index/icon_more_black.png" alt="목록" class="more_black">
+                            <img src="./images/index/icon_more_hover.png" alt="목록" class="more_hover">
                         </a>
-                        <div class="menu">
+                        <span class="menu">
                             <a href="#">고객센터</a>
                             <a href="#">매장찾기</a>
                             <a href="#">주문배송조회</a>
                             <a href="#">예약조회</a>
                             <a href="#">뷰티포인트 추후적립</a>
-                        </div>
+                        </span>
                     </div>
                     <!-- 모바일 목록 -->
                     <a href="#" class="m_list">
@@ -375,19 +375,25 @@
                         </div>
                     </nav>
                 </div>
-                <div class="right_last">
-                    <a href="#">로그인</a>
-                    <div class="user_login">
+                <ul class="right_last">
+                    <li>
                         <a href="#">로그인</a>
-                        <a href="#">회원가입</a>
-                    </div>
-                    <select name="language" id="language">
-                        <option value="ko">KPREAN</option>
-                        <option value="ko">한국어</option>
-                        <option value="ko">English</option>
-                        <option value="ko">中文</option>
-                    </select>
-                </div>
+                        <span class="user_login">
+                            <a href="#">로그인</a>
+                            <a href="#">회원가입</a>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#">KPREAN
+                            <span class="icon_drop"></span>
+                        </a>
+                        <span class="language">
+                            <a href="#">한국어</a>
+                            <a href="#">English</a>
+                            <a href="#">中文</a>
+                        </span>
+                    </li>
+                </ul>
             </div>
         </header>
         <main id="go_top">
