@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오설록</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="shortcut icon" href="./images/favicon/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon/favicon.png" type="image/x-icon">
@@ -15,7 +16,10 @@
     <div class="all">
         <header>
             <div class="top_left">
-                <h1><a href="./index.html"><img src="./images/index/logo_white.png" alt="오설록"></a></h1>
+                <h1><a href="./index.html">
+                        <img src="./images/index/logo_white.png" alt="오설록" class="logo_white">
+                        <img src="./images/index/logo_black.png" alt="오설록" class="logo_black">
+                    </a></h1>
                 <nav>
                     <!-- nav 배경색 -->
                     <div class="nav_bg"></div>
@@ -121,9 +125,7 @@
                             <fieldset>
                                 <legend class="skip">검색양식</legend>
                                 <input type="text" placeholder="검색어를 입력해주세요." class="text">
-                                <button type="button" class="search_btn">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
+                                <button type="button" class="search_btn"></button>
                             </fieldset>
                         </form>
                         <!-- 검색버튼 눌렀을 때 데스크 -->
@@ -212,10 +214,7 @@
                                     <fieldset>
                                         <legend class="skip">검색양식</legend>
                                         <input type="text" placeholder="검색어를 입력해주세요." class="text">
-                                        <button type="button" class="search_btn">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </button>
-                                    </fieldset>
+                                        <button type="button" class="search_btn"></button>
                                 </form>
                             </div>
                             <!-- 검색 나가는 버튼 -->
@@ -285,13 +284,15 @@
                     </div>
                     <!-- 장바구니 -->
                     <a href="#" class="cart">
-                        <img src="./images/index/icon_cart_white.png" alt="장바구니로 가기">
+                        <img src="./images/index/icon_cart_white.png" alt="장바구니로 가기" class="cart_white">
+                        <img src="./images/index/icon_cart_black.png" alt="장바구니로 가기" class="cart_black">
                         <span>0</span>
                     </a>
                     <!-- 목록 -->
                     <div class="list">
                         <a href="#" class="more">
-                            <img src="./images/index/icon_more_white.png" alt="목록">
+                            <img src="./images/index/icon_more_white.png" alt="목록" class="more_white">
+                            <img src="./images/index/icon_more_black.png" alt="목록" class="more_black">
                         </a>
                         <div class="menu">
                             <a href="#">고객센터</a>
@@ -302,7 +303,7 @@
                         </div>
                     </div>
                     <!-- 모바일 목록 -->
-                    <a href="#">
+                    <a href="#" class="m_list">
                         <img src="./images/index/icon_moNav_white.png" alt="목록">
                     </a>
                     <!-- 모바일 목록 내용 -->

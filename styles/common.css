@@ -5,32 +5,37 @@
 
 }
 .all header {
-    background-color: aquamarine;
+    position: fixed;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 10px; width: 100%;
+    max-width: 1580px; 
 }
 .all header .top_left {
-    background-color: antiquewhite;
     display: flex; flex-flow: row nowrap;
     align-items: center;
 }
 .all header .top_left h1 {
-    width: 140px;
+    width: 160px;
     padding-left: 44px;
+    display: block; 
 }
 .all header .top_left h1 a {}
-.all header .top_left h1 a img {}
+.all header .top_left h1 a .logo_white {
+    height: auto;
+}
+.all header .top_left h1 a .logo_black {
+    display: none;
+}
 /* header nav */
 .all header .top_left nav {
-    padding-left: 40px;
+    margin-left: 40px;
 }
 /* nav 배경색 */
 .all header .top_left nav .nav_bg {}
 /* 제품 */
 .all header .top_left nav ul {
-    background-color:black;
     display: flex; flex-flow: row nowrap;
 }
 .all header .top_left nav ul li {
@@ -38,8 +43,8 @@
 }
 /* 제품, 선물추천, 다다 브랜드 */
 .all header .top_left nav ul li a {
-    background-color: pink;
-    color: #fff; font-size: 1.125rem; font-weight: 500;
+    color: #fff; font-size: 1.125rem; font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 /* sub nav */
 .all header .top_left nav ul li .lnb {
@@ -56,27 +61,33 @@
 .all header .top_left nav ul li .lnb .right a {}
 .all header .top_left nav ul li .lnb .right a img {}
 .all header .top_right {
-    background-color:cadetblue ;
     display: flex; flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
 }
 .all header .top_right .first_last {
-    background-color:chocolate;
     display: flex; flex-flow: row nowrap;
+    justify-content:center ;
     align-items: center;
     margin-right: 45px;
 }
 .all header .top_right .first_last .search_nav_bg {}
 /* 검색 */
-.all header .top_right .first_last .search_nav_bg .search {}
+.all header .top_right .first_last .search_nav_bg .search {
+    margin-right: 15PX; 
+}
 .all header .top_right .first_last .search_nav_bg .search fieldset {}
 .all header .top_right .first_last .search_nav_bg .search fieldset .text {
     display: none;
 }
 .all header .top_right .first_last .search_nav_bg .search fieldset .search_btn {
-    color: #fff;
+    color: #fff; width: 40px; height: 40px;
+    background-image: url(../images/index/Icon_search_white.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    text-align: center;
 }
-.all header .top_right .first_last .search_nav_bg .search fieldset .search_btn .fa_magnifying_glass {}
 /* 검색 버튼 눌렀을 때 데스크 */
 .all header .top_right .first_last .search_nav_bg .search_nav {
     display: none;
@@ -132,20 +143,37 @@
 .all header .top_right .first_last .m_search_nav .m_search_last {}
 .all header .top_right .first_last .m_search_nav .m_search_last p {}
 /*  장바구니 */
-.all header .top_right .first_last .cart {}
-.all header .top_right .first_last .cart img {}
-.all header .top_right .first_last .cart span {}
+.all header .top_right .first_last .cart {
+    position: relative; margin-right: 15PX;
+}
+.all header .top_right .first_last .cart img {
+    width: 28px; height: auto;
+}
+.all header .top_right .first_last .cart span {
+    background-color: #fff; height: 18px; line-height: 18px;
+    border-radius: 9px; align-items: center;
+    color: #333; font-weight: 500;
+    position: absolute; right: -8px; top: -4px;
+    justify-content: center; text-align: center;
+    padding: 0 5px; font-size: 0.813rem;
+}
 /* 목록 */
-.all header .top_right .first_last .list {}
+.all header .top_right .first_last .list {
+    margin-right: 15px;
+}
 .all header .top_right .first_last .list .more {}
-.all header .top_right .first_last .list .more img {}
+.all header .top_right .first_last .list .more img {
+    width: 28px; height: auto;
+}
 .all header .top_right .first_last .list .menu {
     display: none;
 }
 .all header .top_right .first_last .list .menu a {}
 /* 모바일 목록 */
-.all header .top_right .first_last a {}
-.all header .top_right .first_last a img {}
+.all header .top_right .first_last .m_list {
+    display: none;
+}
+.all header .top_right .first_last .m_list img {}
 /* 모바일 목록 내용 */
 .all header .top_right .first_last .m_lnb {
     display: none;
@@ -182,10 +210,15 @@
 .all header .top_right .first_last .m_lnb .bottom a img {}
 /* 로그인 번역 */
 .all header .top_right .right_last {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+    height: 80px; 
     
 }
 .all header .top_right .right_last a {
     color: #fff; font-size: 0.938rem; font-weight: 500;
+    margin-right: 24PX;
+    
 }
 .all header .top_right .right_last .user_login {
     display: none;
