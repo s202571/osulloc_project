@@ -303,8 +303,50 @@
 .all header .top_right .first_last .list:hover .more .more_hover {
     display: block;
 }
+.all header .top_right .right_last li a:hover {
+    color: #668904;
+}
 .all header:hover .top_right .right_last li a:hover .icon_drop {
     background:url(../images/index/icon_drop_hover.png);
+}
+/* sub nav 나오기 */
+.all header:hover {
+    position: relative;
+}
+.all header .top_left nav ul li a:hover + .lnb {
+    background-color:yellowgreen; width: 100%;
+    display: flex; flex-flow: row nowrap;
+    position: absolute; top: 80px; left: 0;
+    overflow: hidden;
+    border-top:1px solid #E6E6E6 ;
+    padding: 40px;
+}
+.all header .top_left nav ul li a:hover + .lnb > .left {
+    background-color: violet;
+    display: flex; flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding-left: 170px;
+}
+.all header .top_left nav ul li a:hover + .lnb .left dl {
+    background-color: purple;
+    display: flex; flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 20%;
+}
+.all header .top_left nav ul li a:hover + .lnb .left dl dt {
+    background-color: yellow;
+    font-size: 0.938rem;
+    color: #333;
+}
+.all header .top_left nav ul li a:hover + .lnb .left dl dd {
+    background-color: tomato;
+    margin-top: 15px;
+}
+.all header .top_left nav ul li a:hover + .lnb .left dl dd a {
+    color: #666;
+}
+.all header .top_left nav ul li a:hover + .lnb .right {
+    width: 29.5%; height: auto;
 }
 /* --------------------------------------- */
 /* main */
