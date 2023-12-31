@@ -2,19 +2,16 @@
 /* header  */
 .all {
     background-color: aqua;
-    text-align: center;
-    position: relative;
 }
 .all header {
-    display: block; width: 200vw;
-    text-align: center;
+    display: block; width: 100%;
+    z-index: 100; 
 }
 .all header .wrap {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px; 
-    max-width: 1520px; 
 }
 
 .all header .wrap .top_left {
@@ -314,20 +311,25 @@
     background:url(../images/index/icon_drop_hover.png);
 }
 /* sub nav 나오기 */
-.all header:hover .wrap {
-    position: relative;
+.all header .wrap .top_left nav nav.bg >  ul li a:hover  {
+    background-color: #333;
+    z-index: 200; width: 100%; height: 100%;
+}
+@media screen and (min-width:1370px) {
+    .all header .wrap .top_left nav ul li a:hover + .lnb {
+        padding-right: 170px;
+    }
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb {
-    background-color:yellowgreen; width: 100%;
+    background-color:#fff; width: 100%; height: auto;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
     position: absolute; top: 80px; left: 0;
     overflow: hidden;
     border-top:1px solid #E6E6E6 ;
-    max-width: 1540px;
-    max-height: 100vh;
     padding-left: 170px;
+    
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb .all {
     background-color:palegoldenrod;

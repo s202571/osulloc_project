@@ -3,6 +3,7 @@
 * 12/23 footer 수정 
 * 12/26 header 수정 및 main 작성 
 * 12/27 main 완성 및 header,main,footer 수정
+* 12/27 css 시작
 ## index HTML
 ### header 수정
 1. nav부분 ul,li로 변경 , 순서 변경 , 홀리데이 -> 선물 추천 변경
@@ -41,6 +42,9 @@
 2. 달라서 여러개를 만들어야해서 번거로워짐
 
 # CSS
+* 23.12.30 header css 작성
+* 23.12.31 header css
+1. 크기를 키우면 너비를 줬는데도 안먹힌다
 1. hint요청
 2. js 연동 -> 먼저 피드백
 

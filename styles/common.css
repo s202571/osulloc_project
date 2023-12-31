@@ -1,16 +1,12 @@
 /* 1281 ~ max */
 /* header */
-.all {
-    background-color: aqua;
-
-}
+.all {}
 .all header {
     position: fixed;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px; width: 100%;
-    max-width: 1580px; 
 }
 .all header .top_left {
     display: flex; flex-flow: row nowrap;
@@ -295,4 +291,3 @@
     .all header .top_right .first_last .m_lnb .bottom a {}
     .all header .top_right .first_last .m_lnb .bottom a p {}
     .all header .top_right .first_last .m_lnb .bottom a img {}
-}
