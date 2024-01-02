@@ -5,13 +5,15 @@
 }
 .all header {
     display: block; width: 100%;
-    z-index: 100; 
+    z-index: 100; text-align: center;
 }
 .all header .wrap {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px; 
+    max-width: 1540px;
+    margin: 0 auto;
 }
 
 .all header .wrap .top_left {
@@ -223,7 +225,7 @@
     justify-content: center; align-items: center;
     height: 80px;  text-align: center;
 }
-.all header .wrap .top_right .right_last li a {
+.all header .wrap .top_right .right_last li > a {
     color: #fff; font-size: 0.938rem; font-weight: 700;
     margin-right: 24PX;     display: flex; flex-flow: row nowrap;
     justify-content: center; align-items: center;
@@ -234,7 +236,7 @@
     display: none;
 }
 .all header .wrap .top_right .right_last li .user_login a {}
-.all header .wrap .top_right .right_last li a .icon_drop {
+.all header .wrap .top_right .right_last li > a .icon_drop {
     background-image: url(../images/index/icon_drop_white.png); display:inline-block;
     width: 7px; height: 4px; line-height: 4px;
     margin-left: 7px;
@@ -287,6 +289,64 @@
 .all header:hover .wrap .top_right .right_last #language {
     color: #333;
 }
+/* 목록 나오게 */
+.all header:hover .wrap .top_right .first_last .list:hover .more {
+    position: relative;
+}
+.all header:hover .wrap .top_right .first_last .list:hover .menu {
+    position: absolute; bottom: 5px; right: 7%;
+    transform: translate(-50%,100%);
+    display: flex; flex-flow: column nowrap;
+    text-align: right;
+    width: 165px; background-color: #fff;
+    max-height: 500px;
+    
+}
+.all header:hover .wrap .top_right .first_last .list:hover .menu a {
+    padding:8px 20px;
+    font-size: 0.938rem; color: #555;
+    font-weight: 500;
+}
+.all header:hover .wrap .top_right .first_last .list:hover .menu a:first-child {
+    padding-top: 20px;
+}
+.all header:hover .wrap .top_right .first_last .list:hover .menu a:last-child {
+    padding-bottom: 20px;
+}
+/* 로그인 나오게 */
+.all header:hover .wrap .top_right .right_last li > a:hover + .user_login {
+    position: absolute; top: 80px; right: 9%;
+    display: flex; flex-flow: column nowrap;
+    background-color: #fff; width: 100px;
+    text-align: right; 
+}
+.all header:hover .wrap .top_right .right_last li > a:hover + .user_login a {
+    font-weight: 500; color: #555; margin: 0;
+    padding: 20px 20px 8px 20px;
+}
+.all header:hover .wrap .top_right .right_last li > a:hover + .user_login a:last-of-type {
+    padding-bottom: 20px;
+}
+/* language 나오게 */
+.all header:hover .wrap .top_right .right_last li > a:hover {
+    position: relative;
+}
+.all header:hover .wrap .top_right .right_last li > a:hover + .language {
+    display: flex; flex-flow: column nowrap;
+    position: absolute; top: 80px; right: 4%;
+    background-color: #fff;
+    width: 90px;
+}
+.all header:hover .wrap .top_right .right_last li > a:hover + .language a {
+    padding: 8px 20px; color: #555;
+    margin: 0;
+}
+.all header:hover .wrap .top_right .right_last li > a:hover + .language a:first-of-type {
+    padding-top: 20px;
+}
+.all header:hover .wrap .top_right .right_last li > a:hover + .language a:last-of-type {
+    padding-bottom: 20px;
+}
 /* --------------------------------------- */
 /* sub nav 색 변회*/
 .all header:hover .wrap .top_left nav ul li > a:hover {
@@ -304,7 +364,7 @@
 .all header .wrap .top_right .first_last .list:hover .more .more_hover {
     display: block;
 }
-.all header .wrap .top_right .right_last li a:hover {
+.all header .wrap .top_right .right_last li > a:hover {
     color: #668904;
 }
 .all header:hover .wrap .top_right .right_last li a:hover .icon_drop {
@@ -332,27 +392,24 @@
     
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb .all {
-    background-color:palegoldenrod;
+    background-color: #fff;
     display: flex; flex-flow: row nowrap;
     padding: 40px; width: 100%;
 
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb .left {
-    background-color: violet;
     display: flex; flex-flow: row nowrap;
     width: 100%;
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb .left dl {
-    background-color: purple;
     width: 20%;
+    text-align: left;
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb .left dl dt a {
-    background-color: yellow;
     font-size: 1.063rem;
     color: #333;
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb .left dl dd {
-    background-color: tomato;
     margin-top: 15px;
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb .left dl dd a {
@@ -361,17 +418,102 @@
     font-weight: 500;
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb .right {
-    background-color: teal;
     width: 29.5%; height: auto;
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb .right a img {
-    max-width:100% ; width: 100%; height: auto;
+    max-width:100% ; width: 100%; height: 100%;
 }
 /* --------------------------------------- */
 /* main */
+.all main {}
+.all main .main_all {}
+/* 올라가기 btn */
+.all main .main_all #top {}
+.all main .main_all #top img {}
+<!-- 배너 창 데스크-->
+.all main .main_all .bg {}
+.all main .main_all .bg .slide {}
+.all main .main_all .bg .slide a {
+    /* img */
+}
+.all main .main_all .bg .slide a:first-of-type {}
+.all main .main_all .bg .slide a:last-of-type {}
+.all main .main_all .bg .slide a .bg_text {}
+.all main .main_all .bg .slide a .bg_text h3 {}
+.all main .main_all .bg .slide a .bg_text p {}
+.all main .main_all .bg .slide a .bg_text p em {}
+.all main .main_all .bg a {}
+.all main .main_all .bg a .bg_control {}
+.all main .main_all .bg a .bg_control .bg_go {}
+.all main .main_all .bg a .bg_control .bg_playback {}
+.all main .main_all .bg a .bg_control .bg_playback img {}
+/* 모바일 네비 */
+.all main .main_all .category {}
+.all main .main_all .category ul {}
+.all main .main_all .category ul li {}
+.all main .main_all .category ul li p {}
+.all main .main_all .category ul li p img {}
+/* 공지 */
+.all main .main_all .announcement {}
+.all main .main_all .announcement .left {}
+.all main .main_all .announcement .left p {}
+.all main .main_all .announcement .left .announcement_txt {}
+.all main .main_all .announcement .left .announcement_txt a {}
+/* <!-- 공지사항 페이지 --> */
+.all main .main_all .announcement .right {}
+.all main .main_all .announcement .right a {}
+.all main .main_all .announcement .right a img {}
+/* <!-- 베스트 추천 --> */
+.all main .main_all .tea_best {}
+.all main .main_all .tea_best .top {}
+.all main .main_all .tea_best .top h3 {}
+.all main .main_all .tea_best .top a {}
+/* 베스트 상품 */
+.all main .main_all .tea_best .best_product {}
+/*  상품 1개  다시보기*/ 
+.all main .main_all .tea_best .best_product .item {}
+.all main .main_all .tea_best .best_product .item .photo {}
+.all main .main_all .tea_best .best_product .item .photo a {}
+.all main .main_all .tea_best .best_product .item .photo a img {}
+.all main .main_all .tea_best .best_product .item > a {}
+.all main .main_all .tea_best .best_product .item > a p {}
+.all main .main_all .tea_best .best_product > p {}
+.all main .main_all .tea_best .best_product > p > a {}
+.all main .main_all .tea_best .best_product > p > a > img {}
+.all main .main_all .tea_best .bg_deta {}
+.all main .main_all .tea_best .bg_deta a {
+    /* img */
+}
+/* 시간이 지나감 */
+.all main .main_all .tea_best .bg_deta a .text {}
+.all main .main_all .tea_best .bg_deta a .text .time {}
+.all main .main_all .tea_best .bg_deta a .text h2 {}
+.all main .main_all .tea_best .bg_deta a .text h3 {}
+.all main .main_all .tea_best .bg_deta a .text .option {}
+.all main .main_all .tea_best .bg_deta a .text .option del {}
+.all main .main_all .tea_best .bg_deta a .text .option em {}
+.all main .main_all .tea_best .bg_deta a .text .option span {}
+/* 다다일상 구독 */
+.all main .main_all .tea_best .m_dada_all {}
+.all main .main_all .tea_best .m_dada_all h3 {}
+.all main .main_all .tea_best .m_dada_all p {}
+.all main .main_all .tea_best .m_dada_all .dada_link {}
+.all main .main_all .tea_best .m_dada_all .dada_link .product {}
+.all main .main_all .tea_best .m_dada_all .dada_link .product a {}
+.all main .main_all .tea_best .m_dada_all .dada_link .product a .photo {}
+.all main .main_all .tea_best .m_dada_all .dada_link .product a .photo img {}
+.all main .main_all .tea_best .m_dada_all .dada_link .product a h4 {}
+.all main .main_all .tea_best .m_dada_all .dada_link .product a p {}
+.all main .main_all .tea_best .m_dada_all .dada_link .product a p em {}
+.all main .main_all .tea_best .m_dada_all .dada_link .product a p .option {}
+.all main .main_all .tea_best .m_dada_all .dada_link .product a p .option span {}
+.all main .main_all .tea_best .m_dada_all .dada_detail_view {}
+.all main .main_all .tea_best .m_dada_all .dada_detail_view a {}
+.all main .main_all .tea_best .m_dada_all .dada_detail_view a img {}
+/* 출석체크 */
 /* footer */
 /* 태블릿 ~ 1280 */
-@media screen and (max-width:1280px;) {
+@media screen and (max-width:1280px) {
         /* 검색 버튼 눌렀을 때 모바일 */
     .all header .wrap .top_right .first_last .m_search_nav {
         display: none;
