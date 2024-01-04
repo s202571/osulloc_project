@@ -73,9 +73,7 @@
     margin-right: 15PX; 
 }
 .all header .top_right .first_last .search_nav_bg .search fieldset {}
-.all header .top_right .first_last .search_nav_bg .search fieldset .text {
-    display: none;
-}
+.all header .top_right .first_last .search_nav_bg .search fieldset .text {}
 .all header .top_right .first_last .search_nav_bg .search fieldset .search_btn {
     color: #fff; width: 40px; height: 40px;
     background-image: url(../images/index/Icon_search_white.png);
