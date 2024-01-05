@@ -310,6 +310,12 @@
 .all header:hover .wrap .top_right .first_last .list:hover .more {
     position: relative;
 }
+.all header:hover .wrap .top_right .first_last .list:hover .more .more_black {
+    display: none;
+}
+.all header:hover .wrap .top_right .first_last .list:hover .more .more_hover {
+    display: block; width: 28px; height: 28px;
+}
 .all header:hover .wrap .top_right .first_last .list:hover .menu {
     position: absolute; bottom: 5px; right: 7%;
     transform: translate(-50%,100%);
@@ -317,7 +323,6 @@
     text-align: right;
     width: 165px; background-color: #fff;
     max-height: 500px;
-    
 }
 .all header:hover .wrap .top_right .first_last .list:hover .menu a {
     padding:8px 20px;
