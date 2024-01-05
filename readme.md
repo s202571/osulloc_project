@@ -3,7 +3,9 @@
 * 12/23 footer 수정 
 * 12/26 header 수정 및 main 작성 
 * 12/27 main 완성 및 header,main,footer 수정
-* 12/27 css 시작
+* 12/27 ~ css 시작 header 시작
+* 01/04 main 시작, header 모바일 버전
+* 01/05 header 검색기록 css 작성
 ## index HTML
 ### header 수정
 1. nav부분 ul,li로 변경 , 순서 변경 , 홀리데이 -> 선물 추천 변경
