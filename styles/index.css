@@ -10,7 +10,7 @@
     align-items: center;
     display: block; width: 100%;
     z-index: 100; text-align: center;
-    padding: 0 10px;
+    padding: 0 10px; 
 }
 .all header .wrap {
     display: flex; flex-flow: row nowrap;
@@ -106,28 +106,58 @@
 }
 /* 검색 버튼 눌렀을 때 데스크 */
 .all header .wrap .top_right .first_last .search_nav_bg .search_nav {
-    position: absolute;
+    position: fixed; left: 0; right: 0; top: 80px;
+    display: flex; flex-flow: row nowrap;
+    text-align: left;
+    background-color: #fff; padding: 60px; margin: auto;
+    width: 1200px; height: 642px;
+    border-top:1px solid #E6E6E6 ;
 }
+/* 인기검색어, 최근검색어 공통 */
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left,
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_last {
+    height: 500px;
+}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .popularity_search,
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_last .recent_search {
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between; align-items: flex-end;
+    width: 270px;
+}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .popularity_search h3,
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_last .recent_search h3 {font-size: 1.375rem; font-weight: 400;}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .popularity_search span,
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_last .recent_search span {font-size: 1.063rem; color: #758246; font-weight: 400;}
 /* 인기검색어 */
-.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left {}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left {position: relative;}
 .all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .popularity_search {}
 .all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .popularity_search h3 {}
 .all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .popularity_search span {}
-.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .ranking {}
-.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .ranking .number {}
-.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .ranking a {}
-.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .ranking .state {}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .last {
+    width: 270px; margin: 45px 50px 0 0;
+}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .last::after {
+    content:''; display: block; width: 1px; height: 520px;
+    background-color: #ddd; position: absolute; right: 0; top: 0;
+}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .last .ranking:first-of-type {margin: 0;}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .last .ranking {
+    margin-top: 20px; 
+}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .last .ranking .number {}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .last .ranking a {}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .last .ranking .state {}
 /* 화살표 */
-.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .ranking .state .fa_caret_up {}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_left .last .ranking .state .fa_caret_up {}
 /* 최근검색어 */
 .all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_last {}
 .all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_last .recent_search {}
 .all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_last .recent_search h3 {}
 .all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_last .recent_search span {}
-.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_last .recent_search p {}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_last p {}
 /* 페이지 나가기 */
-.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_closer {}
-.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_closer img {}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_closer {position:absolute; top:30px; right: 30px; cursor: pointer;}
+.all header .wrap .top_right .first_last .search_nav_bg .search_nav .search_closer img {display: inline-block; width: 20px; height: 20px;}
 /* 검색기록 삭제 */
 .all header .wrap .top_right .first_last .search_nav_bg .search_nav .recent_search_closer {}
 .all header .wrap .top_right .first_last .search_nav_bg .search_nav .recent_search_closer .delete_search {}
