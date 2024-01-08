@@ -4,12 +4,12 @@
     background-color: aqua;
 }
 .all header {
-    position: fixed;
+    position: fixed; 
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     display: block; width: 100%;
-    z-index: 110; text-align: center;
+    z-index: 100; text-align: center;
     padding: 0 10px; 
 }
 .all header .wrap {
@@ -44,7 +44,14 @@
     margin-left: 40px;
 }
 /* nav 배경색 */
-.all header .wrap .top_left nav .nav_bg {}
+.all header .wrap .top_left nav .nav_bg {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    top: 0; left: 0;
+    z-index: 110;
+}
 /* 제품 */
 .all header .wrap .top_left nav ul {
     display: flex; flex-flow: row nowrap;
@@ -86,9 +93,10 @@
 .all header .wrap .top_right .first_last .search_nav_bg {position: relative; }
 /* 검색 */
 .all header .wrap .top_right .first_last .search_nav_bg .search {
-    background:#ECECEC;; border-radius: 20px;
+    background:#ECECEC; border-radius: 20px;
     display: flex; justify-content: space-between; align-items: center;
     width: 290px; height: 40px;
+    z-index: 130; position: relative; 
 }
 .all header .wrap .top_right .first_last .search_nav_bg .search fieldset {
     display: flex; justify-content: space-between; width: 100%;
@@ -407,7 +415,7 @@ font-weight: 400;}
     padding-bottom: 20px;
 }
 /* language 나오게 */
-.all header:hover .wrap .top_right .right_last li > a:hover + .language {
+.all header .wrap .top_right .right_last li > a:hover + .language {
     display: flex; flex-flow: column nowrap;
     position: absolute; top: 80px; right: 10%;
     background-color: #fff;
@@ -506,7 +514,7 @@ font-weight: 400;}
 /* 올라가기 btn */
 .all main .main_all #top {}
 .all main .main_all #top img {}
-<!-- 배너 창 데스크-->
+/* <!-- 배너 창 데스크--> */
 .all main .main_all .bg {}
 .all main .main_all .bg .slide {}
 .all main .main_all .bg .slide a {
