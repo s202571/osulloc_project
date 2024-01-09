@@ -1,7 +1,7 @@
 /* 1281 ~ max */
 /* header  */
 .all {
-    background-color: aqua;
+    background-color: aqua; position: relative;
 }
 .all header {
     position: fixed; 
@@ -512,8 +512,12 @@ font-weight: 400;}
 .all main {}
 .all main .main_all {}
 /* 올라가기 btn */
-.all main .main_all #top {}
-.all main .main_all #top img {}
+.all main .main_all #top {position: fixed; bottom: 40px; right: -50px;
+    overflow: hidden; cursor: pointer;
+    /* 자바------------------ */
+    transform: translateX(-60px);
+}
+.all main .main_all #top img {width: 40px; height: 40px;}
 /* <!-- 배너 창 데스크--> */
 .all main .main_all .bg {}
 .all main .main_all .bg .slide {}
@@ -608,9 +612,114 @@ font-weight: 400;}
 .all main .main_all .tea_best .m_dada_all .dada_detail_view a {}
 .all main .main_all .tea_best .m_dada_all .dada_detail_view a img {}
 /* 출석체크 및 소식 */
+.all main .main_all .tea_best .attendance_news {}
+.all main .main_all .tea_best .attendance_news .left {}
+.all main .main_all .tea_best .attendance_news .left a {}
+.all main .main_all .tea_best .attendance_news .left a h3 {}
+.all main .main_all .tea_best .attendance_news .left a p {}
+.all main .main_all .tea_best .attendance_news .right {}
+.all main .main_all .tea_best .attendance_news .right a {}
+.all main .main_all .tea_best .attendance_news .right a p {}
+.all main .main_all .tea_best .attendance_news .right a .osulloc_story {}
+/* 다다일상 기록 */
+.all main .main_all .tea_best .dada_record {}
+.all main .main_all .tea_best .dada_record h3 {}
+.all main .main_all .tea_best .dada_record p {}
+.all main .main_all .tea_best .dada_record p span {}
+.all main .main_all .tea_best .dada_record .photo {}
+.all main .main_all .tea_best .dada_record .photo a {}
+.all main .main_all .tea_best .dada_record .photo a p {}
+.all main .main_all .tea_best .dada_record .photo a h4 {}
+/* 매장소개 */
+.all main .main_all .tea_best .shop {}
+.all main .main_all .tea_best .shop h3 {}
+.all main .main_all .tea_best .shop p {}
+.all main .main_all .tea_best .shop .photo {}
+.all main .main_all .tea_best .shop .photo .store_ph {}
+.all main .main_all .tea_best .shop .photo .store_ph .shop_introduction {}
+.all main .main_all .tea_best .shop .photo .store_ph .shop_introduction h3 {}
+.all main .main_all .tea_best .shop .photo .store_ph .shop_introduction p {}
+.all main .main_all .tea_best .shop .all_store_view {}
+.all main .main_all .tea_best .shop .all_store_view a {}
+.all main .main_all .tea_best .shop .all_store_view a img {}
+/* 단체 및 기업구매 */
+.all main .main_all .tea_best .group_purchase {}
+.all main .main_all .tea_best .group_purchase h3 {}
+.all main .main_all .tea_best .group_purchase p {}
+.all main .main_all .tea_best .group_purchase .group_loginlink {}
+.all main .main_all .tea_best .group_purchase .group_link {}
+.all main .main_all .tea_best .group_purchase .group_link img {}
 /* footer */
+.all footer {}
+.all footer .desk_footer {}
+.all footer .desk_footer .login_sns {}
+.all footer .desk_footer .login_sns a {}
+.all footer .desk_footer .login_sns a img {}
+.all footer .desk_footer .contact {}
+.all footer .desk_footer .contact .left {}
+.all footer .desk_footer .contact .left .user_counseling {}
+.all footer .desk_footer .contact .left .user_counseling p {}
+.all footer .desk_footer .contact .left .user_counseling p em {}
+.all footer .desk_footer .contact .left .user_counseling a {}
+.all footer .desk_footer .contact .left .bulk_purchase {}
+.all footer .desk_footer .contact .left .bulk_purchase p {}
+.all footer .desk_footer .contact .left .bulk_purchase a {}
+.all footer .desk_footer .contact .left .bulk_purchase .kakao_id {}
+.all footer .desk_footer .contact .left .bulk_purchase .time {}
+.all footer .desk_footer .contact .right {}
+.all footer .desk_footer .contact .right a {}
+.all footer .desk_footer .contact .right a img {}
+.all footer .desk_footer .contact .right a span {}
+.all footer .desk_footer .contact .bottom {}
+.all footer .desk_footer .contact .bottom .bottom_left {}
+.all footer .desk_footer .contact .bottom .bottom_left .logo {}
+.all footer .desk_footer .contact .bottom .bottom_left .logo img {}
+.all footer .desk_footer .contact .bottom .bottom_left .company_introduction {}
+.all footer .desk_footer .contact .bottom .bottom_left .company_introduction ul {}
+.all footer .desk_footer .contact .bottom .bottom_left .company_introduction ul li {}
+.all footer .desk_footer .contact .bottom .bottom_left .company_introduction ul li a {}
+.all footer .desk_footer .contact .bottom .bottom_left .company_introduction .last {}
+.all footer .desk_footer .contact .bottom .bottom_left .company_introduction .last address {}
+.all footer .desk_footer .contact .bottom .bottom_left .company_introduction .last p {}
+.all footer .desk_footer .contact .bottom .bottom_right {}
+.all footer .desk_footer .contact .bottom .bottom_right h3 {}
+.all footer .desk_footer .contact .bottom .bottom_right .kcp {}
+.all footer .desk_footer .contact .bottom .bottom_right .kcp p {}
+.all footer .desk_footer .contact .bottom .bottom_right .kcp p img {}
+.all footer .m_footer {}
+.all footer .m_footer .m_top {}
+.all footer .m_footer .m_top .m_top_left {}
+.all footer .m_footer .m_top .m_top_left a {}
+.all footer .m_footer .m_top .m_top_right {}
+.all footer .m_footer .m_top .m_top_right #m_language {}
+.all footer .m_footer .m_top .m_top_right #m_language option {}
+.all footer .m_footer .check_information {}
+.all footer .m_footer .check_information a {}
+.all footer .m_footer .check_information a p {}
+.all footer .m_footer .check_information a p img {}
+.all footer .m_footer .check_information address {}
+.all footer .m_footer .m_company_introduction {}
+.all footer .m_footer .m_company_introduction ul {}
+.all footer .m_footer .m_company_introduction ul li {}
+.all footer .m_footer .m_company_introduction ul li a {}
+.all footer .m_footer .m_company_introduction .m_last {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling p {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling a {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling p em {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling .time {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase p {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase a {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase .kakao_id {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase .time {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_right {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_right a {}
+.all footer .m_footer .m_company_introduction .m_last .m_last_right a img {}
 /* 태블릿 ~ 1279 */
 @media screen and (max-width:1279px) {
+
         /* 검색 버튼 눌렀을 때 모바일 */
     .all header .wrap .top_left nav {display: none;}
     .all header .wrap .top_right .right_last {display: none;}
