@@ -522,7 +522,7 @@ font-weight: 400;}
 .all main .main_all .bg {}
 .all main .main_all .bg .slide {}
 .all main .main_all .bg .slide a {
-    /* img */
+    background-image:url(../images/index/bg1.jpg) ;
 }
 .all main .main_all .bg .slide a:first-of-type {}
 .all main .main_all .bg .slide a:last-of-type {}
@@ -536,50 +536,131 @@ font-weight: 400;}
 .all main .main_all .bg a .bg_control .bg_playback {}
 .all main .main_all .bg a .bg_control .bg_playback img {}
 /* 모바일 네비 */
-.all main .main_all .category {}
+.all main .main_all .category {display: none;}
 .all main .main_all .category ul {}
 .all main .main_all .category ul li {}
 .all main .main_all .category ul li p {}
 .all main .main_all .category ul li p img {}
 /* 공지 */
-.all main .main_all .announcement {}
-.all main .main_all .announcement .left {}
-.all main .main_all .announcement .left p {}
-.all main .main_all .announcement .left .announcement_txt {}
-.all main .main_all .announcement .left .announcement_txt a {}
+.all main .main_all .announcement {
+    max-width: 1240px;
+    margin: 0 auto; padding: 0 20px ;
+    width: 100%;
+}
+.all main .main_all .announcement .announcement_all {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center;
+    margin-top: 48px; padding: 14px 16px; text-align: center;
+    background-color: #F6F6F6; border-radius: 5px;
+}
+.all main .main_all .announcement .announcement_all .left {display: flex; flex-flow: row nowrap; align-items: center;}
+.all main .main_all .announcement .announcement_all .left p {
+    margin-right: 12px; font-size: 0.875rem; color: #999; font-weight: 500;
+}
+.all main .main_all .announcement .announcement_all .left .announcement_txt {
+    
+}
+.all main .main_all .announcement .announcement_all .left .announcement_txt a {
+    font-size: 0.75rem; font-weight: 400;
+}
 /* <!-- 공지사항 페이지 --> */
-.all main .main_all .announcement .right {}
-.all main .main_all .announcement .right a {}
-.all main .main_all .announcement .right a img {}
+.all main .main_all .announcement .announcement_all .right {text-align: right;}
+.all main .main_all .announcement .announcement_all .right a {}
+.all main .main_all .announcement .announcement_all .right a img {width: 7px; height: 12px;}
 /* <!-- 베스트 추천 --> */
-.all main .main_all .tea_best {}
-.all main .main_all .tea_best .top {}
-.all main .main_all .tea_best .top h3 {}
-.all main .main_all .tea_best .top a {}
+.all main .main_all .tea_best {margin-top: 48px; max-width: 1240px;
+    padding: 0 20px; margin-left: auto; margin-right: auto;
+}
+.all main .main_all .tea_best .top {display: flex; flex-flow: row nowrap; align-items: center;}
+.all main .main_all .tea_best .top h3 {font-size: 1.75rem; }
+.all main .main_all .tea_best .top a {
+    font-size: 0.938rem; padding: 7px 16px; border-radius:150px ;
+    font-weight: 500;
+}
+.all main .main_all .tea_best .top >.best_product {
+    margin-left: 20px;  background-color: #F6F6F6; color: #999;
+}
+.all main .main_all .tea_best .top .best_week_product {
+    background-color: #6c801a; color: #fff; margin-left: 8px;
+}
 /* 베스트 상품 */
-.all main .main_all .tea_best .best_product {}
+.all main .main_all .tea_best > .best_product {
+    overflow: hidden; margin-top: 48px;
+    display: flex; flex-flow: row nowrap; height: auto;
+}
+/* 스프라이트 공통(hover) */
+.all main .main_all .tea_best > .best_product .item .photo a button ,
+.all main .main_all .tea_best > .best_week_product .item .photo a button {
+    width: 36px; height: 36px; background-position: -50px;
+    position: absolute; right: 12px; bottom: 12px;
+}
 /*  상품 1개 */ 
-.all main .main_all .tea_best .best_product .item {}
-.all main .main_all .tea_best .best_product .item .photo {}
-.all main .main_all .tea_best .best_product .item .photo a {}
-.all main .main_all .tea_best .best_product .item .photo a img {}
-.all main .main_all .tea_best .best_product .item > a {}
-.all main .main_all .tea_best .best_product .item > a p {}
-.all main .main_all .tea_best .best_week_product {}
-.all main .main_all .tea_best .best_week_product .item {}
-.all main .main_all .tea_best .best_week_product .item .photo {}
-.all main .main_all .tea_best .best_week_product .item .photo a {}
-.all main .main_all .tea_best .best_week_product .item .photo a img {}
-.all main .main_all .tea_best .best_week_product .item > a {}
-.all main .main_all .tea_best .best_week_product .item > a p {}
-.all main .main_all .tea_best .best_week_product .item > a .cost_price {}
-.all main .main_all .tea_best .best_week_product .item > a .cost_price del {}
-.all main .main_all .tea_best .best_week_product .item > a .price {}
-.all main .main_all .tea_best .best_week_product .item > a .price em {}
-.all main .main_all .tea_best .best_week_product .item > a .new_product {}
-.all main .main_all .tea_best .best_week_product .item > a .new_product span {}
-.all main .main_all .tea_best > p {}
-.all main .main_all .tea_best > p > a {}
+
+.all main .main_all .tea_best > .best_product .item {}
+.all main .main_all .tea_best > .best_product .item .photo {}
+.all main .main_all .tea_best > .best_product .item .photo a {
+    position: relative;
+}
+.all main .main_all .tea_best > .best_product .item .photo a img {
+    width: 225px; height: auto;}
+.all main .main_all .tea_best > .best_product .item .photo a .gift {
+    background: url(../images/index/icon_prd_gift.png);
+}
+.all main .main_all .tea_best > .best_product .item > a {
+    margin-top: 15px; min-height: 70px;
+}
+.all main .main_all .tea_best > .best_product .item > a p {}
+.all main .main_all .tea_best > .best_product .item > a .price {
+    margin-top: 18px; font-size: 1.125rem; font-weight: 500;
+}
+.all main .main_all .tea_best > .best_week_product {
+    overflow: hidden; margin-top: 48px;
+    display: flex; flex-flow: row nowrap; height: auto;
+}
+.all main .main_all .tea_best > .best_week_product .item {}
+.all main .main_all .tea_best > .best_week_product .item .photo {}
+.all main .main_all .tea_best > .best_week_product .item .photo a {
+    position: relative;
+}
+.all main .main_all .tea_best > .best_week_product .item .photo a img {
+    width: 225px; height: auto;
+}
+.all main .main_all .tea_best > .best_week_product .item .photo a .cart {
+    background: url(../images/index/icon_prd_cart.png); 
+}
+.all main .main_all .tea_best > .best_week_product .item > a {
+    margin-top: 15px; min-height: 70px;
+}
+.all main .main_all .tea_best > .best_week_product .item > a p {}
+.all main .main_all .tea_best > .best_week_product .item > a .cost_price {
+    
+}
+.all main .main_all .tea_best > .best_week_product .item > a .cost_price del {font-size: 0.875rem; text-decoration: line-through; color: #999;
+    font-weight: 400; margin-top: 12px; font-size: 1.125rem;
+}
+.all main .main_all .tea_best > .best_week_product .item > a .price {
+    font-size: 1.125rem; font-weight: 500; margin-top: 6px;
+}
+.all main .main_all .tea_best > .best_week_product .item > a .price em {
+    margin-left: 5px; color: #6c801a; font-weight: 500;
+}
+.all main .main_all .tea_best > .best_week_product .item > a .new_product {
+    margin-top: 40px; display: block;
+}
+.all main .main_all .tea_best > .best_week_product .item > a .new_product span {
+    background-color: #a89079; color: #fff; padding: 1px 8px; 
+    display: inline-block; font-weight: 500;
+}
+/* 더보기 버튼 */
+.all main .main_all .tea_best > p {
+    margin-top: 48px;
+}
+.all main .main_all .tea_best > p > a {
+    border: 1px solid #ddd; padding: 0 60px;
+    width: auto; height: 48px; display: inline-block;
+    line-height: 48px; background-color: #fff;
+    font-size: 0.938rem;
+}
 .all main .main_all .tea_best > p > a > img {}
 .all main .main_all .tea_best .bg_deta {}
 .all main .main_all .tea_best .bg_deta a {
