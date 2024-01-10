@@ -47,7 +47,6 @@
 .all header .wrap .top_left nav .nav_bg {
     position: absolute;
     width: 100%;
-    height: 80px;
     background: transparent;
     top: 0; left: 0;
     z-index: 110;
@@ -505,7 +504,7 @@ font-weight: 400;}
     width: 29.5%; height: auto;
 }
 .all header .wrap .top_left nav ul li a:hover + .lnb .right a img {
-    max-width:100% ; width: 100%; height: 100%;
+    max-width:100% ; height: 100%;
 }
 /* --------------------------------------- */
 /* main */
@@ -519,22 +518,65 @@ font-weight: 400;}
 }
 .all main .main_all #top img {width: 40px; height: 40px;}
 /* <!-- 배너 창 데스크--> */
-.all main .main_all .bg {}
-.all main .main_all .bg .slide {}
-.all main .main_all .bg .slide a {
-    background-image:url(../images/index/bg1.jpg) ;
+.all main .main_all .bg {background-color: palevioletred;
 }
-.all main .main_all .bg .slide a:first-of-type {}
-.all main .main_all .bg .slide a:last-of-type {}
-.all main .main_all .bg .slide a .bg_text {}
-.all main .main_all .bg .slide a .bg_text h3 {}
-.all main .main_all .bg .slide a .bg_text p {}
-.all main .main_all .bg .slide a .bg_text p em {}
-.all main .main_all .bg a {}
-.all main .main_all .bg a .bg_control {}
-.all main .main_all .bg a .bg_control .bg_go {}
-.all main .main_all .bg a .bg_control .bg_playback {}
-.all main .main_all .bg a .bg_control .bg_playback img {}
+.all main .main_all .bg .slide_wrap {
+    position: relative;
+    display: flex; flex-flow: row nowrap;
+}
+/* slide 공동 */
+.all main .main_all .bg .slide_wrap .slide {height: 100%;}
+.all main .main_all .bg .slide_wrap .slide a {height: 100%;}
+.all main .main_all .bg .slide_wrap .slide a img {
+    width: 100vw; height: auto; 
+}
+.all main .main_all .bg .slide_wrap .slide a .bg_text {
+    position: absolute; top: 50%; left: 60px;
+    transform: translateY(-50%); bottom: auto; padding-top: 50px;
+    max-width: 1320px; padding: 0 60px;
+}
+.all main .main_all .bg .slide_wrap .slide a .bg_text h3 {
+    font-size: 2.25rem; font-weight: 600; line-height: 1.33; color: #333;
+}
+.all main .main_all .bg .slide_wrap .slide a .bg_text p {
+    margin-top: 10px;
+}
+.all main .main_all .bg .slide_wrap .slide a .bg_text p em {
+    padding-top: 12px; font-weight: 500;
+}
+/* slide 개별 */
+.all main .main_all .bg .slide_wrap .slide1 a {}
+.all main .main_all .bg .slide_wrap .slide1 a .bg_text {}
+.all main .main_all .bg .slide_wrap .slide1 a .bg_text h3 {}
+.all main .main_all .bg .slide_wrap .slide1 a .bg_text p {}
+.all main .main_all .bg .slide_wrap .slide1 a .bg_text p em {}
+/* slide2 */
+.all main .main_all .bg .slide_wrap .slide2 {display: none;}
+.all main .main_all .bg .slide_wrap .slide2 a {}
+.all main .main_all .bg .slide_wrap .slide2 a {}
+.all main .main_all .bg .slide_wrap .slide2 a .bg_text {}
+.all main .main_all .bg .slide_wrap .slide2 a .bg_text h3 {}
+.all main .main_all .bg .slide_wrap .slide2 a .bg_text p {}
+.all main .main_all .bg .slide_wrap .slide2 a .bg_text p em {}
+/* slide3 */
+.all main .main_all .bg .slide_wrap .slide3 {display: none;}
+.all main .main_all .bg .slide_wrap .slide3 a {}
+.all main .main_all .bg .slide_wrap .slide3 a .bg_text {}
+.all main .main_all .bg .slide_wrap .slide3 a .bg_text h3 {}
+.all main .main_all .bg .slide_wrap .slide3 a .bg_text p {}
+.all main .main_all .bg .slide_wrap .slide3 a .bg_text p em {}
+/* 이벤트 버튼 */
+.all main .main_all .bg .slide_wrap > a {
+    position: absolute; bottom: 40px; left: 60px; width: 110px; height: 32px;
+    border: 1px solid #555; line-height: 32px; border-radius: 4px;
+    color: #333; background-color: transparent; font-size: 0.813rem;
+    text-align: center; margin-left: 60px; font-weight: 400;
+}
+.all main .main_all .bg .slide_wrap a .bg_control {
+    position: absolute; bottom: 0;}
+.all main .main_all .bg .slide_wrap a .bg_control .bg_go {}
+.all main .main_all .bg .slide_wrap a .bg_control .bg_playback {}
+.all main .main_all .bg .slide_wrap a .bg_control .bg_playback img {}
 /* 모바일 네비 */
 .all main .main_all .category {display: none;}
 .all main .main_all .category ul {}
@@ -545,7 +587,6 @@ font-weight: 400;}
 .all main .main_all .announcement {
     max-width: 1240px;
     margin: 0 auto; padding: 0 20px ;
-    width: 100%;
 }
 .all main .main_all .announcement .announcement_all {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
