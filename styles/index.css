@@ -566,17 +566,21 @@ font-weight: 400;}
 .all main .main_all .bg .slide_wrap .slide3 a .bg_text p {}
 .all main .main_all .bg .slide_wrap .slide3 a .bg_text p em {}
 /* 이벤트 버튼 */
-.all main .main_all .bg .slide_wrap > a {
+.all main .main_all .bg .slide_wrap .event_all {
     position: absolute; bottom: 40px; left: 60px; width: 110px; height: 32px;
     border: 1px solid #555; line-height: 32px; border-radius: 4px;
     color: #333; background-color: transparent; font-size: 0.813rem;
     text-align: center; margin-left: 60px; font-weight: 400;
 }
-.all main .main_all .bg .slide_wrap a .bg_control {
+.all main .main_all .bg .slide_wrap .next_prev {}
+.all main .main_all .bg .slide_wrap .next_prev button {}
+.all main .main_all .bg .slide_wrap .next_prev .next {}
+.all main .main_all .bg .slide_wrap .next_prev .prev {}
+.all main .main_all .bg .slide_wrap .bg_control {
     position: absolute; bottom: 0;}
-.all main .main_all .bg .slide_wrap a .bg_control .bg_go {}
-.all main .main_all .bg .slide_wrap a .bg_control .bg_playback {}
-.all main .main_all .bg .slide_wrap a .bg_control .bg_playback img {}
+.all main .main_all .bg .slide_wrap .bg_control .bg_go {}
+.all main .main_all .bg .slide_wrap .bg_control .bg_playback {}
+.all main .main_all .bg .slide_wrap .bg_control .bg_playback img {}
 /* 모바일 네비 */
 .all main .main_all .category {display: none;}
 .all main .main_all .category ul {}
