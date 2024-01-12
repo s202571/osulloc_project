@@ -642,14 +642,17 @@ font-weight: 400;}
 /*  상품 1개 */ 
 
 .all main .main_all .tea_best > .best_product .item {}
-.all main .main_all .tea_best > .best_product .item .photo {}
-.all main .main_all .tea_best > .best_product .item .photo a {
+.all main .main_all .tea_best > .best_product .item .photo {
     position: relative;
 }
+.all main .main_all .tea_best > .best_product .item .photo a {}
 .all main .main_all .tea_best > .best_product .item .photo a img {
     width: 225px; height: auto;}
-.all main .main_all .tea_best > .best_product .item .photo a .gift {
+    /* 버튼 js */
+.all main .main_all .tea_best > .best_product .item .photo > .gift {
+    position: absolute; right: 12px; bottom: 12px;
     background: url(../images/index/icon_prd_gift.png);
+    width: 36px; height: 36px; 
 }
 .all main .main_all .tea_best > .best_product .item > a {
     margin-top: 15px; min-height: 70px;
@@ -663,15 +666,16 @@ font-weight: 400;}
     display: flex; flex-flow: row nowrap; height: auto;
 }
 .all main .main_all .tea_best > .best_week_product .item {}
-.all main .main_all .tea_best > .best_week_product .item .photo {}
-.all main .main_all .tea_best > .best_week_product .item .photo a {
-    position: relative;
-}
+.all main .main_all .tea_best > .best_week_product .item .photo {position: relative;}
+.all main .main_all .tea_best > .best_week_product .item .photo a {}
 .all main .main_all .tea_best > .best_week_product .item .photo a img {
     width: 225px; height: auto;
 }
-.all main .main_all .tea_best > .best_week_product .item .photo a .cart {
-    background: url(../images/index/icon_prd_cart.png); 
+/* 버튼 js */
+.all main .main_all .tea_best > .best_week_product .item .photo > .cart {
+    background: url(../images/index/icon_prd_cart.png);
+    position: absolute; right: 12px; bottom: 12px;
+    width: 36px; height: 36px;  
 }
 .all main .main_all .tea_best > .best_week_product .item > a {
     margin-top: 15px; min-height: 70px;
