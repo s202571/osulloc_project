@@ -523,17 +523,19 @@ font-weight: 400;}
 .all main .main_all .bg .slide_wrap {
     position: relative;
     display: flex; flex-flow: row nowrap;
+    width: 100%; height: 100%;
 }
 /* slide 공동 */
 .all main .main_all .bg .slide_wrap .slide {height: 100%;}
-.all main .main_all .bg .slide_wrap .slide a {height: 100%;}
+.all main .main_all .bg .slide_wrap .slide a {height: 100%; width: 100%;}
 .all main .main_all .bg .slide_wrap .slide a img {
     width: 100vw; height: auto; 
 }
 .all main .main_all .bg .slide_wrap .slide a .bg_text {
-    position: absolute; top: 50%; left: 60px;
-    transform: translateY(-50%); bottom: auto; padding-top: 50px;
-    max-width: 1320px; padding: 0 60px;
+    position: absolute; top: 40%; left: 50%;
+    transform: translatex(-50%); bottom: auto; padding-top: 50px;
+    max-width: 1320px; padding: 0 60px; width: 100%; 
+    
 }
 .all main .main_all .bg .slide_wrap .slide a .bg_text h3 {
     font-size: 2.25rem; font-weight: 600; line-height: 1.33; color: #333;
@@ -565,22 +567,66 @@ font-weight: 400;}
 .all main .main_all .bg .slide_wrap .slide3 a .bg_text h3 {}
 .all main .main_all .bg .slide_wrap .slide3 a .bg_text p {}
 .all main .main_all .bg .slide_wrap .slide3 a .bg_text p em {}
+/* slide4 */
+.all main .main_all .bg .slide_wrap .slide4 {display: none;}
+.all main .main_all .bg .slide_wrap .slide4 a {}
+.all main .main_all .bg .slide_wrap .slide4 a .bg_text {}
+.all main .main_all .bg .slide_wrap .slide4 a .bg_text h3 {}
+.all main .main_all .bg .slide_wrap .slide4 a .bg_text p {}
+.all main .main_all .bg .slide_wrap .slide4 a .bg_text p em {}
+/* slide5 */
+.all main .main_all .bg .slide_wrap .slide5 {display: none;}
+.all main .main_all .bg .slide_wrap .slide5 a {}
+.all main .main_all .bg .slide_wrap .slide5 a .bg_text {}
+.all main .main_all .bg .slide_wrap .slide5 a .bg_text h3 {}
+.all main .main_all .bg .slide_wrap .slide5 a .bg_text p {}
+.all main .main_all .bg .slide_wrap .slide5 a .bg_text p em {}
 /* 이벤트 버튼 */
 .all main .main_all .bg .slide_wrap .event_all {
-    position: absolute; bottom: 40px; left: 60px; width: 110px; height: 32px;
+    position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+    width: 100%; max-width: 1320px; padding: 0 60px;
+}
+.all main .main_all .bg .slide_wrap .event_all .event_link {
+    width: 110px; height: 32px;
     border: 1px solid #555; line-height: 32px; border-radius: 4px;
     color: #333; background-color: transparent; font-size: 0.813rem;
-    text-align: center; margin-left: 60px; font-weight: 400;
+    text-align: center;  font-weight: 400; display: inline-block;
 }
-.all main .main_all .bg .slide_wrap .next_prev {}
-.all main .main_all .bg .slide_wrap .next_prev button {}
-.all main .main_all .bg .slide_wrap .next_prev .next {}
-.all main .main_all .bg .slide_wrap .next_prev .prev {}
+.all main .main_all .bg .slide_wrap .next_prev {
+    display: flex; flex-flow: row nowrap; position: absolute; top: 50%; left: 50%;
+    justify-content: space-between; align-items: center;
+    transform: translate(-50%, -50%); max-width: 1600px; z-index: 1;
+    width: 100%;
+}
+.all main .main_all .bg .slide_wrap .next_prev button {
+    width: 60px; height: 60px; display: block;
+}
+.all main .main_all .bg .slide_wrap .next_prev .prev {
+    background: url(../images/index/main_prev_btn.png);
+}
+.all main .main_all .bg .slide_wrap .next_prev .next {
+background: url(../images/index/main_next_btn.png);
+}
 .all main .main_all .bg .slide_wrap .bg_control {
-    position: absolute; bottom: 0;}
-.all main .main_all .bg .slide_wrap .bg_control .bg_go {}
-.all main .main_all .bg .slide_wrap .bg_control .bg_playback {}
-.all main .main_all .bg .slide_wrap .bg_control .bg_playback img {}
+    position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+    width: 40%; display: flex; align-items: center; justify-content: center;
+padding: 0 20px;}
+.all main .main_all .bg .slide_wrap .bg_control::after {
+
+}
+.all main .main_all .bg .slide_wrap .bg_control .bg_go {
+    content: ''; display: block; width: 320px; height: 2px;
+    background-color:rgba(51,51,51,.1);
+}
+.all main .main_all .bg .slide_wrap .bg_control .bg_go .var {
+    content: ''; display: block; width: calc(100% / 5); height: 2px;
+    background-color: #333;
+    cursor: pointer;
+}
+.all main .main_all .bg .slide_wrap .bg_control .bg_playback {width: 24px; height: 24px; margin-left: 12px;}
+.all main .main_all .bg .slide_wrap .bg_control .bg_playback img {display: inline-block;}
+.all main .main_all .bg .slide_wrap .bg_control .bg_playback .play {}
+.all main .main_all .bg .slide_wrap .bg_control .bg_playback .stop {display: none;}
 /* 모바일 네비 */
 .all main .main_all .category {display: none;}
 .all main .main_all .category ul {}
@@ -617,7 +663,7 @@ font-weight: 400;}
     padding: 0 20px; margin-left: auto; margin-right: auto;
 }
 .all main .main_all .tea_best .top {display: flex; flex-flow: row nowrap; align-items: center;}
-.all main .main_all .tea_best .top h3 {font-size: 1.75rem; }
+.all main .main_all .tea_best .top h3 {font-size: 1.75rem; font-weight: 500;}
 .all main .main_all .tea_best .top a {
     font-size: 0.938rem; padding: 7px 16px; border-radius:150px ;
     font-weight: 500;
@@ -678,7 +724,7 @@ font-weight: 400;}
     width: 36px; height: 36px;  
 }
 .all main .main_all .tea_best > .best_week_product .item > a {
-    margin-top: 15px; min-height: 70px;
+    margin-top: 15px; min-height: 70px; 
 }
 .all main .main_all .tea_best > .best_week_product .item > a p {}
 .all main .main_all .tea_best > .best_week_product .item > a .cost_price {
@@ -702,45 +748,101 @@ font-weight: 400;}
 }
 /* 더보기 버튼 */
 .all main .main_all .tea_best > p {
-    margin-top: 48px;
+    margin-top: 48px; text-align: center;
 }
 .all main .main_all .tea_best > p > a {
     border: 1px solid #ddd; padding: 0 60px;
     width: auto; height: 48px; display: inline-block;
     line-height: 48px; background-color: #fff;
     font-size: 0.938rem;
+    color: #666; font-weight: 400;
+    border-radius: 4px;
 }
-.all main .main_all .tea_best > p > a > img {}
-.all main .main_all .tea_best .bg_deta {}
-.all main .main_all .tea_best .bg_deta a {
+.all main .main_all .tea_best > p > a > img {
+    width: 5px; height: 9px; margin-left: 10px;
+}
+.all main .main_all .bg_deta {
+    margin: 85px auto 80px auto; max-width: 1240px;
+    padding: 0 20px; 
+    height: 275px; position: relative; 
+}
+.all main .main_all .bg_deta a {
     /* img */
+    background: url(../images/index/bg_deta1.jpg);
+    width: 100%; height: 100%;
+    display: block;
 }
 /* 시간이 지나감 */
-.all main .main_all .tea_best .bg_deta a .text {}
-.all main .main_all .tea_best .bg_deta a .text .time {}
-.all main .main_all .tea_best .bg_deta a .text h2 {}
-.all main .main_all .tea_best .bg_deta a .text h3 {}
-.all main .main_all .tea_best .bg_deta a .text .option {}
-.all main .main_all .tea_best .bg_deta a .text .option del {}
-.all main .main_all .tea_best .bg_deta a .text .option em {}
-.all main .main_all .tea_best .bg_deta a .text .option span {}
-/* 다다일상 구독 */
-.all main .main_all .tea_best .m_dada_all {}
-.all main .main_all .tea_best .m_dada_all h3 {}
-.all main .main_all .tea_best .m_dada_all p {}
-.all main .main_all .tea_best .m_dada_all .dada_link {}
-.all main .main_all .tea_best .m_dada_all .dada_link .product {}
-.all main .main_all .tea_best .m_dada_all .dada_link .product a {}
-.all main .main_all .tea_best .m_dada_all .dada_link .product a .photo {}
-.all main .main_all .tea_best .m_dada_all .dada_link .product a .photo img {}
-.all main .main_all .tea_best .m_dada_all .dada_link .product a h4 {}
-.all main .main_all .tea_best .m_dada_all .dada_link .product a p {}
-.all main .main_all .tea_best .m_dada_all .dada_link .product a p em {}
-.all main .main_all .tea_best .m_dada_all .dada_link .product a p .option {}
-.all main .main_all .tea_best .m_dada_all .dada_link .product a p .option span {}
-.all main .main_all .tea_best .m_dada_all .dada_detail_view {}
-.all main .main_all .tea_best .m_dada_all .dada_detail_view a {}
-.all main .main_all .tea_best .m_dada_all .dada_detail_view a img {}
+.all main .main_all .bg_deta a .text {
+    position: absolute; top: 0; right: 0;
+    width: 50%; height: 100%; padding: 40px 56px 30px 60px;
+}
+.all main .main_all .bg_deta a .text .today {
+    display: flex; justify-content: space-between;
+    align-items: center; 
+}
+.all main .main_all .bg_deta a .text .today h2 {
+    font-size: 1.75rem; font-weight: 500; 
+}
+/* 시간 지나감 js */
+.all main .main_all .bg_deta a .text .today .time {
+    font-size: 1.75rem; display: flex; align-items: center;
+    font-weight: 500; 
+}
+.all main .main_all .bg_deta a .text .today .time::before {
+    content: ''; display: block; width: 22px; height: 22px;
+    margin-right: 6px;
+    background: url(../images/index/todayTime.png) no-repeat center;
+    background-size: cover;
+}
+.all main .main_all .bg_deta a .text h3 {
+    font-size: 1.625rem; font-weight: 500; 
+    margin-top: 44px; 
+}
+.all main .main_all .bg_deta a .text .option {
+    height: 74px; display: flex; align-items: center; justify-content: flex-start;
+}
+.all main .main_all .bg_deta a .text .option del {
+    color: #847A8A; font-size: 1.125rem; text-decoration: line-through;
+}
+.all main .main_all .bg_deta a .text .option .price {
+    margin: 0 15px; font-size: 1.875rem; 
+}
+.all main .main_all .bg_deta a .text .option .sale {
+    border-radius: 50% ; background-color: #FD5C5C; 
+    color: #fff; font-weight: 500; font-size: 1.688rem;
+    width: 74px; height: 74px; display: flex; justify-content: center;
+    align-items: center;
+}
+/* 다다일상 구독 모바일로 통일 */
+/* 제목하고 내용이 이것만 다르면 이상하니 이것만 데스크 버전 */
+/* 터치 슬라이드? js같음  */
+.all main .main_all .m_dada_all {
+    background-color: yellow;
+    margin: 85px auto 80px auto; max-width: 1240px;
+    padding: 0 20px; 
+}
+.all main .main_all .m_dada_all h3 {
+    font-size: 1.75rem; font-weight: 500; margin-bottom: 14px;
+}
+.all main .main_all .m_dada_all p {
+    color: #999; margin-bottom: 24px;
+}
+.all main .main_all .m_dada_all .dada_link {
+    display: flex; 
+}
+.all main .main_all .m_dada_all .dada_link .product {}
+.all main .main_all .m_dada_all .dada_link .product a {}
+.all main .main_all .m_dada_all .dada_link .product a .photo {}
+.all main .main_all .m_dada_all .dada_link .product a .photo img {}
+.all main .main_all .m_dada_all .dada_link .product a h4 {}
+.all main .main_all .m_dada_all .dada_link .product a p {}
+.all main .main_all .m_dada_all .dada_link .product a p em {}
+.all main .main_all .m_dada_all .dada_link .product a p .option {}
+.all main .main_all .m_dada_all .dada_link .product a p .option span {}
+.all main .main_all .m_dada_all .dada_detail_view {}
+.all main .main_all .m_dada_all .dada_detail_view a {}
+.all main .main_all .m_dada_all .dada_detail_view a img {}
 /* 출석체크 및 소식 */
 .all main .main_all .tea_best .attendance_news {}
 .all main .main_all .tea_best .attendance_news .left {}
