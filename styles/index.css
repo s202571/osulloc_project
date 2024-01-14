@@ -815,10 +815,9 @@ padding: 0 20px;}
     align-items: center;
 }
 /* 다다일상 구독 모바일로 통일 */
-/* 제목하고 내용이 이것만 다르면 이상하니 이것만 데스크 버전 */
+/* 폰트사이즈 명 등 이상하니 이것만 데스크 버전 크기로 */
 /* 터치 슬라이드? js같음  */
 .all main .main_all .m_dada_all {
-    background-color: yellow;
     margin: 85px auto 80px auto; max-width: 1240px;
     padding: 0 20px; 
 }
@@ -829,30 +828,58 @@ padding: 0 20px;}
     color: #999; margin-bottom: 24px;
 }
 .all main .main_all .m_dada_all .dada_link {
-    display: flex; 
+    display: flex; overflow: visible;
 }
-.all main .main_all .m_dada_all .dada_link .product {}
+.all main .main_all .m_dada_all .dada_link .product {
+    margin-right: 15px; 
+    position: relative;
+}
 .all main .main_all .m_dada_all .dada_link .product a {}
 .all main .main_all .m_dada_all .dada_link .product a .photo {}
 .all main .main_all .m_dada_all .dada_link .product a .photo img {}
-.all main .main_all .m_dada_all .dada_link .product a h4 {}
-.all main .main_all .m_dada_all .dada_link .product a p {}
-.all main .main_all .m_dada_all .dada_link .product a p em {}
-.all main .main_all .m_dada_all .dada_link .product a p .option {}
-.all main .main_all .m_dada_all .dada_link .product a p .option span {}
-.all main .main_all .m_dada_all .dada_detail_view {}
-.all main .main_all .m_dada_all .dada_detail_view a {}
-.all main .main_all .m_dada_all .dada_detail_view a img {}
+.all main .main_all .m_dada_all .dada_link .product a h4 {
+    font-size: 1.125rem; font-weight: 500; margin: 15px 0 7px;
+}
+.all main .main_all .m_dada_all .dada_link .product a p {
+    color: #333; font-size: 1; font-weight: 500; margin-bottom: 0;
+    display: flex; justify-content: flex-start;
+}
+.all main .main_all .m_dada_all .dada_link .product a p em {
+    font-size: 1.125rem;  font-weight: 500; margin-left: 5px;
+}
+.all main .main_all .m_dada_all .dada_link .product a .option {}
+.all main .main_all .m_dada_all .dada_link .product a .option span {
+    padding: 4px 6px; background-color: #87A57C; width: fit-content;
+    font-size: 1.063rem; color: #fff; font-weight: 500;
+    display: block; margin-top: 10px;
+}
+.all main .main_all .m_dada_all .dada_detail_view {
+    width: 100%; height: 40px; line-height: 40px;
+    text-align: center; border:1px solid #ddd; border-radius: 4px;
+    background-color: #fff; 
+    margin-top: 30px;
+}
+.all main .main_all .m_dada_all .dada_detail_view a {
+    color: #666; font-size: 1.063rem; font-weight: 400;
+}
+.all main .main_all .m_dada_all .dada_detail_view a img {
+    width: 10px; height: 14px; margin-left: 10px;
+}
 /* 출석체크 및 소식 */
-.all main .main_all .tea_best .attendance_news {}
-.all main .main_all .tea_best .attendance_news .left {}
-.all main .main_all .tea_best .attendance_news .left a {}
-.all main .main_all .tea_best .attendance_news .left a h3 {}
-.all main .main_all .tea_best .attendance_news .left a p {}
-.all main .main_all .tea_best .attendance_news .right {}
-.all main .main_all .tea_best .attendance_news .right a {}
-.all main .main_all .tea_best .attendance_news .right a p {}
-.all main .main_all .tea_best .attendance_news .right a .osulloc_story {}
+.all main .main_all .attendance_news {
+    background-color: yellow;
+    margin: 85px auto 80px auto; max-width: 1240px;
+    padding: 0 20px; 
+    height: 275px; position: relative; 
+}
+.all main .main_all .attendance_news .left {}
+.all main .main_all .attendance_news .left a {}
+.all main .main_all .attendance_news .left a h3 {}
+.all main .main_all .attendance_news .left a p {}
+.all main .main_all .attendance_news .right {}
+.all main .main_all .attendance_news .right a {}
+.all main .main_all .attendance_news .right a p {}
+.all main .main_all .attendance_news .right a .osulloc_story {}
 /* 다다일상 기록 */
 .all main .main_all .tea_best .dada_record {}
 .all main .main_all .tea_best .dada_record h3 {}
