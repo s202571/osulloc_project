@@ -867,47 +867,184 @@ padding: 0 20px;}
 }
 /* 출석체크 및 소식 */
 .all main .main_all .attendance_news {
-    background-color: yellow;
     margin: 85px auto 80px auto; max-width: 1240px;
     padding: 0 20px; 
-    height: 275px; position: relative; 
+    height: 275px;
     display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
 }
-.all main .main_all .attendance_news .left {}
+.all main .main_all .attendance_news .left {
+    position: relative;
+    width: calc(100% / 2 - 10px);
+}
 .all main .main_all .attendance_news .left a {
     background: url(../images/index/bg2.jpg) no-repeat;
-    background-size: cover;
-    position: absolute;
+    background-size: cover; 
+    display: inline-block; width: 100%; height: 100%;
+    
 }
-.all main .main_all .attendance_news .left a h3 {}
-.all main .main_all .attendance_news .left a p {}
+.all main .main_all .attendance_news .left a .txt {
+    position: absolute; top: 50%; left: 32px;
+    transform: translateY(-50%);
+}
+.all main .main_all .attendance_news .left a .txt h3 {
+    font-size: 1.625rem; font-weight: 500;
+}
+.all main .main_all .attendance_news .left a .txt p {
+    font-size: 0.875rem; font-weight: 400;
+    margin-top: 10px;
+}
 .all main .main_all .attendance_news .right {
-    position: absolute;
+    width: calc(100% / 2 - 10px );
 }
-.all main .main_all .attendance_news .right a {}
-.all main .main_all .attendance_news .right a p {}
-.all main .main_all .attendance_news .right a .osulloc_story {}
+.all main .main_all .attendance_news .right a {
+    background: url(../images/index/brand_story_img.jpg) no-repeat;
+    background-size: cover;
+    display: inline-block; width: 100%; height: 100%;
+    position: relative;
+}
+.all main .main_all .attendance_news .right a .txt {
+    position: absolute; left: 52px; top: 50%;
+    transform: translateY(-50%);
+}
+.all main .main_all .attendance_news .right a .txt p {
+    font-size: 1.125rem; color: #CFCAC2; line-height: 1;
+}
+.all main .main_all .attendance_news .right a .txt .osulloc_story {
+    font-size: 1.625rem; font-weight: 500; color: #fff;
+    margin-top: 10px;
+}
 /* 다다일상 기록 */
-.all main .main_all .tea_best .dada_record {}
-.all main .main_all .tea_best .dada_record h3 {}
-.all main .main_all .tea_best .dada_record p {}
-.all main .main_all .tea_best .dada_record p span {}
-.all main .main_all .tea_best .dada_record .photo {}
-.all main .main_all .tea_best .dada_record .photo a {}
-.all main .main_all .tea_best .dada_record .photo a p {}
-.all main .main_all .tea_best .dada_record .photo a h4 {}
+.all main .main_all .dada_record {
+    max-width: 1240px;
+    margin: 0 auto; padding: 0 20px ;
+}
+.all main .main_all .dada_record h3 {
+    font-size: 1.75rem; font-weight: 500;
+}
+.all main .main_all .dada_record p {
+    margin-top: 5px; color: #999;
+}
+.all main .main_all .dada_record p span {
+    color: #999;
+}
+.all main .main_all .dada_record .photo {
+    margin: 20px 0 80px 0; width: 100%; height: 400px;
+}
+.all main .main_all .dada_record .photo a {
+    background: url(../images/index/dada_main_pc.jpg) no-repeat;
+    background-size: cover;
+    width: 100%; height: 100%; position: relative;
+    display: inline-block;
+}
+.all main .main_all .dada_record .photo a .txt {
+    position: absolute; top: 50%; left: 80px;
+    transform: translateY(-50%);
+}
+.all main .main_all .dada_record .photo a .txt p {
+    color: #fff; margin-bottom: 10px; font-weight: 400;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+.all main .main_all .dada_record .photo a .txt h4 {
+    color: #fff; font-size: 1.875rem; font-weight: 400;
+    font-family: 'Gowun Dodum', sans-serif;
+}
 /* 매장소개 */
-.all main .main_all .tea_best .shop {}
-.all main .main_all .tea_best .shop h3 {}
-.all main .main_all .tea_best .shop p {}
-.all main .main_all .tea_best .shop .photo {}
-.all main .main_all .tea_best .shop .photo .store_ph {}
-.all main .main_all .tea_best .shop .photo .store_ph .shop_introduction {}
-.all main .main_all .tea_best .shop .photo .store_ph .shop_introduction h3 {}
-.all main .main_all .tea_best .shop .photo .store_ph .shop_introduction p {}
-.all main .main_all .tea_best .shop .all_store_view {}
-.all main .main_all .tea_best .shop .all_store_view a {}
-.all main .main_all .tea_best .shop .all_store_view a img {}
+.all main .main_all .shop {
+    max-width: 1240px;
+    margin: 0 auto; padding: 0 20px ;
+    background-color: yellow;
+}
+.all main .main_all .shop h3 {
+    font-size: 1.75rem; font-weight: 500;
+}
+.all main .main_all .shop p {
+    margin-top: 5px; color: #999;
+}
+.all main .main_all .shop .photo {
+    max-width: 1320px; 
+    margin: 20px auto 40px; overflow: hidden;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; position: relative;
+}
+.all main .main_all .shop .photo .store_ph {
+    width: 373.333px; transition: transform 0.5s;
+    background-color: plum;
+    display: inline-block; height: 392px;
+}
+/* js */
+.all main .main_all .shop .photo .brand4,
+.all main .main_all .shop .photo .brand5,
+.all main .main_all .shop .photo .brand6,
+.all main .main_all .shop .photo .brand7 {
+    display: none;
+}
+.all main .main_all .shop .photo .brand1 a {
+    background: url(../images/index/main_th_1979.jpg);
+    transform: scale(0.9);
+}
+.all main .main_all .shop .photo .brand2 a {
+    background: url(../images/index/main_th_haeundae.jpg);
+}
+.all main .main_all .shop .photo .brand3 a {
+    background: url(../images/index/main_th_jeju.jpg);
+    transform: scale(0.9);
+}
+.all main .main_all .shop .photo .brand4 a {
+    background: url(../images/index/main_th_bukchon.jpg);
+}
+.all main .main_all .shop .photo .brand5 a {
+    background: url(../images/index/main_th_hannam.jpg);
+}
+.all main .main_all .shop .photo .brand6 a {
+    background: url(../images/index/main_th_mmca.jpg);
+}
+.all main .main_all .shop .photo .brand7 a {
+    background: url(../images/index/main_th_bukchon.jpg);
+}
+.all main .main_all .shop .photo .store_ph .shop_introduction {
+    background-size: cover; width: 100%; height: 100%;
+    position: relative; display: inline-block;
+    cursor: pointer;
+}
+.all main .main_all .shop .photo .store_ph .shop_introduction .txt {
+    height: 100%; width: 100%; 
+    padding: 40px; display: flex; flex-flow: column nowrap;
+    justify-content: center;
+}
+.all main .main_all .shop .photo .store_ph .shop_introduction .txt h3 {
+    color: #fff; font-family: 'Gowun Dodum';
+    font-size: 1.875rem; line-height: 1.3;
+}
+.all main .main_all .shop .photo .store_ph .shop_introduction .txt p {
+    color: #fff; font-family: 'Gowun Dodum';
+    font-size: 0.875rem; font-weight: 300; margin-top: 10px;
+}
+.all main .main_all .shop .photo .brand_control {
+    position: absolute; bottom:27px ; left: 0;
+    width: 100%; height: 18px;
+    display: flex; justify-content: center;
+    align-items: center;
+}
+.all main .main_all .shop .photo .brand_control span {
+    width: 4px; height: 4px; margin: 0 6px;
+    background: transparent;
+}
+.all main .main_all .shop .photo .brand_control span:first-child::before {
+    background: #fff;
+}
+.all main .main_all .shop .photo .brand_control span::before {
+    content: ''; display: inline-block;
+    background:#fff9f53f; width: 4px; height: 4px;
+    border-radius: 8px;
+}
+.all main .main_all .shop .next_prev {}
+.all main .main_all .shop .next_prev button {}
+.all main .main_all .shop .next_prev .prev {}
+.all main .main_all .shop .next_prev .next {}
+.all main .main_all .shop .all_store_view {}
+.all main .main_all .shop .all_store_view a {}
+.all main .main_all .shop .all_store_view a img {}
 /* 단체 및 기업구매 */
 .all main .main_all .tea_best .group_purchase {}
 .all main .main_all .tea_best .group_purchase h3 {}
