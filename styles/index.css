@@ -871,12 +871,19 @@ padding: 0 20px;}
     margin: 85px auto 80px auto; max-width: 1240px;
     padding: 0 20px; 
     height: 275px; position: relative; 
+    display: flex; flex-flow: row nowrap;
 }
 .all main .main_all .attendance_news .left {}
-.all main .main_all .attendance_news .left a {}
+.all main .main_all .attendance_news .left a {
+    background: url(../images/index/bg2.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+}
 .all main .main_all .attendance_news .left a h3 {}
 .all main .main_all .attendance_news .left a p {}
-.all main .main_all .attendance_news .right {}
+.all main .main_all .attendance_news .right {
+    position: absolute;
+}
 .all main .main_all .attendance_news .right a {}
 .all main .main_all .attendance_news .right a p {}
 .all main .main_all .attendance_news .right a .osulloc_story {}
