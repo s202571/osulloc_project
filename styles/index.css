@@ -509,7 +509,9 @@ font-weight: 400;}
 /* --------------------------------------- */
 /* main */
 .all main {}
-.all main .main_all {}
+.all main .main_all {
+    padding-bottom: 60px;
+}
 /* 올라가기 btn */
 .all main .main_all #top {position: fixed; bottom: 40px; right: -50px;
     overflow: hidden; cursor: pointer;
@@ -834,6 +836,11 @@ padding: 0 20px;}
     margin-right: 15px; 
     position: relative;
 }
+/* 정기배송 */
+.all main .main_all .m_dada_all .dada_link .product:last-child a .photo {
+    margin-bottom: 15px;
+}
+
 .all main .main_all .m_dada_all .dada_link .product a {}
 .all main .main_all .m_dada_all .dada_link .product a .photo {}
 .all main .main_all .m_dada_all .dada_link .product a .photo img {}
@@ -854,16 +861,18 @@ padding: 0 20px;}
     display: block; margin-top: 10px;
 }
 .all main .main_all .m_dada_all .dada_detail_view {
-    width: 100%; height: 40px; line-height: 40px;
-    text-align: center; border:1px solid #ddd; border-radius: 4px;
-    background-color: #fff; 
-    margin-top: 30px;
+    margin-top: 48px; text-align: center;
 }
 .all main .main_all .m_dada_all .dada_detail_view a {
-    color: #666; font-size: 1.063rem; font-weight: 400;
+    border: 1px solid #ddd; padding: 0 60px;
+    width: auto; height: 48px; display: inline-block;
+    line-height: 48px; background-color: #fff;
+    font-size: 0.938rem;
+    color: #666; font-weight: 400;
+    border-radius: 4px;
 }
 .all main .main_all .m_dada_all .dada_detail_view a img {
-    width: 10px; height: 14px; margin-left: 10px;
+    width: 5px; height: 9px; margin-left: 10px;
 }
 /* 출석체크 및 소식 */
 .all main .main_all .attendance_news {
@@ -953,7 +962,7 @@ padding: 0 20px;}
 .all main .main_all .shop {
     max-width: 1240px;
     margin: 0 auto; padding: 0 20px ;
-    background-color: yellow;
+    position: relative;
 }
 .all main .main_all .shop h3 {
     font-size: 1.75rem; font-weight: 500;
@@ -969,7 +978,6 @@ padding: 0 20px;}
 }
 .all main .main_all .shop .photo .store_ph {
     width: 373.333px; transition: transform 0.5s;
-    background-color: plum;
     display: inline-block; height: 392px;
 }
 /* js */
@@ -1038,39 +1046,132 @@ padding: 0 20px;}
     background:#fff9f53f; width: 4px; height: 4px;
     border-radius: 8px;
 }
-.all main .main_all .shop .next_prev {}
-.all main .main_all .shop .next_prev button {}
-.all main .main_all .shop .next_prev .prev {}
-.all main .main_all .shop .next_prev .next {}
-.all main .main_all .shop .all_store_view {}
-.all main .main_all .shop .all_store_view a {}
-.all main .main_all .shop .all_store_view a img {}
+.all main .main_all .shop .next_prev {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    position: absolute; top: 35%; left: 0;
+    width: 100%;
+}
+.all main .main_all .shop .next_prev button {
+    width: 60px; height: 60px;
+}
+.all main .main_all .shop .next_prev .prev {
+    background: url(../images/index/main_prev_btn.png);
+}
+.all main .main_all .shop .next_prev .next {
+    background: url(../images/index/main_next_btn.png);
+}
+.all main .main_all .shop .all_store_view {
+    text-align: center;
+}
+.all main .main_all .shop .all_store_view a {
+    border: 1px solid #ddd; padding: 0 60px;
+    width: auto; height: 48px; display: inline-block;
+    line-height: 48px; background-color: #fff;
+    font-size: 0.938rem;
+    color: #666; font-weight: 400;
+    border-radius: 4px;
+}
+.all main .main_all .shop .all_store_view a img {
+    width: 5px; height: 9px; margin-left: 10px;
+}
 /* 단체 및 기업구매 */
-.all main .main_all .tea_best .group_purchase {}
-.all main .main_all .tea_best .group_purchase h3 {}
-.all main .main_all .tea_best .group_purchase p {}
-.all main .main_all .tea_best .group_purchase .group_loginlink {}
-.all main .main_all .tea_best .group_purchase .group_link {}
-.all main .main_all .tea_best .group_purchase .group_link img {}
+.all main .main_all .group_purchase {
+    max-width: 1240px;
+    margin: 0 auto; padding: 0 20px ;
+    margin-top: 80px;
+}
+.all main .main_all .group_purchase h3 {
+    font-size: 1.75rem; font-weight: 500;
+}
+.all main .main_all .group_purchase p {
+    margin-top: 5px; color: #999;
+}
+.all main .main_all .group_purchase .group_loginlink {
+    background: url(../images/index/b2b_banner.jpg) no-repeat;
+    background-size: 100% auto;
+    width: 100%; display: inline-block; height: 350px;
+    margin: 20px 0 40px;
+}
+.all main .main_all .group_purchase .btn_center {
+    text-align: center;
+}
+.all main .main_all .group_purchase .btn_center .group_link {
+    border: 1px solid #ddd; padding: 0 60px;
+    width: auto; height: 48px; display: inline-block;
+    line-height: 48px; background-color: #fff;
+    font-size: 0.938rem;
+    color: #666; font-weight: 400;
+    border-radius: 4px; 
+}
+.all main .main_all .group_purchase .btn_center .group_link img {
+    width: 5px; height: 9px; margin-left: 10px;
+}
 /* footer */
 .all footer {}
 .all footer .desk_footer {}
-.all footer .desk_footer .login_sns {}
-.all footer .desk_footer .login_sns a {}
-.all footer .desk_footer .login_sns a img {}
-.all footer .desk_footer .contact {}
-.all footer .desk_footer .contact .left {}
+.all footer .desk_footer .login_sns {
+    background: #727272; height: 62px;
+    display: flex; justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+.all footer .desk_footer .login_sns .login {
+    background: #3f3e3c; color: #fff; text-align: center;
+    width: 94px; height: 40px; line-height: 40px;
+    border: 1px solid #2a2a2a;
+    font-size: 0.938rem; 
+    font-weight: 500;
+}
+.all footer .desk_footer .login_sns .icon a {
+    margin-left: 20px; background: #2a2a2a;
+    border-radius: 100%; width: 43px; height: 43px;
+    display: inline-block;
+}
+.all footer .desk_footer .login_sns .icon a img {
+    max-width: 100%;
+    position: relative; right: -1px; bottom: -1px;
+}
+.all footer .desk_footer .contact {
+    background: #fafafa; height: 164px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 40px; max-width: 100%;
+}
+.all footer .desk_footer .contact .left {
+    display: flex; margin-top: 40px;
+}
 .all footer .desk_footer .contact .left .user_counseling {}
-.all footer .desk_footer .contact .left .user_counseling p {}
-.all footer .desk_footer .contact .left .user_counseling p em {}
-.all footer .desk_footer .contact .left .user_counseling a {}
-.all footer .desk_footer .contact .left .bulk_purchase {}
+.all footer .desk_footer .contact .left .user_counseling p:first-child {
+    margin-top: 0;
+}
+.all footer .desk_footer .contact .left .user_counseling p {
+    font-size: 0.875rem; color: #7b7b7b;
+    margin: 5px 0; font-weight: 400;
+}
+.all footer .desk_footer .contact .left .user_counseling p em {
+    color: #595959; font-size:2.106rem ;
+}
+.all footer .desk_footer .contact .left .user_counseling a {
+    color: #595959; font-size: 1.125rem; font-weight: 500;
+    font-weight: 500;
+}
+.all footer .desk_footer .contact .left .user_counseling .time {
+    font-size: 0.75rem; color: #828282; font-weight: 400;
+}
+.all footer .desk_footer .contact .left .bulk_purchase {
+    margin-left: 40px;
+}
 .all footer .desk_footer .contact .left .bulk_purchase p {}
 .all footer .desk_footer .contact .left .bulk_purchase a {}
 .all footer .desk_footer .contact .left .bulk_purchase .kakao_id {}
 .all footer .desk_footer .contact .left .bulk_purchase .time {}
-.all footer .desk_footer .contact .right {}
-.all footer .desk_footer .contact .right a {}
+.all footer .desk_footer .contact .right {
+    display: flex; 
+}
+.all footer .desk_footer .contact .right a {
+    
+}
 .all footer .desk_footer .contact .right a img {}
 .all footer .desk_footer .contact .right a span {}
 .all footer .desk_footer .contact .bottom {}
@@ -1089,7 +1190,7 @@ padding: 0 20px;}
 .all footer .desk_footer .contact .bottom .bottom_right .kcp {}
 .all footer .desk_footer .contact .bottom .bottom_right .kcp p {}
 .all footer .desk_footer .contact .bottom .bottom_right .kcp p img {}
-.all footer .m_footer {}
+.all footer .m_footer {display: none;}
 .all footer .m_footer .m_top {}
 .all footer .m_footer .m_top .m_top_left {}
 .all footer .m_footer .m_top .m_top_left a {}
