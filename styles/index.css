@@ -1,7 +1,7 @@
 /* 1281 ~ max */
 /* header  */
 .all {
-    background-color: aqua; position: relative;
+    position: relative;
 }
 .all header {
     position: fixed; 
@@ -520,8 +520,7 @@ font-weight: 400;}
 }
 .all main .main_all #top img {width: 40px; height: 40px;}
 /* <!-- 배너 창 데스크--> */
-.all main .main_all .bg {background-color: palevioletred;
-}
+.all main .main_all .bg {}
 .all main .main_all .bg .slide_wrap {
     position: relative;
     display: flex; flex-flow: row nowrap;
@@ -1147,10 +1146,11 @@ padding: 0 20px;}
 }
 .all footer .desk_footer .contact .left .user_counseling p {
     font-size: 0.875rem; color: #7b7b7b;
-    margin: 5px 0; font-weight: 400;
+    margin-bottom: 5px; font-weight: 400;
 }
 .all footer .desk_footer .contact .left .user_counseling p em {
     color: #595959; font-size:2.106rem ;
+    font-weight: 400;
 }
 .all footer .desk_footer .contact .left .user_counseling a {
     color: #595959; font-size: 1.125rem; font-weight: 500;
@@ -1162,34 +1162,87 @@ padding: 0 20px;}
 .all footer .desk_footer .contact .left .bulk_purchase {
     margin-left: 40px;
 }
-.all footer .desk_footer .contact .left .bulk_purchase p {}
-.all footer .desk_footer .contact .left .bulk_purchase a {}
-.all footer .desk_footer .contact .left .bulk_purchase .kakao_id {}
-.all footer .desk_footer .contact .left .bulk_purchase .time {}
+.all footer .desk_footer .contact .left .bulk_purchase p {
+    font-size: 0.875rem; color: #7b7b7b;
+    font-weight: 400;
+}
+.all footer .desk_footer .contact .left .bulk_purchase a {
+    display: block;
+    margin-top: 5px; font-size: 1.125rem;
+    color: #585858;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.all footer .desk_footer .contact .left .bulk_purchase .kakao_id {
+    font-size: 0.813rem; color: #797979;
+    font-weight: 700; margin-top: 3px;
+}
+.all footer .desk_footer .contact .left .bulk_purchase .time {
+    font-size: 0.75rem; color: #6b6b6b;
+    margin-top: 10px;
+}
 .all footer .desk_footer .contact .right {
-    display: flex; 
+    display: flex; justify-content: flex-end;
+    border-left: 1px solid #efefef;
+    align-items: center;
 }
 .all footer .desk_footer .contact .right a {
-    
+    margin-left: 50px; display: block;
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
 }
-.all footer .desk_footer .contact .right a img {}
-.all footer .desk_footer .contact .right a span {}
-.all footer .desk_footer .contact .bottom {}
-.all footer .desk_footer .contact .bottom .bottom_left {}
-.all footer .desk_footer .contact .bottom .bottom_left .logo {}
-.all footer .desk_footer .contact .bottom .bottom_left .logo img {}
-.all footer .desk_footer .contact .bottom .bottom_left .company_introduction {}
-.all footer .desk_footer .contact .bottom .bottom_left .company_introduction ul {}
-.all footer .desk_footer .contact .bottom .bottom_left .company_introduction ul li {}
-.all footer .desk_footer .contact .bottom .bottom_left .company_introduction ul li a {}
-.all footer .desk_footer .contact .bottom .bottom_left .company_introduction .last {}
-.all footer .desk_footer .contact .bottom .bottom_left .company_introduction .last address {}
-.all footer .desk_footer .contact .bottom .bottom_left .company_introduction .last p {}
-.all footer .desk_footer .contact .bottom .bottom_right {}
-.all footer .desk_footer .contact .bottom .bottom_right h3 {}
-.all footer .desk_footer .contact .bottom .bottom_right .kcp {}
-.all footer .desk_footer .contact .bottom .bottom_right .kcp p {}
-.all footer .desk_footer .contact .bottom .bottom_right .kcp p img {}
+.all footer .desk_footer .contact .right a img {
+    width: max-content; height: auto;
+}
+.all footer .desk_footer .contact .right a span {
+    color: #505051; margin-top: 10px;
+    text-align: center; font-weight: 400;
+}
+.all footer .desk_footer .bottom {
+    display: flex; flex-flow: row nowrap;
+    padding: 20px 40px 35px;
+}
+.all footer .desk_footer .bottom .bottom_left {
+    display: flex; align-items: center;
+}
+.all footer .desk_footer .bottom .bottom_left .logo {
+    width: 120px; text-align: center;
+}
+.all footer .desk_footer .bottom .bottom_left .logo img {}
+.all footer .desk_footer .bottom .bottom_left .company_introduction {
+    margin-left: 25px;
+}
+.all footer .desk_footer .bottom .bottom_left .company_introduction ul {
+    display: flex; flex-flow: row nowrap;
+}
+.all footer .desk_footer .bottom .bottom_left .company_introduction ul li {}
+.all footer .desk_footer .bottom .bottom_left .company_introduction ul li a {
+    font-size: 0.75rem; color: #000;
+    font-weight: 500;
+}
+.all footer .desk_footer .bottom .bottom_left .company_introduction ul li a::after {
+    content: ''; display: inline-block;
+    margin:0 10px; width: 1px; height: 12px;
+    background: #000; 
+}
+.all footer .desk_footer .bottom .bottom_left .company_introduction ul li:last-child a::after {
+    display: none;
+}
+.all footer .desk_footer .bottom .bottom_left .company_introduction ul li:nth-child(3) a {
+    font-weight: 800;
+}
+.all footer .desk_footer .bottom .bottom_left .company_introduction .last {
+    margin-top: 15px; 
+}
+.all footer .desk_footer .bottom .bottom_left .company_introduction .last address {color: #a0a0a0; font-size: 0.75rem;}
+.all footer .desk_footer .bottom .bottom_left .company_introduction .last p {
+    color: #a0a0a0; font-size: 0.75rem;
+}
+.all footer .desk_footer .bottom .bottom_right {}
+.all footer .desk_footer .bottom .bottom_right h3 {}
+.all footer .desk_footer .bottom .bottom_right .kcp {}
+.all footer .desk_footer .bottom .bottom_right .kcp p {}
+.all footer .desk_footer .bottom .bottom_right .kcp p img {}
 .all footer .m_footer {display: none;}
 .all footer .m_footer .m_top {}
 .all footer .m_footer .m_top .m_top_left {}
