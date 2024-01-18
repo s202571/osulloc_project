@@ -1200,6 +1200,7 @@ padding: 0 20px;}
 }
 .all footer .desk_footer .bottom {
     display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
     padding: 20px 40px 35px;
 }
 .all footer .desk_footer .bottom .bottom_left {
@@ -1235,12 +1236,27 @@ padding: 0 20px;}
     margin-top: 15px; 
 }
 .all footer .desk_footer .bottom .bottom_left .company_introduction .last address {color: #a0a0a0; font-size: 0.75rem;}
+.all footer .desk_footer .bottom .bottom_left .company_introduction .last address a{margin-left: 5px; border: 1px solid #ededed ;
+    color: #828282; background: #fafafa;
+    width: 111px; height: 28px; line-height: 28px;
+    text-align: center;
+    font-size: 0.75rem; display: inline-block;
+}
 .all footer .desk_footer .bottom .bottom_left .company_introduction .last p {
     color: #a0a0a0; font-size: 0.75rem;
 }
-.all footer .desk_footer .bottom .bottom_right {}
-.all footer .desk_footer .bottom .bottom_right h3 {}
-.all footer .desk_footer .bottom .bottom_right .kcp {}
+.all footer .desk_footer .bottom .bottom_right {
+    width: 310px; height: auto;
+    margin-top: 35px; padding: 15px 20px;
+    border: 1px solid #e8e8e8;
+}
+.all footer .desk_footer .bottom .bottom_right h3 {
+    margin-bottom: 10px; color: #828282; font-size: 0.75rem;
+    font-weight: 700;
+}
+.all footer .desk_footer .bottom .bottom_right .kcp {
+    display: flex; flex-flow: row nowrap;
+}
 .all footer .desk_footer .bottom .bottom_right .kcp p {}
 .all footer .desk_footer .bottom .bottom_right .kcp p img {}
 .all footer .m_footer {display: none;}
