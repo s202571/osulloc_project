@@ -1403,7 +1403,7 @@ padding: 0 20px;}
     .all header:hover .top_left h1 a .logo_white {
         display: block;
     }
-    /* 로고, 글 검은색 */
+    /* 로고, 글 모바일 용 */
     .all header:hover .top_left h1 a .logo_black {
         display: none;
     }
@@ -1416,20 +1416,5 @@ padding: 0 20px;}
     .all header:hover .wrap .top_right .first_last .cart span {
         background-color:  #fff;
         color:#333 ; 
-    }
-    .all header:hover .wrap .top_right .first_last .list .more .more_white {
-        display: none;
-    }
-    .all header:hover .wrap .top_right .first_last .list .more .more_black {
-        display: block; width: 28px; height: 28px;
-    }
-    .all header:hover .wrap .top_right .right_last li a .icon_drop {
-        background-image: url(../images/index/icon_drop_black.png);
-    }
-    .all header:hover .wrap .top_right .right_last a {
-        color: #333;
-    } 
-    .all header:hover .wrap .top_right .right_last #language {
-        color: #333;
     }
 }
