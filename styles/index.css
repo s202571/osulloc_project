@@ -1334,8 +1334,6 @@ padding: 0 20px;}
     .all header .wrap .top_right .first_last {
         margin: 0;
     }
-    /* 검색 버튼 눌렀을 때 모바일 배경색 */
-    .all header .wrap .top_right .first_last .search_bg {}
     /* 검색 버튼 눌렀을 때 모바일 */
     .all header .wrap .top_right .first_last .search_nav_bg {
         display: none;
@@ -1350,11 +1348,13 @@ padding: 0 20px;}
     .all header .wrap .top_right .first_last .m_search_nav .top_search .top_search_left .search fieldset .text {}
     .all header .wrap .top_right .first_last .m_search_nav .top_search .top_search_left .search fieldset .search_btn {
         background: url(../images/index/Icon_search_white.png) no-repeat center;
-        background-size: 20px; width: 40px; height: 40px;
+        background-size: 20px; width: 40px; heigight: 40px;
     }
     /* 검색 나가는 버튼 */
     .all header .wrap .top_right .first_last .m_search_nav .top_search .search_closer {}
     .all header .wrap .top_right .first_last .m_search_nav .top_search .search_closer img {}
+    /* 검색 버튼 눌렀을 때 모바일 배경색 */
+    .all header .wrap .top_right .first_last .m_search_nav .search_bg {}
     .all header .wrap .top_right .first_last .m_search_nav .m_search {}
     .all header .wrap .top_right .first_last .m_search_nav .m_search .m_search_first {}
     .all header .wrap .top_right .first_last .m_search_nav .m_search .m_search_first a {}
