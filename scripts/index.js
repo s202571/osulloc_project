@@ -21,6 +21,16 @@ console.log(search_nav_bg,search_desk ,search_btn,search_text)
 console.log(search_bg,search_nav, search_close,header_nav_bg,header)
 console.log(m_search_nav,m_search,m_search_last)
 
+// 모바일 목록
+const m_list = document.querySelector('.m_list')
+const m_lnb = document.querySelector('.m_lnb')
+const m_list_closer = document.querySelector('.closer')
+// 목록 네비
+const m_list_nav = document.querySelectorAll('.m_lnb > a')
+const m_gnb = document.querySelectorAll('.m_gnb')
+console.log(m_list,m_lnb, m_list_closer)
+console.log(m_list_nav, m_gnb)
+
 search_text[0].style.display = 'none';
 search_desk.style = 'background:none;'
 search_nav.style = 'display:none;'
@@ -63,4 +73,24 @@ search_close[1].addEventListener('click', ()=>{
     search_close[1].style.display = 'none';
     m_search.style.display = 'none';
     m_search_last.style.display = 'none';
+})
+
+// 모바일 목록 나오기 들어가기
+m_lnb.style.display = 'none';
+m_list.addEventListener('click', ()=>{
+    m_lnb.style.display = 'block'
+})
+
+m_list_closer.addEventListener('click', ()=>{
+    m_lnb.style.display = 'none'
+})
+// 모바일 목록 네비
+
+for(let i=0; i < 3; i++){
+    m_gnb[i].style.display = 'none'
+}
+
+m_list_nav[0].addEventListener('click', ()=>{
+    m_gnb[i].style.display = 'flex'
+    m_gnb[0].classList.toggle('on')
 })
