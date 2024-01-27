@@ -646,7 +646,7 @@ padding: 0 20px;}
     margin-right: 12px; font-size: 0.875rem; color: #999; font-weight: 500;
 }
 .all main .main_all .announcement .announcement_all .left .announcement_txt {
-    
+    display: flex; flex-flow: column nowrap;
 }
 .all main .main_all .announcement .announcement_all .left .announcement_txt a {
     font-size: 0.75rem; font-weight: 400;
@@ -1296,7 +1296,7 @@ padding: 0 20px;}
 .all footer .m_footer .m_company_introduction .m_last .m_last_right {}
 .all footer .m_footer .m_company_introduction .m_last .m_last_right a {}
 .all footer .m_footer .m_company_introduction .m_last .m_last_right a img {}
-/* 태블릿 ~ 1279 */
+/* 태블릿 - 1279 ~ 1040 */
 @media screen and (max-width:1279px) {
 
         /* 검색 버튼 눌렀을 때 모바일 */
@@ -1465,21 +1465,21 @@ padding: 0 20px;}
     .all header .wrap .top_right .first_last .m_lnb > a p img {float: right; width: 12px; 
     margin-top: 6px;}
     .all header .wrap .top_right .first_last .m_lnb > a:nth-of-type(4) p {border: 0;}
-    .all header .wrap .top_right .first_last .m_lnb .m_gnb.on {display: flex; 
+    .all header .wrap .top_right .first_last .m_lnb .m_gnb {display: flex; 
         flex-flow: column nowrap; align-items: flex-start;
         background:#F6F6F6 ; padding: 20px 0 35px 32px;
     }
-    .all header .wrap .top_right .first_last .m_lnb .m_gnb.on a {margin-bottom: 20px;
+    .all header .wrap .top_right .first_last .m_lnb .m_gnb a {margin-bottom: 20px;
         color: #666; font-size: 0.938rem; font-weight: 400;
     }
-    .all header .wrap .top_right .first_last .m_lnb .m_gnb.on a:last-of-type {margin: 0;}
+    .all header .wrap .top_right .first_last .m_lnb .m_gnb a:last-of-type {margin: 0;}
     .all header .wrap .top_right .first_last .m_lnb .photo {
         width: 100%; margin-top: 18px;
     }
     /* bg */
     .all header .wrap .top_right .first_last .m_lnb .photo img {width: 100%;}
     /* 마지막 메뉴 */
-    .all header .wrap .top_right .first_last .m_lnb .bottom {display: grid;
+    .all header .wrap .top_right .first_last .m_lnb .bottom {
         margin: 30px 0 60px; display: flex; flex-flow: row wrap;
         justify-content: space-between; height: 100px;
     }
@@ -1519,4 +1519,7 @@ padding: 0 20px;}
         background: url(../images/index/Icon_search_hover.png) no-repeat center;
         background-size: 20px; width: 40px; height: 40px;
     }
+}
+@media screen and (max-width:1040px){
+
 }

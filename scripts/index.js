@@ -86,11 +86,33 @@ m_list_closer.addEventListener('click', ()=>{
 })
 // 모바일 목록 네비
 
-for(let i=0; i < 3; i++){
+// for(let i=0; i < 3; i++){
+//     m_gnb[i].style.display = 'none'
+//     if(m_gnb[i].style.display = 'none'){
+//         m_list_nav[i].addEventListener('click', ()=>{
+//         m_gnb[i].style.display = 'flex'
+//     })}else if(m_gnb[1].style.display = 'none'){
+//         m_list_nav[1].addEventListener('click', ()=>{
+//             m_gnb[i].style.display = 'none'
+//         })
+//     }
+// }
+for(let i=0; i < 4; i++){
     m_gnb[i].style.display = 'none'
+    if(m_gnb[1].style.display = 'none'){
+        m_list_nav[1].addEventListener('click', ()=>{
+            m_gnb[i].style.display = 'none'
+        })
+    }else if(m_gnb[i].style.display = 'none'){
+        m_list_nav[i].addEventListener('click', ()=>{
+            m_gnb[i].style.display = 'flex'
+        })
+    }else if(m_gnb[i].style.display = 'block'){
+        m_list_nav[i].addEventListener('click', ()=>{
+            m_gnb[i].style.display = 'none'
+        })
+    }
 }
 
-m_list_nav[0].addEventListener('click', ()=>{
-    m_gnb[i].style.display = 'flex'
-    m_gnb[0].classList.toggle('on')
-})
+// 선물추천 제외 없음
+
