@@ -1589,19 +1589,7 @@ padding: 0 20px;}
         display: none;
     }
     .all main .main_all .bg .slide_wrap .next_prev {
-        display: flex; flex-flow: row nowrap; position: absolute; top: 50%; left: 50%;
-        justify-content: space-between; align-items: center;
-        transform: translate(-50%, -50%); max-width: 1600px; z-index: 1;
-        width: 100%;
-    }
-    .all main .main_all .bg .slide_wrap .next_prev button {
-        width: 60px; height: 60px; display: block;
-    }
-    .all main .main_all .bg .slide_wrap .next_prev .prev {
-        background: url(../images/index/main_prev_btn.png);
-    }
-    .all main .main_all .bg .slide_wrap .next_prev .next {
-    background: url(../images/index/main_next_btn.png);
+        display: none;
     }
     /*  */
     .all main .main_all .bg .slide_wrap .bg_control {
@@ -1612,7 +1600,7 @@ padding: 0 20px;}
 
     }
     .all main .main_all .bg .slide_wrap .bg_control .bg_go {
-        content: ''; display: block; width: 320px; height: 2px;
+        content: ''; display: block; width: 100%; height: 2px;
         background-color:rgba(51,51,51,.1);
     }
     .all main .main_all .bg .slide_wrap .bg_control .bg_go .var {
@@ -1620,8 +1608,27 @@ padding: 0 20px;}
         background-color: #333;
         cursor: pointer;
     }
-    .all main .main_all .bg .slide_wrap .bg_control .m_play {display: flex;}
-    .all main .main_all .bg .slide_wrap .bg_control .m_play .count {}
-    .all main .main_all .bg .slide_wrap .bg_control .m_play .m_play_btn {}
+    .all main .main_all .bg .slide_wrap .bg_control .m_play {display: flex;
+        align-items: center; height: 28px; margin-left: 12px;
+        padding-left:17px ; border-radius: 4px; background-color: rgba(0,0,0,.25);
+        width: 72px;
+    }
+    .all main .main_all .bg .slide_wrap .bg_control .m_play .count {
+        color: #fff; font-weight:400; opacity: 0.7; font-size: 0.813rem;
+    }
+    .all main .main_all .bg .slide_wrap .bg_control .m_play .m_play_btn {
+        color: #fff; margin-left: 10px; 
+    }
+    .all main .main_all .bg .slide_wrap .bg_control .m_play .m_play_btn img {
+        width: 12px;
+    }
     .all main .main_all .bg .slide_wrap .bg_control .bg_playback {display: none;}
+    /* 모바일 네비 */
+    .all main .main_all .category {display: block;}
+    .all main .main_all .category ul {display: flex; flex-flow: row nowrap;
+        max-width: 1240px; padding: 0 20px; margin: 30px auto 0;
+    }
+    .all main .main_all .category ul li {}
+    .all main .main_all .category ul li p {}
+    .all main .main_all .category ul li p img {}
 }
