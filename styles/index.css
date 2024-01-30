@@ -672,7 +672,7 @@ padding: 0 20px;}
     font-size: 0.938rem; padding: 7px 16px; border-radius:150px ;
     font-weight: 500;
 }
-.all main .main_all .tea_best .top >.best_product {
+.all main .main_all .tea_best .top .best_product {
     margin-left: 20px;  background-color: #F6F6F6; color: #999;
 }
 .all main .main_all .tea_best .top .best_week_product {
@@ -1628,7 +1628,133 @@ padding: 0 20px;}
     .all main .main_all .category ul {display: flex; flex-flow: row nowrap;
         max-width: 1240px; padding: 0 20px; margin: 30px auto 0;
     }
-    .all main .main_all .category ul li {}
-    .all main .main_all .category ul li p {}
-    .all main .main_all .category ul li p img {}
+    .all main .main_all .category ul li {
+        margin-right: 15px; width: calc(100% / 4);
+    }
+    .all main .main_all .category ul li:last-of-type {margin: 0;}
+    .all main .main_all .category ul li a {display: flex; flex-flow: column nowrap;
+        justify-content: center; align-items: center; font-size: 0.813rem;
+        font-weight: 400;
+    }
+    .all main .main_all .category ul li a img {
+        border-radius: 50%; max-width: 100px; margin-bottom: 10px;
+    }
+    /* ------------------------------------------------------------ */
+    /* <!-- 베스트 추천 --> */
+    .all main .main_all .tea_best {margin-top: 40px;}
+    .all main .main_all .tea_best .top {
+        display: flex; flex-flow: column nowrap; align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .all main .main_all .tea_best .top h3 {font-size: 1.375rem;}
+    .all main .main_all .tea_best .top .product {margin-top: 15px;}
+    .all main .main_all .tea_best .top .product a {
+        font-size: 0.938rem; padding: 7px 16px; border-radius:150px ;
+        font-weight: 500;
+        
+    }
+    .all main .main_all .tea_best .top .product .best_product {
+        margin-left: 0;  background-color: #F6F6F6; color: #999;
+    }
+    .all main .main_all .tea_best .top .best_week_product {
+        background-color: #6c801a; color: #fff; margin-left: 8px;
+    }
+    /* 베스트 상품 */
+    .all main .main_all .tea_best > .best_product {
+        overflow: hidden; margin-top: 48px;
+        display: flex; flex-flow: row nowrap; height: auto;
+    }
+    /* 스프라이트 공통(hover) */
+    .all main .main_all .tea_best > .best_product .item .photo a button ,
+    .all main .main_all .tea_best > .best_week_product .item .photo a button {
+        width: 36px; height: 36px; background-position: -50px;
+        position: absolute; right: 12px; bottom: 12px;
+    }
+    /*  상품 1개 */ 
+
+    .all main .main_all .tea_best > .best_product .item {}
+    .all main .main_all .tea_best > .best_product .item .photo {
+        position: relative;
+    }
+    .all main .main_all .tea_best > .best_product .item .photo a {}
+    .all main .main_all .tea_best > .best_product .item .photo a img {
+        width: 225px; height: auto;}
+        /* 버튼 js */
+    .all main .main_all .tea_best > .best_product .item .photo > .gift {
+        position: absolute; right: 12px; bottom: 12px;
+        background: url(../images/index/icon_prd_gift.png);
+        width: 36px; height: 36px; 
+    }
+    .all main .main_all .tea_best > .best_product .item > a {
+        margin-top: 15px; min-height: 70px;
+    }
+    .all main .main_all .tea_best > .best_product .item > a p {}
+    .all main .main_all .tea_best > .best_product .item > a .price {
+        margin-top: 18px; font-size: 1.125rem; font-weight: 500;
+    }
+    .all main .main_all .tea_best > .best_week_product {
+        overflow: hidden; margin-top: 48px;
+        display: flex; flex-flow: row nowrap; height: auto;
+    }
+    .all main .main_all .tea_best > .best_week_product .item {}
+    .all main .main_all .tea_best > .best_week_product .item .photo {position: relative;}
+    .all main .main_all .tea_best > .best_week_product .item .photo a {}
+    .all main .main_all .tea_best > .best_week_product .item .photo a img {
+        width: 225px; height: auto;
+    }
+    /* 버튼 js */
+    .all main .main_all .tea_best > .best_week_product .item .photo > .cart {
+        background: url(../images/index/icon_prd_cart.png);
+        position: absolute; right: 12px; bottom: 12px;
+        width: 36px; height: 36px;  
+    }
+    .all main .main_all .tea_best > .best_week_product .item > a {
+        margin-top: 15px; min-height: 70px; 
+    }
+    .all main .main_all .tea_best > .best_week_product .item > a p {}
+    .all main .main_all .tea_best > .best_week_product .item > a .cost_price {
+        
+    }
+    .all main .main_all .tea_best > .best_week_product .item > a .cost_price del {font-size: 0.875rem; text-decoration: line-through; color: #999;
+        font-weight: 400; margin-top: 12px; font-size: 1.125rem;
+    }
+    .all main .main_all .tea_best > .best_week_product .item > a .price {
+        font-size: 1.125rem; font-weight: 500; margin-top: 6px;
+    }
+    .all main .main_all .tea_best > .best_week_product .item > a .price em {
+        margin-left: 5px; color: #6c801a; font-weight: 500;
+    }
+    .all main .main_all .tea_best > .best_week_product .item > a .new_product {
+        margin-top: 40px; display: block;
+    }
+    .all main .main_all .tea_best > .best_week_product .item > a .new_product span {
+        background-color: #a89079; color: #fff; padding: 1px 8px; 
+        display: inline-block; font-weight: 500;
+    }
+    /* 더보기 버튼 */
+    .all main .main_all .tea_best > p {
+        margin-top: 48px; text-align: center;
+    }
+    .all main .main_all .tea_best > p > a {
+        border: 1px solid #ddd; padding: 0 60px;
+        width: auto; height: 48px; display: inline-block;
+        line-height: 48px; background-color: #fff;
+        font-size: 0.938rem;
+        color: #666; font-weight: 400;
+        border-radius: 4px;
+    }
+    .all main .main_all .tea_best > p > a > img {
+        width: 5px; height: 9px; margin-left: 10px;
+    }
+    .all main .main_all .bg_deta {
+        margin: 85px auto 80px auto; max-width: 1240px;
+        padding: 0 20px; 
+        height: 275px; position: relative; 
+    }
+    .all main .main_all .bg_deta a {
+        /* img */
+        background: url(../images/index/bg_deta1.jpg);
+        width: 100%; height: 100%;
+        display: block;
+    }
 }
