@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="all">
@@ -337,7 +339,7 @@
                                 <a href="#" class="join">회원가입</a>
                             </div>
                             <!-- 메뉴 네비 -->
-                            <a href="#">
+                            <a href="#" class="nav_tap">
                                 <p>제품<img src="./images/index/icon_mo_nav.png" alt=""></p>
                             </a>
                             <nav class="m_gnb">
@@ -350,9 +352,8 @@
                             </nav>
                             <!-- 선물추천 -->
                             <a href="#"><p>선물 추천</p></a>
-                            <nav class="m_gnb"></nav>
                             <!-- 다다일상 서브 메뉴 -->
-                            <a href="#">
+                            <a href="#" class="nav_tap">
                                 <p>다다일상<img src="./images/index/icon_mo_nav.png" alt=""></p>
                             </a>
                             <nav class="m_gnb">
@@ -361,7 +362,7 @@
                                 <a href="#">다다일상 기록</a>
                             </nav>
                             <!-- 브랜드 서브메뉴 -->
-                            <a href="#">
+                            <a href="#" class="nav_tap">
                                 <p>브랜드<img src="./images/index/icon_mo_nav.png" alt=""></p>
                             </a>
                             <nav class="m_gnb">
@@ -418,9 +419,9 @@
                 <!-- 올라가기 btn -->
                 <a href="#go_top" id="top"><img src="./images/index/btn_goTop.png" alt="맨 위로 올라가기"></a>
                 <!-- 배너 창 데스크-->
-                <div class="bg">
-                    <div class="slide_wrap">
-                        <div class="slide slide1">
+                <div class="bg swiper-container">
+                    <div class="slide_wrap swiper-wrapper">
+                        <div class="slide slide1 swiper-slide">
                             <a href="#">
                                 <img src="./images/index/bg1.jpg" alt="" class="bg">
                                 <img src="./images/index/m_bg1.jpg" alt="" class="m_bg">
@@ -437,7 +438,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="slide slide2">
+                        <div class="slide slide2 swiper-slide">
                             <a href="#">
                                 <img src="./images/index/bg2.jpg" alt="" class="bg">
                                 <img src="./images/index/m_bg2.jpg" alt="" class="m_bg">
@@ -454,7 +455,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="slide slide3">
+                        <div class="slide slide3 swiper-slide">
                             <a href="#">
                                 <img src="./images/index/bg3.jpg" alt="" class="bg">
                                 <img src="./images/index/m_bg3.jpg" alt="" class="m_bg">
@@ -471,7 +472,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="slide slide4">
+                        <div class="slide slide4 swiper-slide">
                             <a href="#">
                                 <img src="./images/index/bg4.jpg" alt="" class="bg">
                                 <img src="./images/index/m_bg4.jpg" alt="" class="m_bg">
@@ -488,7 +489,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="slide slide5">
+                        <div class="slide slide5 swiper-slide">
                             <a href="#">
                                 <img src="./images/index/bg5.jpg" alt="" class="bg">
                                 <img src="./images/index/m_bg5.jpg" alt="" class="m_bg">
@@ -509,11 +510,11 @@
                             <a href="#" class="event_link">이벤트 전체보기</a>
                         </div>
                         <div class="next_prev">
-                            <button type="button" class="prev"></button>
-                            <button type="button" class="next"></button>
+                            <button type="button" class="swiper-button-prev"></button>
+                            <button type="button" class="swiper-button-next"></button>
                         </div>
                         <div class="bg_control">
-                            <div class="bg_go">
+                            <div class="bg_go swiper-scrollbar">
                                 <span class="var"></span>
                             </div>
                             <div class="m_play">
@@ -563,7 +564,7 @@
                     <div class="announcement_all">
                         <div class="left">
                             <p>공지사항</p>
-                            <div class="announcement_txt swiper-containe">
+                            <div class="announcement_txt swiper-container-vertical">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slide1"><a href="#">[공지] 23년 추석 배송마감 안내</a></div>
                                     <div class="swiper-slide slide2"><a href="#">[안내] 오설록 티 크리에이터 3기 모집</a></div>
@@ -1081,9 +1082,9 @@
                     </div>
                 </div>
                 <div class="check_information">
-                    <a href="#">
+                    <button type="button">
                         <p>오설록 사업자 정보확인<img src="./images/index/icon_mo_nav.png" alt=""></p>
-                    </a>
+                    </button>
                     <address>
                         ㈜ 오설록<br>
                         대표이사 : 서혁제<br>
@@ -1128,9 +1129,9 @@
                             </div>
                         </div>
                         <div class="m_last_right">
-                            <a href="#"><img src="./images/index/sns_t.png" alt="틱톡으로 가기"></a>
-                            <a href="#"><img src="./images/index/sns_y.png" alt="유튜브로 가기"></a>
-                            <a href="#"><img src="./images/index/sns_i.png" alt="인스타그램으로 가기"></a>
+                            <a href="#"><img src="./images/index/ic_tiktok.png" alt=""></a>
+                            <a href="#"><img src="./images/index/ic_youtube.png" alt=""></a>
+                            <a href="#"><img src="./images/index/ic_insta.png" alt=""></a>
                         </div>
                     </div>
                 </div>

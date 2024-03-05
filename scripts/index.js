@@ -26,7 +26,7 @@ const m_list = document.querySelector('.m_list')
 const m_lnb = document.querySelector('.m_lnb')
 const m_list_closer = document.querySelector('.closer')
 // 목록 네비
-const m_list_nav = document.querySelectorAll('.m_lnb > a')
+const m_list_nav = document.querySelectorAll('.nav_tap')
 const m_gnb = document.querySelectorAll('.m_gnb')
 console.log(m_list,m_lnb, m_list_closer)
 console.log(m_list_nav, m_gnb)
@@ -77,6 +77,7 @@ search_close[1].addEventListener('click', ()=>{
 
 // 모바일 목록 나오기 들어가기
 m_lnb.style.display = 'none';
+
 m_list.addEventListener('click', ()=>{
     m_lnb.style.display = 'block'
 })
@@ -86,33 +87,44 @@ m_list_closer.addEventListener('click', ()=>{
 })
 // 모바일 목록 네비
 
-// for(let i=0; i < 3; i++){
-//     m_gnb[i].style.display = 'none'
-//     if(m_gnb[i].style.display = 'none'){
-//         m_list_nav[i].addEventListener('click', ()=>{
-//         m_gnb[i].style.display = 'flex'
-//     })}else if(m_gnb[1].style.display = 'none'){
-//         m_list_nav[1].addEventListener('click', ()=>{
-//             m_gnb[i].style.display = 'none'
-//         })
-//     }
-// }
-for(let i=0; i < 4; i++){
-    m_gnb[i].style.display = 'none'
-    if(m_gnb[1].style.display = 'none'){
-        m_list_nav[1].addEventListener('click', ()=>{
-            m_gnb[i].style.display = 'none'
-        })
-    }else if(m_gnb[i].style.display = 'none'){
-        m_list_nav[i].addEventListener('click', ()=>{
-            m_gnb[i].style.display = 'flex'
-        })
-    }else if(m_gnb[i].style.display = 'block'){
-        m_list_nav[i].addEventListener('click', ()=>{
-            m_gnb[i].style.display = 'none'
-        })
+hide = (name)=>{
+    for(let i of name){
+        i.classList.remove('active')
     }
 }
 
+for(let i of m_gnb){
+    i.classList.add('active')
+}
+
+m_list_nav.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        m_gnb[i].classList.toggle('active');
+    })
+})
+
+var mySwiper = new Swiper('.swiper-container', { 
+    effect:'fade',
+    autoplay:{delay:5000,},
+    navigation:{
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev'
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+})
+console.log(mySwiper)
+
+const bg_var = document.querySelector('.var')
+console.log(bg_var)
+
+
+var verticalSwiper = new Swiper('.swiper-container-vertical', {
+    direction:'vertical',
+    effect:'fade',
+    autoplay:{delay:5000,},
+});
+console.log(verticalSwiper)
 // 선물추천 제외 없음
 
