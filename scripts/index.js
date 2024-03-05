@@ -106,6 +106,7 @@ m_list_nav.forEach((t,i)=>{
 var mySwiper = new Swiper('.swiper-container', { 
     effect:'fade',
     autoplay:{delay:5000,},
+    loop: true,
     navigation:{
         nextEl:'.swiper-button-next',
         prevEl:'.swiper-button-prev'
@@ -114,17 +115,66 @@ var mySwiper = new Swiper('.swiper-container', {
         el: '.swiper-scrollbar',
     },
 })
-console.log(mySwiper)
 
-const bg_var = document.querySelector('.var')
-console.log(bg_var)
 
 
 var verticalSwiper = new Swiper('.swiper-container-vertical', {
-    direction:'vertical',
-    effect:'fade',
-    autoplay:{delay:5000,},
+    direction: 'vertical',
+    loop: true, 
+    autoplay:{
+        delay:1000,
+        disableOnInteraction:false,
+    },
+    slidesPerView:1,
+    spaceBetween:50,
 });
-console.log(verticalSwiper)
 // 선물추천 제외 없음
 
+var mySwiper = new Swiper('.swiper-container-horizontal', {
+    direction: 'horizontal', // 수평 방향으로 슬라이딩
+    slidesPerView: 'auto', // 부모 요소의 너비에 맞게 슬라이드를 조정
+    spaceBetween: 0, // 슬라이드 사이의 간격
+    loop: true, // 슬라이드가 무한 루프로 이동하도록 설정
+    autoplay: {
+      delay: 3000, // 3초마다 자동으로 슬라이드 이동
+      disableOnInteraction: false, // 사용자와의 상호 작용 후에도 자동 슬라이딩 유지
+    },
+    navigation:{
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev'
+    },
+});
+
+// 베스트
+const product_btn = document.querySelectorAll('.product_btn button')
+const tea_best_content = document.querySelectorAll('.swiper-container-horizontal') 
+console.log(product_btn,tea_best_content)
+
+hide_content = (name)=>{
+    for(let i of name){
+        i.style.display = 'none'
+    }
+}
+
+hide_content(tea_best_content)
+tea_best_content[1].style.display = 'flex'
+product_btn[1].classList.add('active')
+
+product_btn.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        hide_content(tea_best_content)
+        tea_best_content[i].style.display = 'flex'
+        hide(product_btn)
+        product_btn[i].classList.add('active')
+    })
+})
+
+var mySwiper = new Swiper('.swiper-container-silde', {
+    direction: 'horizontal',
+    slidesPerView: 'auto', 
+    spaceBetween: 0, 
+    navigation:{
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev'
+    },
+});
