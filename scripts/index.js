@@ -3,6 +3,7 @@
 // 2. 검색 버튼을 눌렀을 때 데스크 창, 검색창이 열린다.
 // 3. X를 누르면 지워진다
 // 4. header 색 hover 색으로 고정 
+const main = document.querySelector('main')
 // 데스크 검색
 const search_nav_bg = document.querySelector('.search_nav_bg')
 const search_desk = search_nav_bg.querySelector('.search')
@@ -13,6 +14,11 @@ const search_nav = search_nav_bg.querySelector('.search_nav')
 const search_close = document.querySelectorAll('.search_closer')
 const header_nav_bg = document.querySelector('.nav_bg')
 const header = document.querySelector('header')
+const nav_btn = document.querySelectorAll('.nav_btn')
+const not_btn = document.querySelector('.not_btn')
+const lnb = document.querySelectorAll('.lnb')
+const nav_wrap = document.querySelectorAll('.left dl')
+const nav_content = document.querySelectorAll('.left dl dt')
 // 모바일 검색
 const m_search_nav = document.querySelector('.m_search_nav')
 const m_search = document.querySelector('.m_search')
@@ -20,6 +26,57 @@ const m_search_last = document.querySelector('.m_search_last')
 console.log(search_nav_bg,search_desk ,search_btn,search_text)
 console.log(search_bg,search_nav, search_close,header_nav_bg,header)
 console.log(m_search_nav,m_search,m_search_last)
+console.log(nav_btn,lnb,not_btn,main)
+console.log(nav_content,nav_wrap)
+
+// header nav
+hide = (name)=>{
+    for(let i of name){
+        i.classList.remove('active')
+    }
+}
+
+hide_nav = ()=>{
+    for(let i of lnb){
+        i.style.display = 'none'
+    }
+}
+
+hide_nav()
+nav_btn.forEach((t,i)=>{
+    t.addEventListener('mouseover',()=>{
+        hide_nav()
+        hide(nav_btn)
+        lnb[i].style.display = 'block'
+        t.classList.add('active')
+    })
+})
+
+not_btn.addEventListener('mouseover',()=>{
+    for(let i of lnb){
+        i.style.display = 'none'
+    }
+    hide(nav_btn)
+})
+
+main.addEventListener('mouseout',()=>{
+    hide_nav()
+    hide(nav_btn)
+})
+
+nav_wrap.forEach((t,i)=>{
+    t.addEventListener('mouseover',()=>{
+        hide(nav_content)
+        nav_content[i].classList.add('active')
+    })
+})
+
+nav_wrap.forEach((t,i)=>{
+    t.addEventListener('mouseout',()=>{
+        hide(nav_content)
+    })
+})
+
 
 // 모바일 목록
 const m_list = document.querySelector('.m_list')
@@ -87,11 +144,7 @@ m_list_closer.addEventListener('click', ()=>{
 })
 // 모바일 목록 네비
 
-hide = (name)=>{
-    for(let i of name){
-        i.classList.remove('active')
-    }
-}
+
 
 for(let i of m_gnb){
     i.classList.add('active')
@@ -169,6 +222,8 @@ product_btn.forEach((t,i)=>{
     })
 })
 
+
+// 다다
 var mySwiper = new Swiper('.swiper-container-silde', {
     direction: 'horizontal',
     slidesPerView: 'auto', 
@@ -178,3 +233,19 @@ var mySwiper = new Swiper('.swiper-container-silde', {
         prevEl:'.swiper-button-prev'
     },
 });
+
+// 매장소개
+const swiper = new Swiper('.visual',{
+    loop: true,
+    slidesPerView: 3, // slidesPerView 값을 'auto'로 설정하여 슬라이드의 너비를 자동으로 조정합니다.
+    centeredSlides: true, // 슬라이드를 가운데 정렬합니다.
+    spaceBetween: 30, // 슬라이드 사이의 간격
+    initialSlide: 1,
+    navigation:{
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev'
+    },
+})
+
+const shop_introduction = document.querySelectorAll('.shop_introduction')
+console.log(shop_introduction)

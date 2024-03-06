@@ -1,0 +1,37 @@
+// 미디어쿼리
+$desktop: 1400px;
+$notebook: 1200px;
+$tablet: 900px;
+$phone: 600px;
+
+//====================================
+// font-size
+
+$title32: 2rem;
+$title24: 1.5rem;
+$title20: 1.25rem;
+$title18: 1.125rem;
+$defalt16: 1rem;
+$subT15: 0.938rem;
+$subC14: 0.875rem;
+$small13: 0.813rem;
+$small12: 0.75rem;
+$small11: 0.688rem;
+
+//=====================================
+// font-weight
+
+$weight400: 400;
+$weight500: 500;
+$weight600: 600;
+$weight700: 700;
+
+// =============================
+// flex
+
+@mixin flex-rnsc {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

@@ -65,20 +65,59 @@ html ,body {overflow-x:hidden; width:100%; min-width: 1470px;}
     color: #fff; font-size: 1.125rem; font-weight: 700;
     font-family: 'Noto Sans KR', sans-serif;
 }
+.all header .wrap .top_left nav ul li .not_btn:hover {
+    color: #668904;
+}
 /* sub nav */
 .all header .wrap .top_left nav ul li .lnb {
-    display: none; 
+    background-color:#fff; width: 100%; height: auto;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute; top: 80px; left: 0;
+    overflow: hidden;
+    border-top:1px solid #E6E6E6 ;
+    padding-left: 170px;
+    /* js */
+    display: none;
 }
-.all header .wrap .top_left nav ul li .lnb .left {}
-.all header .wrap .top_left nav ul li .lnb .left dl {}
-.all header .wrap .top_left nav ul li .lnb .left dl dt {}
-.all header .wrap .top_left nav ul li .lnb .left dl dt a {}
-.all header .wrap .top_left nav ul li .lnb .left dl dd {}
-.all header .wrap .top_left nav ul li .lnb .left dl dd a {}
+.all header .wrap .top_left nav ul li .lnb .all {
+    background-color: #fff;
+    display: flex; flex-flow: row nowrap;
+    padding: 40px; width: 100%;
+}
+.all header .wrap .top_left nav ul li .lnb .all .left {
+    display: flex; flex-flow: row nowrap;
+    width: 100%;
+}
+.all header .wrap .top_left nav ul li .lnb .all .left dl {
+    width: 20%;
+    text-align: left;
+}
+.all header .wrap .top_left nav ul li .lnb .all .left dl .active a {
+    color: #668904;
+}
+.all header .wrap .top_left nav ul li .lnb .all .left dl dt {}
+.all header .wrap .top_left nav ul li .lnb .all .left dl dt a {
+    font-size: 1.063rem;
+    color: #333;
+}
+.all header .wrap .top_left nav ul li .lnb .all .left dl dd {
+    margin-top: 15px;
+}
+.all header .wrap .top_left nav ul li .lnb .all .left dl dd a {
+    color: #666;
+    font-size: 0.938rem;
+    font-weight: 500;
+}
 /* 다다일상 사이트 링크 */
-.all header .wrap .top_left nav ul li .lnb .right {}
-.all header .wrap .top_left nav ul li .lnb .right a {}
-.all header .wrap .top_left nav ul li .lnb .right a img {width: 100%; height: auto;}
+.all header .wrap .top_left nav ul li .lnb .all .right {
+    width: 29.5%; height: auto;
+}
+.all header .wrap .top_left nav ul li .lnb .all .right a {}
+.all header .wrap .top_left nav ul li .lnb .all .right a img {
+    max-width:100% ; height: 100%;
+}
 .all header .wrap .top_right {
     display: flex; flex-flow: row nowrap;
     justify-content: center;
@@ -429,7 +468,7 @@ font-weight: 400;}
 }
 /* --------------------------------------- */
 /* sub nav 색 변회*/
-.all header:hover .wrap .top_left nav ul li > a:hover {
+.all header:hover .wrap .top_left nav ul li > .active {
     color: #668904;
 }
 .all header .wrap .top_right .first_last .search_nav_bg .search fieldset .search_btn:hover {
@@ -459,49 +498,6 @@ font-weight: 400;}
     .all header .wrap .top_left nav ul li a:hover + .lnb {
         padding-right: 170px;
     }
-}
-.all header .wrap .top_left nav ul li a:hover + .lnb {
-    background-color:#fff; width: 100%; height: auto;
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: absolute; top: 80px; left: 0;
-    overflow: hidden;
-    border-top:1px solid #E6E6E6 ;
-    padding-left: 170px;
-    
-}
-.all header .wrap .top_left nav ul li a:hover + .lnb .all {
-    background-color: #fff;
-    display: flex; flex-flow: row nowrap;
-    padding: 40px; width: 100%;
-
-}
-.all header .wrap .top_left nav ul li a:hover + .lnb .left {
-    display: flex; flex-flow: row nowrap;
-    width: 100%;
-}
-.all header .wrap .top_left nav ul li a:hover + .lnb .left dl {
-    width: 20%;
-    text-align: left;
-}
-.all header .wrap .top_left nav ul li a:hover + .lnb .left dl dt a {
-    font-size: 1.063rem;
-    color: #333;
-}
-.all header .wrap .top_left nav ul li a:hover + .lnb .left dl dd {
-    margin-top: 15px;
-}
-.all header .wrap .top_left nav ul li a:hover + .lnb .left dl dd a {
-    color: #666;
-    font-size: 0.938rem;
-    font-weight: 500;
-}
-.all header .wrap .top_left nav ul li a:hover + .lnb .right {
-    width: 29.5%; height: auto;
-}
-.all header .wrap .top_left nav ul li a:hover + .lnb .right a img {
-    max-width:100% ; height: 100%;
 }
 /* --------------------------------------- */
 /* main */
@@ -601,7 +597,7 @@ font-weight: 400;}
 }
 .all main .main_all .bg .slide_wrap .next_prev button {
     width: 60px; height: 60px; display: block;
-    color: #333;
+    color: #ddd;
 }
 .all main .main_all .bg .slide_wrap .bg_control {
     position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
@@ -719,7 +715,7 @@ padding: 0 20px;}
     width: fit-content !important;
 }
 .all main .main_all .tea_best > .swiper-container-horizontal button {
-    color: #6b6b6b;
+    color: #ddd;
 }
 .all main .main_all .tea_best > .swiper-container-horizontal .swiper-button-prev {
     left: -10px;
@@ -1008,90 +1004,97 @@ padding: 0 20px;}
 .all main .main_all .shop p {
     margin-top: 5px; color: #999;
 }
-.all main .main_all .shop .photo {
-    max-width: 1320px; 
-    margin: 20px auto 40px; overflow: hidden;
+.all main .main_all .shop .visual {
+    max-width: 1320px; overflow: hidden;
     display: flex; flex-flow: row nowrap;
-    justify-content: center; position: relative;
+    justify-content: flex-start;
 }
-.all main .main_all .shop .photo .store_ph {
-    width: 373.333px; transition: transform 0.5s;
+
+.all main .main_all .shop .visual .photo {
+    
+    margin: 20px auto 40px; 
+    display: flex; flex-flow: row nowrap;
+    justify-content: flex-start; position: relative;
+}
+.all main .main_all .shop .visual .photo .swiper-slide {
+    width: 373.333px;
     display: inline-block; height: 392px;
 }
+.all main .main_all .shop .visual .swiper-slide-active {
+    transform: scale(1.1);
+}
 /* js */
-.all main .main_all .shop .photo .brand4,
-.all main .main_all .shop .photo .brand5,
-.all main .main_all .shop .photo .brand6,
-.all main .main_all .shop .photo .brand7 {
-    display: none;
-}
-.all main .main_all .shop .photo .brand1 a {
+.all main .main_all .shop .visual .photo .slide1 a {
     background: url(../images/index/main_th_1979.jpg);
-    transform: scale(0.9);
 }
-.all main .main_all .shop .photo .brand2 a {
+.all main .main_all .shop .visual .photo .slide2 a {
     background: url(../images/index/main_th_haeundae.jpg);
 }
-.all main .main_all .shop .photo .brand3 a {
+.all main .main_all .shop .visual .photo .slide3 a {
     background: url(../images/index/main_th_jeju.jpg);
-    transform: scale(0.9);
 }
-.all main .main_all .shop .photo .brand4 a {
+.all main .main_all .shop .visual .photo .slide4 a {
     background: url(../images/index/main_th_bukchon.jpg);
 }
-.all main .main_all .shop .photo .brand5 a {
+.all main .main_all .shop .visual .photo .slide5 a {
     background: url(../images/index/main_th_hannam.jpg);
 }
-.all main .main_all .shop .photo .brand6 a {
+.all main .main_all .shop .visual .photo .slide6 a {
     background: url(../images/index/main_th_mmca.jpg);
 }
-.all main .main_all .shop .photo .brand7 a {
+.all main .main_all .shop .visual .photo .slide7 a {
     background: url(../images/index/main_th_bukchon.jpg);
 }
-.all main .main_all .shop .photo .store_ph .shop_introduction {
+.all main .main_all .shop .visual .photo .swiper-slide .shop_introduction {
     background-size: cover; width: 100%; height: 100%;
     position: relative; display: inline-block;
     cursor: pointer;
 }
-.all main .main_all .shop .photo .store_ph .shop_introduction .txt {
+.all main .main_all .shop .visual .photo .store_ph .shop_introduction .txt {
     height: 100%; width: 100%; 
     padding: 40px; display: flex; flex-flow: column nowrap;
     justify-content: center;
 }
-.all main .main_all .shop .photo .store_ph .shop_introduction .txt h3 {
+.all main .main_all .shop .visual .photo .store_ph .shop_introduction .txt h3 {
     color: #fff; font-family: 'Gowun Dodum';
     font-size: 1.875rem; line-height: 1.3;
 }
-.all main .main_all .shop .photo .store_ph .shop_introduction .txt p {
+.all main .main_all .shop .visual .photo .store_ph .shop_introduction .txt p {
     color: #fff; font-family: 'Gowun Dodum';
     font-size: 0.875rem; font-weight: 300; margin-top: 10px;
 }
-.all main .main_all .shop .photo .brand_control {
+.all main .main_all .shop .visual .photo .brand_control {
     position: absolute; bottom:27px ; left: 0;
     width: 100%; height: 18px;
     display: flex; justify-content: center;
     align-items: center;
 }
-.all main .main_all .shop .photo .brand_control span {
+.all main .main_all .shop .visual .photo .brand_control span {
     width: 4px; height: 4px; margin: 0 6px;
     background: transparent;
 }
-.all main .main_all .shop .photo .brand_control span:first-child::before {
+.all main .main_all .shop .visual .photo .brand_control span:first-child::before {
     background: #fff;
 }
-.all main .main_all .shop .photo .brand_control span::before {
+.all main .main_all .shop .visual .photo .brand_control span::before {
     content: ''; display: inline-block;
     background:#fff9f53f; width: 4px; height: 4px;
     border-radius: 8px;
 }
-.all main .main_all .shop .next_prev {
+.all main .main_all .shop .visual .next_prev {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
-    position: absolute; top: 35%; left: 0;
+    position: absolute; top: 50%; left: 0;
     width: 100%;
 }
-.all main .main_all .shop .next_prev button {
-    width: 60px; height: 60px;
+.all main .main_all .shop .visual .next_prev button {
+    width: 60px; height: 60px; color: #ddd;
+}
+.all main .main_all .shop .visual .next_prev .swiper-button-next {
+    right: -40px;
+}
+.all main .main_all .shop .visual .next_prev .swiper-button-prev {
+    left: -40px;
 }
 .all main .main_all .shop .all_store_view {
     text-align: center;
