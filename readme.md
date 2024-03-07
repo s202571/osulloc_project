@@ -12,6 +12,7 @@
 * 01-27 모바일 메인 시작
 * 02/01 ~ 02/05 팀작업 잠시 작업 중단
 * 03/06 ~ index 완성 prodect 시작
+* 03/07 데스크탑 버전 prodect 완료 및 detail 시작
 ## index HTML
 ### header 수정
 1. nav부분 ul,li로 변경 , 순서 변경 , 홀리데이 -> 선물 추천 변경
@@ -78,3 +79,7 @@
 03/06
 1. index 완성
 2. product html 작업중
+-----------------------
+03/06
+1. product css, javascript 완료
+2. detail thml 작업중
