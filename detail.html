@@ -20,31 +20,37 @@
                             <span class="tag">추천</span>
                             <p class="item_img"><img src="./images/detail/item001.png" alt=""></p>
                             <div class="point">
-                                <div class="beauty_point">
+                                <div class="point_content">
                                     <span class="logo"></span>
-                                    <span>뷰티포인트 304P 적립</span>
+                                    <p>뷰티포인트 304P<br>적립</p>
                                 </div>
-                                <div class="tea_point">
+                                <div class="point_content">
                                     <span class="logo"></span>
-                                    <span>찻잎 308P 적입</span>
+                                    <p>찻잎 308P 적립</p>
                                 </div>
                             </div>
                         </div>
                         <div class="review">
                             <div class="left">
-                                <p>리뷰 평점 <span class="star_num">4.5</span><span class="star"></span></p>
+                                <p>리뷰 평점</p>
+                                <div class="ico_num">
+                                    <span class="star_num">4.5</span>
+                                    <p><span class="star"></span></p>
+                                </div>
                             </div>
-                            <div class="right">
-                                <p><span>REVIEW</span>18<span class="icon"></span></p>
-                            </div>
+                            <a href="#review_link" id="go_review">
+                                <p><span>REVIEW</span> 18</p>
+                                <span class="icon"></span>
+                            </a>
                         </div>
                     </div>
                     <div class="right">
                         <div class="top">
                             <div class="item_content">
                                 <span>Tea Food > 베이커리</span>
-                                <p><em class="item_name">한라산 녹차 케이크</em><br><em class="item_origin">(원산지 : 하단 상품고시정보에 표시)</em></p>
-                                <p>진한 녹차크림과 초콜렛 가나슈에 크림치즈 생크림으로 5가지 레이어를 가진, 눈 쌓인 한라산을 닮은 특별한 케이크, 제품의 가격은 판매가와 배송비를 포함하여 책정되었습니다.</p>
+                                <p class="item_name">한라산 녹차 케이크</p>
+                                <p class="item_origin">(원산지 : 하단 상품고시정보에 표시)</p>
+                                <p class="item_txt">진한 녹차크림과 초콜렛 가나슈에 크림치즈 생크림으로 5가지 레이어를 가진, 눈 쌓인 한라산을 닮은 특별한 케이크, 제품의 가격은 판매가와 배송비를 포함하여 책정되었습니다.</p>
                             </div>
                             <div class="link_price">
                                 <div class="link_wrap">
@@ -53,22 +59,21 @@
                                     <span class="like"></span>
                                 </div>
                                 <div class="price_wrap">
-                                    <span class="origin_price">38,000원</span>
-                                    <div class="sele_price">
-                                        <p><em>30,400</em>원 <span>20 %</span></p>
-                                    </div>
+                                    <span class="origin_price">38,000</span>원
                                 </div>
                             </div>
-                            <div class="num_box">
-                                <p>구매수량</p>
-                                <form action="#" method="get" class="num_btn">
-                                    <fieldset>
-                                        <legend class="skip">수량 양식</legend>
-                                        <button type="button" class="minus"></button>
-                                        <input type="text" id="num_count">
-                                        <button type="button" class="plus"></button>
-                                    </fieldset>
-                                </form>
+                            <div class="box">
+                                <div class="num_box">
+                                    <p>구매수량</p>
+                                    <form action="#" method="get" class="num_btn">
+                                        <fieldset>
+                                            <legend class="skip">수량 양식</legend>
+                                            <button type="button" class="minus"></button>
+                                            <input type="text" id="num_count" placeholder="1">
+                                            <button type="button" class="plus"></button>
+                                        </fieldset>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         <div class="order_price_wrap">
@@ -77,23 +82,23 @@
                                 <p><span class="order_price">30,400</span>원</p>
                             </div>
                             <div class="pay_btn_wrap">
-                                <button type="button" class="gift">선물하기</button>
-                                <button type="button" class="cart">장바구니</button>
-                                <button type="button" class="pay">바로구매</button>
+                                <a href="#" class="gift">선물하기</a>
+                                <a href="#"  class="cart">장바구니</a>
+                                <a href="#" class="pay">바로구매</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <nav>
-                    <button class="nav_btn">상품상세</button>
-                    <button class="nav_btn">고객리뷰 <span class="review_num">18개</span></button>
-                    <button>상품고시정보</button>
-                </nav>
                 <div class="wrap">
+                    <nav>
+                        <button class="nav_btn">상품상세</button>
+                        <button class="nav_btn">고객리뷰 <span class="review_num">18개</span></button>
+                        <button>상품고시정보</button>
+                    </nav>
                     <div class="section">
                         <div class="poroduct_content">
+                            <img src="./images/detail/w_img_01.jpg" alt="">
                             <div class="photo">
-                                <img src="./images/detail/m_img_01.jpg" alt="">
                                 <img src="./images/detail/m_img_02.jpg" alt="">
                                 <img src="./images/detail/m_img_03.jpg" alt="">
                                 <img src="./images/detail/m_img_04.jpg" alt="">
@@ -110,24 +115,33 @@
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <p class="item_img"><img src="./images/detail/item002.png" alt=""></p>
-                                            <p class="item_name">제주 말차 카스테라</p>
-                                            <p class="origin_price"><span>24,000</span>원</p>
+                                            <a href="#">
+                                                <img src="./images/detail/item002.png" alt="">
+                                                <span class="item_name">제주 말차 카스테라</span>
+                                                <span class="origin_price"><em>24,000</em>원</span>
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <p class="item_img"><img src="./images/detail/item003.png" alt=""></p>
-                                            <p class="item_name">그린티 롤케이크</p>
-                                            <p class="origin_price"><span>24,000</span>원</p>
+                                            <a href="#">
+                                                <img src="./images/detail/item003.png" alt="">
+                                                <span class="item_name">그린티 롤케이크</span>
+                                                <span class="origin_price"><em>24,000</em>원</span>
+                                            </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <p class="item_img"><img src="./images/detail/item004.png" alt=""></p>
-                                            <p class="item_name">스토로베리 그린티 케이크</p>
-                                            <p class="origin_price"><span>34,000</span>원</p>
+                                            <a href="#">
+                                                <img src="./images/detail/item004.png" alt="">
+                                                <span class="item_name">스토로베리 그린티 케이크</span>
+                                                <span class="origin_price"><em>34,000</em>원</span>
+                                            </a>
+                                            
                                         </div>
                                         <div class="swiper-slide">
-                                            <p class="item_img"><img src="./images/detail/item005.png" alt=""></p>
-                                            <p class="item_name">제주 녹차 크레이프 케이크</p>
-                                            <p class="origin_price"><span>47,500</span>원</p>
+                                            <a href="#">
+                                                <img src="./images/detail/item003.png" alt="">
+                                                <span class="item_name">제주 녹차 크레이프 케이크</span>
+                                                <span class="origin_price"><em>47,500</em>원</span>
+                                            </a>
                                         </div>
                                         <div class="var_wrap">
                                             <span class="var"></span>
@@ -139,11 +153,74 @@
                             </div>
                         </div>
                         <div class="not_product">
-                            <img src="./images/detail/arr_l_12x21.png" alt="">
+                            <img src="./images/detail/arr_up_16x35.png" alt="">
                             <p>상품 상세 접어보기</p>
                         </div>
+                        <span></span>
                     </div>
-                    <div class="section">2</div>
+                    <div class="section" id="review_link">
+                        <div class="user_review">
+                            <h2>고객리뷰</h2>
+                            <p>상품을 직접 구매하여 경험하신 분들의 솔직담백한 후기들을 확인해보세요</p>
+                            <div class="top">
+                                <div class="top_wrap">
+                                    <div class="left">
+                                        <h3>한라산 녹차 케이크</h3>
+                                        <p><span>총 18개</span>의 고객후기가 있습니다.</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>리뷰 평점</p>
+                                        <div class="ico_num">
+                                            <p><span class="star"></span></p>
+                                            <span class="star_num">4.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review_wrap">
+                                <div class="review_btn">
+                                    <button type="button">전체리뷰<span>2</span></button>
+                                    <button type="button">사진리뷰<span>1</span></button>
+                                </div>
+                                <div class="all_review review_box">
+                                    <div class="review_content">
+                                        <div class="left">
+                                            <p class="day">2023.12.22</p>
+                                            <p><span class="star_balck"></span></p>
+                                        </div>
+                                        <div class="right">
+                                            <p>구매자 <span class="user_id">cre***</span></p>
+                                            <p>너무 작네요 정말 작아요 어른 손크기 정도예요 대신 맛이 오설록에서만 맛볼 수 있는 케이크네요 진한 녹차맛이 특징이고 초코에는 크런치를 안넣는게 더 좋아요 롤케이크 위주로 먹었는데 괜찮네요 작은 사이즈라는 거 유념하시고 구입하셔야 할 것 같네요 맛은 좋아요</p>
+                                            <p><img src="./images/detail/review001.jpg" alt=""></p>
+                                        </div>
+                                    </div>
+                                    <div class="review_content">
+                                        <div class="left">
+                                            <p class="day">2023.12.22</p>
+                                            <p><span class="star_balck"></span></p>
+                                        </div>
+                                        <div class="right">
+                                            <p>구매자 <span class="user_id">cre***</span></p>
+                                            <p>사촌동생에게 선물했어요. 크리스마스에 가족들과 행복한 시간 보내기를 바라면서요.. 어제 받았다고 연락왔고 케이크가 너무 이쁘고 맛있다고 하네요</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="photo_review review_box">
+                                    <div class="review_content">
+                                        <div class="left">
+                                            <p class="day">2023.12.22</p>
+                                            <p><span class="star_balck"></span></p>
+                                        </div>
+                                        <div class="right">
+                                            <p>구매자 <span class="user_id">cre***</span></p>
+                                            <p>너무 작네요 정말 작아요 어른 손크기 정도예요 대신 맛이 오설록에서만 맛볼 수 있는 케이크네요 진한 녹차맛이 특징이고 초코에는 크런치를 안넣는게 더 좋아요 롤케이크 위주로 먹었는데 괜찮네요 작은 사이즈라는 거 유념하시고 구입하셔야 할 것 같네요 맛은 좋아요</p>
+                                            <p><img src="./images/detail/review001.jpg" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
