@@ -1,5 +1,6 @@
 .all main .detail_content {
   padding-top: 80px;
+  margin-bottom: 200px;
 }
 .all main .detail_content > .top {
   max-width: 1280px;
@@ -57,7 +58,7 @@
   align-items: center;
   margin-left: 5px;
 }
-.all main .detail_content > .top .left .box .point .point_content p {
+.all main .detail_content > .top .left .box .point .point_content p, .all main .detail_content > .top .left .box .point .point_content .wrap .section .user_review .review_wrap .review_box .review_content .right p span, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right p .left .box .point .point_content span {
   color: #505051;
   font-size: 0.938rem;
   line-height: 21px;
@@ -86,7 +87,7 @@
   flex-flow: row;
   width: 100%;
 }
-.all main .detail_content > .top .left .review .left p {
+.all main .detail_content > .top .left .review .left p, .all main .detail_content > .top .left .review .left .wrap .section .user_review .review_wrap .review_box .review_content .right p span, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right p .left .review .left span {
   font-size: 1.5rem;
   color: #555555;
   margin: 0 15px 0 0;
@@ -102,14 +103,14 @@
   color: #6c801a;
   font-weight: bold;
 }
-.all main .detail_content > .top .left .review .left .ico_num p {
+.all main .detail_content > .top .left .review .left .ico_num p, .all main .detail_content > .top .left .review .left .ico_num .wrap .section .user_review .review_wrap .review_box .review_content .right p span, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right p .left .review .left .ico_num span {
   display: block;
   background: url(../images/detail/bg_stars.png) 0 0 no-repeat;
   width: 176px;
   height: 32px;
   transform: scale(0.7);
 }
-.all main .detail_content > .top .left .review .left .ico_num p .star {
+.all main .detail_content > .top .left .review .left .ico_num p .star, .all main .detail_content > .top .left .review .left .ico_num .wrap .section .user_review .review_wrap .review_box .review_content .right p span .star, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right p .left .review .left .ico_num span .star {
   display: inline-block;
   background: url(../images/detail/bg_stars.png) 0 -40px no-repeat;
   height: 32px;
@@ -123,11 +124,11 @@
   margin-right: 23px;
   padding-right: 22px;
 }
-.all main .detail_content > .top .left .review #go_review p {
+.all main .detail_content > .top .left .review #go_review p, .all main .detail_content > .top .left .review #go_review .wrap .section .user_review .review_wrap .review_box .review_content .right p span, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right p .left .review #go_review span {
   color: #2f2f2f;
   font-size: 1.25rem;
 }
-.all main .detail_content > .top .left .review #go_review p span {
+.all main .detail_content > .top .left .review #go_review p span, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right p .left .review #go_review span span {
   color: #9e9e9e;
   font-size: 1.25rem;
 }
@@ -201,6 +202,7 @@
 }
 .all main .detail_content > .top .right .top .link_price .link_wrap .facebook {
   background: url(../images/detail/ic_facebook.png);
+  height: 42px;
 }
 .all main .detail_content > .top .right .top .link_price .link_wrap .like {
   background: url(../images/detail/ic_like.png);
@@ -239,7 +241,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.all main .detail_content > .top .right .top .box .num_box p {
+.all main .detail_content > .top .right .top .box .num_box p, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right .top .box .num_box p span, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right p .top .box .num_box span {
   height: 100%;
   line-height: 61px;
   padding: 0 70px 0 14px;
@@ -310,11 +312,11 @@
   color: #6c801a;
   font-size: 1.5rem;
 }
-.all main .detail_content > .top .right .order_price_wrap .order_price_box p {
+.all main .detail_content > .top .right .order_price_wrap .order_price_box p, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right .order_price_wrap .order_price_box p span, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right p .order_price_wrap .order_price_box span {
   color: #6c801a;
   font-size: 1.5rem;
 }
-.all main .detail_content > .top .right .order_price_wrap .order_price_box p span {
+.all main .detail_content > .top .right .order_price_wrap .order_price_box p span, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right .order_price_wrap .order_price_box p span span, .all main .detail_content > .top .wrap .section .user_review .review_wrap .review_box .review_content .right p .order_price_wrap .order_price_box span span {
   font-size: 2.875rem;
   font-weight: bold;
   color: #6c801a;
@@ -348,6 +350,7 @@
 }
 .all main .detail_content .wrap nav {
   position: relative;
+  z-index: 999;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -378,6 +381,16 @@
 .all main .detail_content .wrap nav .active {
   color: #6c801a;
   border-bottom: 3px solid #6c801a;
+}
+.all main .detail_content .wrap .section.active {
+  display: none;
+}
+.all main .detail_content .wrap .not_product {
+  padding: 45px 0;
+  text-align: center;
+}
+.all main .detail_content .wrap .not_product .rotate {
+  transform: rotate(180deg);
 }
 .all main .detail_content .wrap .section .poroduct_content {
   width: 100%;
@@ -411,12 +424,12 @@
   font-size: 2.5rem;
   margin-bottom: 38px;
 }
-.all main .detail_content .wrap .section .poroduct_content .item_recommend > p {
+.all main .detail_content .wrap .section .poroduct_content .item_recommend > p, .all main .detail_content .wrap .section .poroduct_content .user_review .review_wrap .review_box .review_content .right p .item_recommend > span, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p .poroduct_content .item_recommend > span {
   margin-bottom: 20px;
   color: #464646;
   font-size: 1.375rem;
 }
-.all main .detail_content .wrap .section .poroduct_content .item_recommend > p span {
+.all main .detail_content .wrap .section .poroduct_content .item_recommend > p span, .all main .detail_content .wrap .section .poroduct_content .user_review .review_wrap .review_box .review_content .right p .item_recommend > span span, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p .poroduct_content .item_recommend > span span {
   color: #6c801a;
   font-size: 1.375rem;
 }
@@ -431,7 +444,7 @@
   position: relative;
 }
 .all main .detail_content .wrap .section .poroduct_content .item_recommend .swiper-container .swiper-wrapper .swiper-slide {
-  width: 158px;
+  width: 158px !important;
   margin-right: 30px;
 }
 .all main .detail_content .wrap .section .poroduct_content .item_recommend .swiper-container .swiper-wrapper .swiper-slide a {
@@ -454,17 +467,36 @@
   position: absolute;
   top: -32px;
   right: 132px;
+  display: flex;
+  flex-flow: row nowrap;
 }
 .all main .detail_content .wrap .section .poroduct_content .item_recommend .swiper-container .swiper-wrapper .var_wrap .var {
   display: block;
   content: "";
+  position: relative;
+  right: 100px;
   width: 240px;
   height: 3px;
   background: #000;
 }
-.all main .detail_content .wrap .section .not_product {
-  padding: 45px 0;
-  text-align: center;
+.all main .detail_content .wrap .section .poroduct_content .item_recommend .swiper-container .swiper-wrapper .var_wrap .btn_wrap {
+  display: block;
+}
+.all main .detail_content .wrap .section .poroduct_content .item_recommend .swiper-container .swiper-wrapper .var_wrap .btn_wrap button {
+  color: #b0b0b0;
+  width: 12px;
+  height: 21px;
+  line-height: 21px;
+}
+.all main .detail_content .wrap .section .poroduct_content .item_recommend .swiper-container .swiper-wrapper .var_wrap .btn_wrap .swiper-button-prev {
+  position: relative;
+  top: 0;
+  right: 70px;
+}
+.all main .detail_content .wrap .section .poroduct_content .item_recommend .swiper-container .swiper-wrapper .var_wrap .btn_wrap .swiper-button-next {
+  position: relative;
+  top: 0;
+  left: 70px;
 }
 .all main .detail_content .wrap .section > span {
   display: block;
@@ -483,7 +515,7 @@
   font-size: 2.5rem;
   text-align: center;
 }
-.all main .detail_content .wrap .section .user_review > p {
+.all main .detail_content .wrap .section .user_review > p, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p .user_review > span {
   margin: 20px 0 80px;
   color: #9e9e9e;
   font-size: 1.125rem;
@@ -510,19 +542,19 @@
   color: #000;
   font-size: 2rem;
 }
-.all main .detail_content .wrap .section .user_review .top .top_wrap .left p {
+.all main .detail_content .wrap .section .user_review .top .top_wrap .left p, .all main .detail_content .wrap .section .user_review .top .top_wrap .left .review_wrap .review_box .review_content .right p span, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p .top .top_wrap .left span {
   margin-top: 13px;
   color: #9e9e9e;
   font-size: 1.375rem;
 }
-.all main .detail_content .wrap .section .user_review .top .top_wrap .left p span {
+.all main .detail_content .wrap .section .user_review .top .top_wrap .left p span, .all main .detail_content .wrap .section .user_review .top .top_wrap .left .review_wrap .review_box .review_content .right p span span, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p .top .top_wrap .left span span {
   font-size: 1.375rem;
   color: #fd5c5c;
 }
 .all main .detail_content .wrap .section .user_review .top .top_wrap .right {
   width: 50%;
 }
-.all main .detail_content .wrap .section .user_review .top .top_wrap .right > p {
+.all main .detail_content .wrap .section .user_review .top .top_wrap .right > p, .all main .detail_content .wrap .section .user_review .top .top_wrap .review_wrap .review_box .review_content .right p .right > span, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p .top .top_wrap .right > span {
   text-align: right;
   color: #313131;
   font-size: 1.25rem;
@@ -533,13 +565,13 @@
   align-items: flex-end;
   float: right;
 }
-.all main .detail_content .wrap .section .user_review .top .top_wrap .right .ico_num p {
+.all main .detail_content .wrap .section .user_review .top .top_wrap .right .ico_num p, .all main .detail_content .wrap .section .user_review .top .top_wrap .review_wrap .review_box .review_content .right .ico_num p span, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .top .top_wrap .right .ico_num p span, .all main .detail_content .wrap .section .user_review .top .top_wrap .review_wrap .review_box .review_content .right p .ico_num span, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .top .top_wrap .right p .ico_num span {
   display: block;
   background: url(../images/detail/bg_stars.png) 0 0 no-repeat;
   width: 176px;
   height: 32px;
 }
-.all main .detail_content .wrap .section .user_review .top .top_wrap .right .ico_num p .star {
+.all main .detail_content .wrap .section .user_review .top .top_wrap .right .ico_num p .star, .all main .detail_content .wrap .section .user_review .top .top_wrap .review_wrap .review_box .review_content .right .ico_num p span .star, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .top .top_wrap .right .ico_num p span .star, .all main .detail_content .wrap .section .user_review .top .top_wrap .review_wrap .review_box .review_content .right p .ico_num span .star, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .top .top_wrap .right p .ico_num span .star {
   display: inline-block;
   background: url(../images/detail/bg_stars.png) 0 -40px no-repeat;
   height: 32px;
@@ -565,7 +597,7 @@
 }
 .all main .detail_content .wrap .section .user_review .review_wrap .review_btn button {
   min-width: 90px;
-  height: auto;
+  height: 100%;
   margin: 0 60px;
   text-align: center;
   color: #313131;
@@ -584,10 +616,78 @@
 }
 .all main .detail_content .wrap .section .user_review .review_wrap .review_box {
   max-width: 1280px;
+  margin: 0 auto;
+  padding: 18px 0 0;
 }
 .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
+  padding: 30px 0 20px;
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .left {
+  width: 152px;
+  padding-left: 20px;
+  text-align: left;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .left .day {
+  color: #b0b0b0;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .left p:nth-child(2), .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .left .right p span:nth-child(2), .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p .left span:nth-child(2) {
+  margin-top: 15px;
+  display: block;
+  background: url(../images/detail/bg_stars_black.png) 0 0 no-repeat;
+  width: 107px;
+  height: 19px;
+  overflow: hidden;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .left p:nth-child(2) .star_balck, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .left .right p span:nth-child(2) .star_balck, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p .left span:nth-child(2) .star_balck {
+  display: inline-block;
+  background: url(../images/detail/bg_stars_black.png) 0 -20px no-repeat;
+  height: 19px;
+  width: 86px;
+  overflow: hidden;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right {
+  width: 100%;
+  padding: 0 70px 0 20px;
+  text-align: left;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p span {
+  color: #8b8b8b;
+  font-size: 1.063rem;
+  letter-spacing: -0.03px;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p em, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p span em {
+  color: #6c801a;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p img, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p span img {
+  text-align: left;
+  display: flex;
+  margin: 20px 0 0 auto;
+  width: 360px;
+  height: 370px;
+  display: block;
+  overflow: hidden;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p:nth-child(2), .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p span:nth-child(2) {
+  margin-top: 10px;
+  color: #7e7e7e;
+  line-height: 1.8;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p:nth-child(3), .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p span:nth-child(3) {
+  text-align: left;
+  float: left;
+  margin: 20px 0 0 auto;
+  width: 360px;
+  height: 370px;
+  display: block;
+  overflow: hidden;
+}
+.all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p:nth-child(3) img, .all main .detail_content .wrap .section .user_review .review_wrap .review_box .review_content .right p span:nth-child(3) img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=detail.css.map */

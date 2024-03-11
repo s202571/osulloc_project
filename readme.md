@@ -88,3 +88,7 @@
 -----------------------
 03/08
 1. detail css 작업중
+-----------------------
+03/11
+1. gift_recommendation - html, css 완료
+2. gift_recommendation - js 작업 중

@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="./styles/detail.css">
     <link rel="shortcut icon" href="./images/favicon/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="all">
         <header></header>
         <main>
             <div class="detail_content">
-                <div class="top">
+                <div class="top top_contents">
                     <div class="left">
                         <div class="box">
                             <span class="tag">추천</span>
@@ -69,7 +71,7 @@
                                         <fieldset>
                                             <legend class="skip">수량 양식</legend>
                                             <button type="button" class="minus"></button>
-                                            <input type="text" id="num_count" placeholder="1">
+                                            <input type="text" id="num_count" value="1">
                                             <button type="button" class="plus"></button>
                                         </fieldset>
                                     </form>
@@ -79,7 +81,7 @@
                         <div class="order_price_wrap">
                             <div class="order_price_box">
                                 <h2>금액 합계</h2>
-                                <p><span class="order_price">30,400</span>원</p>
+                                <p><span class="order_price">38,000</span></p>
                             </div>
                             <div class="pay_btn_wrap">
                                 <a href="#" class="gift">선물하기</a>
@@ -92,7 +94,7 @@
                 <div class="wrap">
                     <nav>
                         <button class="nav_btn">상품상세</button>
-                        <button class="nav_btn">고객리뷰 <span class="review_num">18개</span></button>
+                        <button class="nav_btn">고객리뷰 <span class="review_num">2개</span></button>
                         <button>상품고시정보</button>
                     </nav>
                     <div class="section">
@@ -145,18 +147,21 @@
                                         </div>
                                         <div class="var_wrap">
                                             <span class="var"></span>
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
+                                            <div class="btn_wrap">
+                                                <button class="swiper-button-prev"></button>
+                                                <button class="swiper-button-next"></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="not_product">
-                            <img src="./images/detail/arr_up_16x35.png" alt="">
-                            <p>상품 상세 접어보기</p>
-                        </div>
+                        
                         <span></span>
+                    </div>
+                    <div class="not_product">
+                        <img src="./images/detail/arr_up_16x35.png" alt="">
+                        <p>상품 상세 접어보기</p>
                     </div>
                     <div class="section" id="review_link">
                         <div class="user_review">
@@ -189,9 +194,9 @@
                                             <p><span class="star_balck"></span></p>
                                         </div>
                                         <div class="right">
-                                            <p>구매자 <span class="user_id">cre***</span></p>
+                                            <p><em class="name">구매자</em><span class="user_id">cre***</span></p>
                                             <p>너무 작네요 정말 작아요 어른 손크기 정도예요 대신 맛이 오설록에서만 맛볼 수 있는 케이크네요 진한 녹차맛이 특징이고 초코에는 크런치를 안넣는게 더 좋아요 롤케이크 위주로 먹었는데 괜찮네요 작은 사이즈라는 거 유념하시고 구입하셔야 할 것 같네요 맛은 좋아요</p>
-                                            <p><img src="./images/detail/review001.jpg" alt=""></p>
+                                            <p><img src="./images/detail/review001.jpg" alt="" class="review_photo"></p>
                                         </div>
                                     </div>
                                     <div class="review_content">
@@ -200,7 +205,7 @@
                                             <p><span class="star_balck"></span></p>
                                         </div>
                                         <div class="right">
-                                            <p>구매자 <span class="user_id">cre***</span></p>
+                                            <p><em class="name">구매자</em><span class="user_id">cre***</span></p>
                                             <p>사촌동생에게 선물했어요. 크리스마스에 가족들과 행복한 시간 보내기를 바라면서요.. 어제 받았다고 연락왔고 케이크가 너무 이쁘고 맛있다고 하네요</p>
                                         </div>
                                     </div>
@@ -212,9 +217,9 @@
                                             <p><span class="star_balck"></span></p>
                                         </div>
                                         <div class="right">
-                                            <p>구매자 <span class="user_id">cre***</span></p>
+                                            <p><em class="name">구매자</em><span class="user_id">cre***</span></p>
                                             <p>너무 작네요 정말 작아요 어른 손크기 정도예요 대신 맛이 오설록에서만 맛볼 수 있는 케이크네요 진한 녹차맛이 특징이고 초코에는 크런치를 안넣는게 더 좋아요 롤케이크 위주로 먹었는데 괜찮네요 작은 사이즈라는 거 유념하시고 구입하셔야 할 것 같네요 맛은 좋아요</p>
-                                            <p><img src="./images/detail/review001.jpg" alt=""></p>
+                                            <p><img src="./images/detail/review001.jpg" alt="" class="review_photo"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -225,6 +230,7 @@
             </div>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./scripts/detail.js"></script>
     </div>
 </body>
 </html>
