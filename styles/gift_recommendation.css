@@ -1,3 +1,7 @@
+* {
+  transition: all 0.3s;
+}
+
 .all main .bg {
   width: 100%;
   height: 380px;
@@ -13,6 +17,9 @@
   font-weight: 500;
   transform: translateX(-50%);
 }
+.all main .wrap {
+  margin-bottom: 300px;
+}
 .all main .wrap nav {
   display: flex;
   flex-flow: row nowrap;
@@ -21,18 +28,24 @@
   padding: 12px 0 38px;
   border-bottom: 1px solid #e6e6e6;
   background-color: #fff;
-  max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 .all main .wrap nav button {
   position: relative;
   margin: 0 17px;
   width: 70px;
   height: auto;
+  border-radius: 50%;
 }
 .all main .wrap nav button img {
   width: 100%;
   height: auto;
+  vertical-align: top;
 }
 .all main .wrap nav button h2 {
   position: absolute;
@@ -43,6 +56,9 @@
   color: #666;
   text-align: center;
   line-height: 1.5;
+}
+.all main .wrap nav .active {
+  border: 3px solid #6c801a;
 }
 .all main .wrap .container {
   max-width: 1280px;
@@ -130,8 +146,11 @@
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 50%;
 }
+.all main .wrap .container section .swiper-container .swiper-wrapper .swiper-slide .cart:hover {
+  display: block;
+}
 .all main .wrap .container section .swiper-container .swiper-wrapper .swiper-slide .cart:hover button {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 .all main .wrap .container section .swiper-container .swiper-wrapper .swiper-slide .item::after {
   position: absolute;
@@ -143,15 +162,45 @@
   height: 50%;
   z-index: 2;
 }
-.all main .wrap .container section .swiper-pagination {
-  position: absolute;
-  top: 0;
-  right: 0;
+.all main .wrap .container section .swiper-container .swiper-pagination {
+  top: 135px;
+  right: 40px;
+  bottom: unset;
+  left: unset;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.all main .wrap .container section .btn_wrap {
+.all main .wrap .container section .swiper-container .swiper-pagination span {
+  width: 7px;
+  height: 7px;
+  margin-left: 12px;
+}
+.all main .wrap .container section .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #333;
+}
+.all main .wrap .container section .swiper-container .btn_wrap {
   width: 100%;
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+}
+.all main .wrap .container section .swiper-container .btn_wrap button {
+  width: 40px;
+  height: 40px;
+  left: auto;
+  right: auto;
+  color: transparent;
+  background-size: cover;
+}
+.all main .wrap .container section .swiper-container .btn_wrap .swiper-button-prev {
+  background: url(../images/gift_recommendation/gifts_prev_btn.png) no-repeat center center;
+  left: -5px;
+}
+.all main .wrap .container section .swiper-container .btn_wrap .swiper-button-next {
+  background: url(../images/gift_recommendation/gifts_next_btn.png) no-repeat center center;
+  right: -5px;
 }
 .all main .wrap .container section .photo_wrap {
   display: flex;
@@ -184,7 +233,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
-  z-index: 15;
+  z-index: 10;
 }
 .all main .wrap .container section .photo_wrap .best_item .photo a .product_content .product_name {
   font-size: 1.375rem;
@@ -206,7 +255,7 @@
   right: 30px;
   width: 52px !important;
   height: 52px !important;
-  z-index: 13;
+  z-index: 20;
 }
 .all main .wrap .container section .photo_wrap .best_item .photo .cart button {
   width: 52px !important;
@@ -216,8 +265,11 @@
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 50%;
 }
+.all main .wrap .container section .photo_wrap .best_item .photo .cart:hover {
+  display: block;
+}
 .all main .wrap .container section .photo_wrap .best_item .photo .cart:hover button {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 .all main .wrap .container section .photo_wrap .best_item .photo::after {
   position: absolute;

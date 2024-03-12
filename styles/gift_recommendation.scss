@@ -1,5 +1,6 @@
 @import 'common';
 
+* {transition: all 0.3s;}
 .all {
     main {
         .bg {
@@ -13,18 +14,22 @@
             }
         }
         .wrap {
+            margin-bottom: 300px;
             nav {
                 @include flex-rncc;
                 padding: 12px 0 38px;
                 border-bottom: 1px solid #e6e6e6;
                 background-color: #fff;
-                max-width: 1240px;
+                width: 100%;
                 margin: 0 auto;
+                position: relative; top: 0; left: 0; z-index: 999;
                 button {
                     position: relative;
                     margin: 0 17px; width: 70px; height: auto;
+                    border-radius: 50%;
                     img {
                         width: 100%; height: auto;
+                        vertical-align: top;
                     }
                     h2 {
                         position: absolute; top: 76px; left: 50%;
@@ -34,6 +39,9 @@
                         text-align: center;
                         line-height: 1.5;
                     }
+                }
+                .active {
+                    border: 3px solid #6c801a;
                 }
             }
             .container {
@@ -106,8 +114,9 @@
                                     }
                                 }
                                 .cart:hover {
+                                    display: block;
                                     button {
-                                        background-color: rgba(0,0,0,.8);
+                                        background-color: rgba(0,0,0,.8) !important;
                                     }
                                 }
                                 .item::after {
@@ -119,15 +128,34 @@
                             }
                             
                         }
-                        
+                        .swiper-pagination {
+                            top: 135px; right: 40px; bottom: unset; left: unset;
+                            width: fit-content;
+                            span {
+                                width: 7px; height: 7px; margin-left: 12px;
+                            }
+                            .swiper-pagination-bullet-active {
+                                background-color: #333;
+                            }
+                        }
+                        .btn_wrap {
+                            width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); height: auto;
+                            button {
+                                width: 40px; height: 40px; left: auto; right: auto;
+                                color: transparent; 
+                                background-size: cover;
+                            }
+                            .swiper-button-prev {
+                                background: url(../images/gift_recommendation/gifts_prev_btn.png) no-repeat center center;
+                                left: -5px;
+                            }
+                            .swiper-button-next {
+                                background: url(../images/gift_recommendation/gifts_next_btn.png) no-repeat center center;
+                                right: -5px;
+                            }
+                        }
                     }
-                    .swiper-pagination {
-                        position: absolute; top: 0; right: 0;
-                    }
-                    .btn_wrap {
-                        width: 100%; position: absolute; top: 50%; 
-                        
-                    }
+                    
                     .photo_wrap {
                         @include flex-rwfc;
                         margin-top: 30px;
@@ -144,7 +172,7 @@
                                         padding: 0 34px 0 42px;
                                         position: absolute; left: 50%; bottom: 35px;
                                         width: 100%; transform: translateX(-50%);
-                                        @include flex-cncf; z-index: 15;
+                                        @include flex-cncf; z-index: 10;
                                         .product_name {
                                             font-size: 1.375rem;
                                             margin-top: 20px;
@@ -161,7 +189,7 @@
                                 }
                                 .cart {
                                     position: absolute; bottom: 30px !important; right: 30px;
-                                    width: 52px !important; height: 52px !important; z-index: 13;
+                                    width: 52px !important; height: 52px !important; z-index: 20;
                                     button {
                                         width: 52px !important; height: 52px !important; background-size: 22px auto;
                                         background: url(../images/gift_recommendation/gift_icon_pc.png) no-repeat center center;
@@ -170,8 +198,9 @@
                                     }
                                 }
                                 .cart:hover {
+                                    display: block;
                                     button {
-                                        background-color: rgba(0,0,0,.8);
+                                        background-color: rgba(0,0,0,.8) !important;
                                     }
                                 }
                                 

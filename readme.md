@@ -92,3 +92,7 @@
 03/11
 1. gift_recommendation - html, css 완료
 2. gift_recommendation - js 작업 중
+-----------------------
+03/12
+1. gift_recommendation - 완료
+2. brand - html 완료 scss 작업 중

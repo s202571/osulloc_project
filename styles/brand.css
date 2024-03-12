@@ -1,0 +1,168 @@
+.player {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+.all main .bg {
+  background-attachment: scroll;
+  z-index: -1;
+  position: relative;
+}
+.all main .bg .iframe-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.all main .bg .iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.all main .bg .iframe-container .mo-video {
+  display: none;
+}
+.all main .bg .content {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, 0%);
+}
+.all main .bg .content h2 {
+  letter-spacing: 9px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 2.75rem;
+}
+.all main .bg .content p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.65;
+}
+.all main .wrap {
+  background-attachment: fixed;
+  background-color: #fff;
+}
+.all main .wrap section {
+  position: relative;
+  padding-bottom: 130px;
+}
+.all main .wrap section .border {
+  background: #fff;
+  display: block;
+  position: absolute;
+  width: 132%;
+  height: 0;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding-bottom: 40%;
+  z-index: 0;
+  margin-top: -9px;
+}
+.all main .wrap section .swiper-container {
+  position: relative;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+.all main .wrap section .swiper-container .swiper-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: visible;
+  text-align: center;
+  transform-origin: center center;
+  transform: rotate(-15deg);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .swiper-slide {
+  flex: 0 0 auto;
+  position: relative;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .swiper-slide w h2 {
+  margin-bottom: 14px;
+  font-size: 2.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .swiper-slide p {
+  color: #666;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 1.375rem;
+  word-break: keep-all;
+  line-height: 1.75;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .swiper-slide p span {
+  font-weight: 400;
+  font-size: 1.375rem;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .swiper-slide p:last-of-type {
+  width: 70%;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .swiper-slide .photo {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .swiper-slide .photo img {
+  width: 100%;
+  height: auto;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .swiper-slide .photo .icon {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  height: auto;
+  width: 32px;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .slide1 p span {
+  color: #75828E;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .slide1 h2 {
+  color: #75828E;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .slide2 p span {
+  color: #82664F;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .slide2 h2 {
+  color: #82664F;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .slide3 p span {
+  color: #5181AE;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .slide3 h2 {
+  color: #5181AE;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .slide4 p span {
+  color: #717E8F;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .slide4 h2 {
+  color: #717E8F;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .slide5 p span {
+  color: #5F6F55;
+}
+.all main .wrap section .swiper-container .swiper-wrapper .slide5 h2 {
+  color: #5F6F55;
+}/*# sourceMappingURL=brand.css.map */
