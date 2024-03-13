@@ -11,19 +11,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 </head>
 <body>
     <div class="all">
         <header></header>
         <main>
-            <div class="bg">
-                <div class="iframe-container">
-                    <iframe src="https://player.vimeo.com/video/709357001?color=ffffff&title=0&byline=0&portrait=0&background=1&muted=1&autopause=1#t=0s" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen playsinline class="pc-video"></iframe>
-                    <iframe src="https://player.vimeo.com/video/709357094?color=ffffff&title=0&byline=0&portrait=0&background=1&muted=1&autopause=1#t=0s" frameborder="0" allowfullscreen class="mo-video"></iframe>
-                </div>
-                <div class="content">
-                    <h2>TEA FROM JEJU</h2>
-                    <p>대한민국이 가진 천혜의 자연 유산 제주,<br>화산섬 제주가 가진 경이로운 생명력으로<br>오설록의 차는 탄생합니다.</p>
+            <div class="top_bg">
+                <div class="video_sticky"></div>
+                <div class="bg">
+                    <div class="iframe-container">
+                        <iframe src="https://player.vimeo.com/video/709357001?color=ffffff&title=0&byline=0&portrait=0&background=1&muted=1&autopause=1#t=0s" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen playsinline class="pc-video"></iframe>
+                        <iframe src="https://player.vimeo.com/video/709357094?color=ffffff&title=0&byline=0&portrait=0&background=1&muted=1&autopause=1#t=0s" frameborder="0" allowfullscreen class="mo-video"></iframe>
+                    </div>
+                    <div class="content">
+                        <h2>TEA FROM JEJU</h2>
+                        <p>대한민국이 가진 천혜의 자연 유산 제주,<br>화산섬 제주가 가진 경이로운 생명력으로<br>오설록의 차는 탄생합니다.</p>
+                    </div>
                 </div>
             </div>
             <div class="wrap">
@@ -427,7 +433,7 @@
                         <div class="swiper-container-photo">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slide1">
-                                    <img src="./images/brand/people_1.jpg" alt="">
+                                    <img src="./images/brand/people_4.jpg" alt="">
                                     <span>차나무를 정성스럽게 살펴보는 고 장원 서성환 회장</span>
                                 </div>
                                 <div class="swiper-slide slide2">
@@ -486,7 +492,7 @@
                                 </div>
                                 <div class="img_txt">
                                     <img src="./images/brand/dada_9.jpg" alt="">
-                                    <div class="box">
+                                    <div class="box top_box">
                                         <p class="text">후각이 예민하다 보니 차를 마실 때도 향을 가장 신경 써요. 좋은 향을 내는 차가 심신에 안정을 줘서 더 즐기게 됐어요.</p>
                                         <p class="name">채식 요리 연구가 신주하</p>
                                     </div>
@@ -502,7 +508,7 @@
                                 </div>
                                 <div class="img_txt">
                                     <img src="./images/brand/dada_11.jpg" alt="">
-                                    <div class="box">
+                                    <div class="box top_box">
                                         <p class="text">차가운 공기 때문인지 진한 자연의 냄새와 차 향이 함께 느껴지는데 집에서 마실 때와는 또 다르더라고요.</p>
                                         <p class="name">오지 캠퍼 강서구</p>
                                     </div>
@@ -525,6 +531,9 @@
                 </section>
             </div>
         </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="./scripts/brand.js"></script>
     </div>
 </body>
 </html>

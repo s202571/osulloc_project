@@ -96,3 +96,6 @@
 03/12
 1. gift_recommendation - 완료
 2. brand - html 완료 scss 작업 중
+-----------------------
+03/13
+1. brand - scss 완료 js 작업 중
