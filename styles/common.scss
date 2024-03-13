@@ -44,9 +44,30 @@ $weight700: 700;
     align-items: center;
 }
 
+@mixin flex-rnsf {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin flex-rwsc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @mixin flex-rncc {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-rwcc {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
@@ -85,6 +106,7 @@ $weight700: 700;
     justify-content: center; 
     align-items: flex-start;
 }
+
 
 @mixin flex-cncc {
     display: flex; 
