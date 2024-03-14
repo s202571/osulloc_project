@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니 | 오설록</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="shortcut icon" href="./images/favicon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon/favicon.png" type="image/x-icon">
+    <style>
+        .checkbox-wrapper-4 * {
+            box-sizing: border-box;
+        }
+        .checkbox-wrapper-4 .cbx {
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            padding: 6px 8px;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+        .checkbox-wrapper-4 .cbx:not(:last-child) {
+            margin-right: 6px;
+        }
+        .checkbox-wrapper-4 .cbx span {
+            float: left;
+            vertical-align: middle;
+            transform: translate3d(0, 0, 0);
+        }
+        .checkbox-wrapper-4 .cbx span:first-child {
+            position: relative;
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            transform: scale(1);
+            border: 1px solid #cccfdb;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 1px rgba(0,16,75,0.05);
+        }
+        .checkbox-wrapper-4 .cbx span:first-child svg {
+            position: absolute;
+            top: 3px;
+            left: 2px;
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 16px;
+            stroke-dashoffset: 16px;
+            transition: all 0.3s ease;
+            transition-delay: 0.1s;
+            transform: translate3d(0, 0, 0);
+        }
+        .checkbox-wrapper-4 .cbx span:last-child {
+            padding-left: 8px;
+            line-height: 18px;
+        }
+        .checkbox-wrapper-4 .inp-cbx {
+            position: absolute;
+            visibility: hidden;
+        }
+        .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child {
+            background: #6C801A;
+            border-color: #6C801A;
+            animation: wave-4 0.4s ease;
+        }
+        .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child svg {
+            stroke-dashoffset: 0;
+        }
+        .checkbox-wrapper-4 .inline-svg {
+            position: absolute;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+            user-select: none;
+        }
+        @media screen and (max-width: 640px) {
+            .checkbox-wrapper-4 .cbx {
+            width: 100%;
+            display: inline-block;
+            }
+        }
+        @-moz-keyframes wave-4 {
+            50% {
+            transform: scale(0.9);
+            }
+        }
+        @-webkit-keyframes wave-4 {
+            50% {
+            transform: scale(0.9);
+            }
+        }
+        @-o-keyframes wave-4 {
+            50% {
+            transform: scale(0.9);
+            }
+        }
+        @keyframes wave-4 {
+            50% {
+            transform: scale(0.9);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <header></header>
+        <main>
+            <h1>장바구니</h1>
+            <div class="wrap">
+                <section class="cart">
+                    <div class="left">
+                        <div class="product_btn_wrap">
+                            <button type="button">일반상품(<span>2</span>)</button>
+                            <button type="button">정기상품(<span>0</span>)</button>
+                        </div>
+                        <form action="#" method="get" id="product_check_from">
+                            <fieldset>
+                                <legend class="skip">상품 선택양식</legend>
+                                <div class="product_check">
+                                    <div class="checkbox-wrapper-4">
+                                        <input class="inp-cbx" id="all_check" type="checkbox"/>
+                                        <label class="cbx" for="all_check"><span>
+                                        <svg width="12px" height="10px">
+                                            <use xlink:href="#check-4"></use>
+                                        </svg></span><span>전체선택</span></label>
+                                        <svg class="inline-svg">
+                                            <symbol id="check-4" viewbox="0 0 12 10">
+                                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                            </symbol>
+                                        </svg>
+                                    </div>
+                                    <button type="button">선택 삭제</button>
+                                </div>
+                                <div class="product_wrap">
+                                    <div class="product">
+                                        <div class="checkbox-wrapper-4">
+                                            <input class="inp-cbx" id="item" type="checkbox"/>
+                                            <label class="cbx" for="item"><span>
+                                            <svg width="12px" height="10px">
+                                                <use xlink:href="#check-4"></use>
+                                            </svg></label>
+                                            <svg class="inline-svg">
+                                                <symbol id="check-4" viewbox="0 0 12 10">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                </symbol>
+                                            </svg>
+                                        </div>
+                                        <div class="photo_text">
+                                            <img src="./images/cart/item001.png" alt="">
+                                            <div class="content">
+                                                <p><em>한라산녹차케이크</em></p>
+                                                <p>냉동포장</p>
+                                                <p><span>· 선물 가능한 상품입니다.</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="num_box">
+                                            <button type="button" class="minus"></button>
+                                            <input type="text" id="num_count" value="1">
+                                            <button type="button" class="plus"></button>
+                                        </div>
+                                        <div class="price_pay">
+                                            <p><span class="order_price">38,000</span></p>
+                                            <button type="button">바로구매</button>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="checkbox-wrapper-4">
+                                            <input class="inp-cbx" id="item" type="checkbox"/>
+                                            <label class="cbx" for="item"><span>
+                                            <svg width="12px" height="10px">
+                                                <use xlink:href="#check-4"></use>
+                                            </svg></label>
+                                            <svg class="inline-svg">
+                                                <symbol id="check-4" viewbox="0 0 12 10">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                </symbol>
+                                            </svg>
+                                        </div>
+                                        <div class="photo_text">
+                                            <img src="./images/cart/item002.png" alt="">
+                                            <div class="content">
+                                                <p><em>러블리 티 박스 4종 12입</em></p>
+                                                <p>포장가능</p>
+                                                <p><span>· 선물 가능한 상품입니다.</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="num_box">
+                                            <button type="button" class="minus"></button>
+                                            <input type="text" id="num_count" value="1">
+                                            <button type="button" class="plus"></button>
+                                        </div>
+                                        <div class="price_pay">
+                                            <p><span class="order_price">21,000</span></p>
+                                            <button type="button">바로구매</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="link_wrap">
+                                        <div class="check_pay">
+                                            <a href="#">선택상품 주문</a>
+                                            <a href="#">선택상품 선물하기</a>
+                                        </div>
+                                        <div class="all_pay">
+                                            <a href="#">전체상품 주문하기</a>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <img src="./images/cart/IconPresentNote.png" alt="">
+                                        <span>장바구니에 보관된 상품은 3개월 후에 삭제 됩니다.</span>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <div class="price_wrap">
+                            <dl>
+                                <dt>상품금액</dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="top"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

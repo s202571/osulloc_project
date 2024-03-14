@@ -7,7 +7,7 @@ html,body {overflow-x:hidden; width:100%;}
             position: relative;
             .video_sticky {
                 height: 0;
-                padding-bottom: 105%;
+                padding-bottom: 75%;
             }
             .bg {
                 position: fixed; top: 0; left: 0; z-index: -1;
@@ -261,8 +261,6 @@ html,body {overflow-x:hidden; width:100%;}
                             height: 100vh; width: 100vw;
                             margin: 0 auto;
                             display: flex; align-items: center; justify-content: center;
-                            // js
-                            display: none;
                             .popup_content {
                                 background-color: #fff;
                                 border-radius: 10px;
@@ -278,7 +276,7 @@ html,body {overflow-x:hidden; width:100%;}
                                         font-size: 1.125rem;
                                     }
                                     button {
-                                        position: absolute; top: 26px; right: 26px;
+                                        position: absolute; top: 9px; right: 26px;
                                         width: 24px; height: 24px;
                                     }
                                 }
@@ -372,9 +370,11 @@ html,body {overflow-x:hidden; width:100%;}
                                 }
                             }
                             .right {
+                                position: relative;
                                 width: 50%; height: 100%;
                                 .content_box {
-                                    height: 100%;
+                                    position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+                                    height: 100%; z-index: 1;
                                     img {
                                         width: 100%; height: 100%;
                                     }
@@ -388,9 +388,6 @@ html,body {overflow-x:hidden; width:100%;}
                                     p.active {
                                         opacity: 1;
                                     }
-                                }
-                                .content_box:nth-child(2) {
-                                    display: none;
                                 }
                             }
                         }
@@ -453,8 +450,6 @@ html,body {overflow-x:hidden; width:100%;}
                                 height: 100vh; width: 100vw;
                                 margin: 0 auto;
                                 display: flex; align-items: center; justify-content: center;
-                                // js
-                                display: none;
                                 .popup_content {
                                     background: rgba(255, 255, 255, 0.7);
                                     border-radius: 10px;
@@ -469,7 +464,7 @@ html,body {overflow-x:hidden; width:100%;}
                                             font-size: 1.125rem;
                                         }
                                         button {
-                                            position: absolute; top: 26px; right: 26px;
+                                            position: absolute; top: 9px; right: 26px;
                                             width: 24px; height: 24px;
                                         }
                                     }
@@ -530,6 +525,9 @@ html,body {overflow-x:hidden; width:100%;}
                     background-position: center;
                 }
             }
+            section:nth-child(2) {
+                padding-bottom: 0;
+            }
             section:nth-child(4) {
                 .container {
                     width: 1400px;
@@ -550,11 +548,13 @@ html,body {overflow-x:hidden; width:100%;}
                     }
                     .swiper-container-slide {
                         overflow: visible;
+                        width: 90%;
                         .swiper-wrapper {
                             padding-bottom: 100px;
+                            width: fit-content;
                             @include flex-rnff;
                             .swiper-slide {
-                                width: 327.5px;
+                                width: 327.5px !important;
                                 margin-right: 30px;
                                 cursor: grab;
                                 p {
@@ -574,8 +574,13 @@ html,body {overflow-x:hidden; width:100%;}
                                     }
                                 }
                             }
-                            .swiper-scrollbar {
-                                // 
+                            
+                        }
+                        .swiper-scrollbar {
+                            width: 100%; height: 2px; left: 0;
+                            background-color: rgba(255, 255, 255, 0.15);
+                            .swiper-scrollbar-drag {
+                                background: #fff;
                             }
                         }
                     }
@@ -588,14 +593,11 @@ html,body {overflow-x:hidden; width:100%;}
                     margin: 100px auto 0; width: 100%; height: fit-content;
                     .swiper-wrapper {
                         overflow: visible;
-                        @include flex-rncc;
                         .swiper-slide {
                             text-align: center;
-                            transform-origin:center center; ;
-                            flex: 0 0 auto;
-                            position: relative;
                             width: 705px;
-                            margin-right: 80px;
+                            // margin-right: 80px;
+                            opacity: 0.3;
                             img {
                                 width: 100%;
                             }
@@ -606,15 +608,35 @@ html,body {overflow-x:hidden; width:100%;}
                                 line-height: 1.75;
                             }
                         }
-                        .swiper-slide-active {
+                        .swiper-slide:hover {
                             opacity: 1;
                         }
+                        .swiper-slide-active {
+                            opacity: 1 !important;
+                        }
                         .swiper-slide-prev {
-                            opacity: 0.4;
+                            span {
+                                display: none;
+                            }
                         }
                         .swiper-slide-next {
-                            opacity: 0.4;
+                            span {
+                                display: none;
+                            }
                         }
+                    }
+                    .swiper-button-prev:hover + .swiper-wrapper {
+                        background-color: #000;
+                    }
+                    .swiper-button-prev {
+                        width: 705px; height: 440px;
+                        left: -46%; top: 23px;
+                        color: transparent;
+                    }
+                    .swiper-button-next {
+                        width: 705px; height: 440px;
+                        right: -46%; top: 23px;
+                        color: transparent;
                     }
                 }
             }

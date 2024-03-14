@@ -108,3 +108,15 @@ for(let i of number){
         i.classList.add('active')
     })
 }
+
+for(let i of cart){
+    i.addEventListener('click',()=>{
+        if (confirm('장바구니로 가시겠습니까?')) {
+            // 확인 버튼을 클릭한 경우
+            window.location.href = './cart.html';
+        } else {
+            // 취소 버튼을 클릭한 경우
+            // 현재 페이지에 머무름
+        }
+    })
+}
