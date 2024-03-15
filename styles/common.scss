@@ -44,6 +44,13 @@ $weight700: 700;
     align-items: center;
 }
 
+@mixin flex-rnac {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @mixin flex-rnsf {
     display: flex;
     flex-flow: row nowrap;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>장바구니 | 오설록</title>
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/cart.css">
     <link rel="shortcut icon" href="./images/favicon/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon/favicon.png" type="image/x-icon">
     <style>
@@ -111,10 +112,10 @@
         <main>
             <h1>장바구니</h1>
             <div class="wrap">
-                <section class="cart">
-                    <div class="left">
+                <section class="detail_cart">
+                    <div class="cart">
                         <div class="product_btn_wrap">
-                            <button type="button">일반상품(<span>2</span>)</button>
+                            <button type="button">일반상품(<span class="product_num">2</span>)</button>
                             <button type="button">정기상품(<span>0</span>)</button>
                         </div>
                         <form action="#" method="get" id="product_check_from">
@@ -133,9 +134,44 @@
                                             </symbol>
                                         </svg>
                                     </div>
-                                    <button type="button">선택 삭제</button>
+                                    <button type="button" class="item_removal">선택 삭제</button>
                                 </div>
                                 <div class="product_wrap">
+                                    <div class="product today_product">
+                                        <div class="checkbox-wrapper-4">
+                                            <input class="inp-cbx" id="item" type="checkbox"/>
+                                            <label class="cbx" for="item"><span>
+                                            <svg width="12px" height="10px">
+                                                <use xlink:href="#check-4"></use>
+                                            </svg></label>
+                                            <svg class="inline-svg">
+                                                <symbol id="check-4" viewbox="0 0 12 10">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                </symbol>
+                                            </svg>
+                                        </div>
+                                        <div class="photo_text">
+                                            <img src="./images/cart/item003.png" alt="">
+                                            <div class="content">
+                                                <a href="./detail.html"><em>그린티 라떼 더블샷</em></a>
+                                                <p>포장불가</p>
+                                                <p><span>· 선물 가능한 상품입니다.</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="num_box">
+                                                <button type="button" class="minus"></button>
+                                                <input type="text" id="num_count" value="0">
+                                                <button type="button" class="plus"></button>
+                                            </div>
+                                            <div class="price_pay">
+                                                <p><span class="origin_price">12,000원</span><span class="order_price">8,400</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="pay_btn">
+                                            <a href="#">바로구매</a>
+                                        </div>
+                                    </div>
                                     <div class="product">
                                         <div class="checkbox-wrapper-4">
                                             <input class="inp-cbx" id="item" type="checkbox"/>
@@ -152,19 +188,23 @@
                                         <div class="photo_text">
                                             <img src="./images/cart/item001.png" alt="">
                                             <div class="content">
-                                                <p><em>한라산녹차케이크</em></p>
+                                                <a href="./detail.html"><em>한라산 녹차 케이크</em></a>
                                                 <p>냉동포장</p>
                                                 <p><span>· 선물 가능한 상품입니다.</span></p>
                                             </div>
                                         </div>
-                                        <div class="num_box">
-                                            <button type="button" class="minus"></button>
-                                            <input type="text" id="num_count" value="1">
-                                            <button type="button" class="plus"></button>
+                                        <div class="box">
+                                            <div class="num_box">
+                                                <button type="button" class="minus"></button>
+                                                <input type="text" id="num_count" value="1">
+                                                <button type="button" class="plus"></button>
+                                            </div>
+                                            <div class="price_pay">
+                                                <p><span class="origin_price"></span><span class="order_price">38,000</span></p>
+                                            </div>
                                         </div>
-                                        <div class="price_pay">
-                                            <p><span class="order_price">38,000</span></p>
-                                            <button type="button">바로구매</button>
+                                        <div class="pay_btn">
+                                            <a href="#">바로구매</a>
                                         </div>
                                     </div>
                                     <div class="product">
@@ -183,23 +223,27 @@
                                         <div class="photo_text">
                                             <img src="./images/cart/item002.png" alt="">
                                             <div class="content">
-                                                <p><em>러블리 티 박스 4종 12입</em></p>
+                                                <a href="./detail.html"><em>러블리 티 박스 4종 12입</em></a>
                                                 <p>포장가능</p>
                                                 <p><span>· 선물 가능한 상품입니다.</span></p>
                                             </div>
                                         </div>
-                                        <div class="num_box">
-                                            <button type="button" class="minus"></button>
-                                            <input type="text" id="num_count" value="1">
-                                            <button type="button" class="plus"></button>
+                                        <div class="box">
+                                            <div class="num_box">
+                                                <button type="button" class="minus"></button>
+                                                <input type="text" id="num_count" value="1">
+                                                <button type="button" class="plus"></button>
+                                            </div>
+                                            <div class="price_pay">
+                                                <p><span class="origin_price"></span><span class="order_price">21,000</span></p>
+                                            </div>
                                         </div>
-                                        <div class="price_pay">
-                                            <p><span class="order_price">21,000</span></p>
-                                            <button type="button">바로구매</button>
+                                        <div class="pay_btn">
+                                            <a href="#">바로구매</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="wrap">
+                                <div class="container">
                                     <div class="link_wrap">
                                         <div class="check_pay">
                                             <a href="#">선택상품 주문</a>
@@ -217,17 +261,63 @@
                             </fieldset>
                         </form>
                     </div>
-                    <div class="right">
-                        <div class="price_wrap">
-                            <dl>
-                                <dt>상품금액</dt>
-                                <dd></dd>
-                            </dl>
+                    <div class="today_price">
+                        <div class="top">
+                            <div class="left">
+                                <h3>오늘만 이 가격</h3>
+                                <p>오늘 하루만 이 가격으로 구매할 수 있는 상품을 지금 바로 만나보세요</p>
+                            </div>
+                            <div class="right">
+                                <p><em class="time">13:40:50</em></p>
+                            </div>
+                        </div>
+                        <div class="product_detail">
+                            <div class="photo">
+                                <img src="./images/cart/item005.png" alt="">
+                                <span class="sale_percent">30%</span>
+                                <button type="button" class="cart_btn">
+                                    <img src="./images/cart/icon_bucket.png" alt="">
+                                </button>
+                            </div>
+                            <div class="product_content">
+                                <p>그린티 라떼 더블샷</p>
+                                <p><span class="origin_price">12,000원</span><span class="order_price">8,400</span></p>
+                            </div>
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div class="top"></div>
+                <section class="detail_price">
+                    <div class="box">
+                        <div class="price_wrap">
+                            <dl>
+                                <dt>상품 금액</dt>
+                                <dd class="all_price">+59000원</dd>
+                            </dl>
+                            <dl>
+                                <dt>상품 할인</dt>
+                                <dd class="sale_price">-0원</dd>
+                            </dl>
+                            <dl>
+                                <dt>포장비</dt>
+                                <dd class="package_price">+0원</dd>
+                            </dl>
+                            <dl>
+                                <dt>부가 쇼핑백</dt>
+                                <dd class="package_add_price">+0원</dd>
+                            </dl>
+                            <dl>
+                                <dt>배송비</dt>
+                                <dd class="delivery_price">+2,500원</dd>
+                            </dl>
+                        </div>
+                        <div class="amount">
+                            <dl>
+                                <dt>결제 예상 금액</dt>
+                                <dd><em class="amount_price">61,500</em>원</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <a href="#"><em class="amount_price">61,500</em>원 주문하기</a>
                 </section>
             </div>
         </main>
