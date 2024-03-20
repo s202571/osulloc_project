@@ -731,10 +731,17 @@ padding: 0 20px;}
 .all main .main_all .tea_best > .swiper-container-horizontal  .best_product .item .photo a img {
     width: 225px; height: auto;}
     /* 버튼 js */
+    .all main .main_all .tea_best > .swiper-container-horizontal  .best_product .item:hover > .photo > .gift {
+        display: block;
+    }
 .all main .main_all .tea_best > .swiper-container-horizontal  .best_product .item .photo > .gift {
+    display: none;
     position: absolute; right: 12px; bottom: 12px;
     background: url(../images/index/icon_prd_gift.png);
     width: 36px; height: 36px; 
+}
+.all main .main_all .tea_best > .swiper-container-horizontal  .best_product .item .photo > .gift:hover {
+    background: url(../images/index/icon_prd_gift.png) 0 -36px;
 }
 .all main .main_all .tea_best .swiper-container-horizontal  .best_product .item > a {
     margin-top: 15px; min-height: 70px;
@@ -754,10 +761,18 @@ padding: 0 20px;}
     width: 225px; height: auto;
 }
 /* 버튼 js */
+.all main .main_all .tea_best .swiper-container-horizontal .best_week_product .item:hover > .photo > .cart {
+    display: block;
+}
 .all main .main_all .tea_best .swiper-container-horizontal .best_week_product .item .photo > .cart {
+    display: none;
     background: url(../images/index/icon_prd_cart.png);
     position: absolute; right: 12px; bottom: 12px;
     width: 36px; height: 36px;  
+}
+
+.all main .main_all .tea_best .swiper-container-horizontal .best_week_product .item .photo > .cart:hover {
+    background: url(../images/index/icon_prd_cart.png) 0 -36px;
 }
 .all main .main_all .tea_best .swiper-container-horizontal .best_week_product .item > a {
     margin-top: 15px; min-height: 70px; 
