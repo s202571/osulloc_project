@@ -2,6 +2,7 @@
 
 .all {
     padding-top: 80px;
+    padding-bottom: 60px;
     main {
         padding: 0 60px;
         max-width: 1320px;
@@ -74,13 +75,42 @@
                                         height: 100vh; width: 100vw;
                                         margin: 0 auto;
                                         display: flex; align-items: center; justify-content: center;
+                                        // js
+                                        display: none;
                                         .popup_content {
                                             background-color: #fff;
-                                            border-radius: 10px;
+                                            border-radius: 16px;
                                             box-shadow: 0 2px 16px #00000014;
-                                            padding-top: 16px;
+                                            padding:48px 56px 40px;
                                             width: 400px;
-                                            // ---------------------------------------
+                                            p {
+                                                margin-bottom: 24px;
+                                                font-size:0.875rem ;
+                                                text-align: center;
+                                                font-weight: 500;
+                                                span {
+                                                    @extend p;
+                                                }
+                                            }
+                                            .btn_wrap {
+                                                @include flex-rnsc;
+                                                button {
+                                                    height: 40px; line-height: 40px;
+                                                    width: calc((100% - 8px) / 2);
+                                                    font-size: 0.938rem;
+                                                    border-radius: 4px;
+                                                    border: 1px solid #ddd;
+                                                    color: #333;
+                                                    text-align: center;
+                                                    background-color: #fff;
+                                                }
+                                                .item_close_btn {
+                                                    background-color: #6C801A;
+                                                    border: #6C801A;
+                                                    color: #fff;
+                                                    font-weight: 600;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -125,7 +155,7 @@
                                     }
                                     // 하루 세일 상품 js
                                     .today_product {
-                                        display: none;
+                                        // display: none;
                                     }
                                     .box {
                                         @include flex-rnsc;
@@ -258,6 +288,45 @@
                                         margin: 0 10px;
                                         width: 1px; height: 12px;
                                     }
+                                    .popup_bg {
+                                        z-index: 15;
+                                        background-color:rgba(0,0,0,.5) ;
+                                        position: fixed; top: 0; left: 0;
+                                        height: 100vh; width: 100vw;
+                                        margin: 0 auto;
+                                        display: flex; align-items: center; justify-content: center;
+                                        // js
+                                        display: none;
+                                        .popup_content {
+                                            background-color: #fff;
+                                            border-radius: 16px;
+                                            box-shadow: 0 2px 16px #00000014;
+                                            padding:48px 56px 40px;
+                                            width: 400px;
+                                            p {
+                                                margin-bottom: 24px;
+                                                font-size:0.875rem ;
+                                                text-align: center;
+                                                font-weight: 500;
+                                                span {
+                                                    @extend p;
+                                                }
+                                            }
+                                            .btn_wrap {
+                                                button {
+                                                    height: 40px; line-height: 40px;
+                                                    width: 100%;
+                                                    font-size: 0.938rem;
+                                                    border-radius: 4px;
+                                                    background-color: #6C801A;
+                                                    border: #6C801A;
+                                                    color: #fff;
+                                                    font-weight: 600;
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                                 .box {
                                     border-bottom: 1px solid #e6e6e6;
@@ -316,7 +385,7 @@
                             @include flex-rnsc;
                             h3 {
                                 font-size: 1.5rem;
-                                font-weight: 500;
+                                font-weight: 600;
                                 margin-right: 15px;
                             }
                             p {
@@ -328,7 +397,52 @@
                             p {
                                 .time {
                                     font-size: 1.75rem;
-                                    font-weight: 500;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                    .product_detail {
+                        border-top: 1px solid #707070;
+                        border-bottom: 1px solid #e6e6e6;
+                        display: flex; align-items: center;
+                        .photo {
+                            width: 280px; position: relative;
+                            > img {
+                                width: 100%; height: auto;
+                            }
+                            span {
+                                width: 60px; height: 60px; line-height: 60px;
+                                position: absolute; top: 14px; right: 14px;
+                                font-size: 1.25rem;
+                                background-color: #fd5c5c;
+                                border-radius: 100%;
+                                color: #fff;
+                                font-weight: 600;
+                                text-align: center;
+                            }
+                            .cart_btn {
+                                position: absolute; right: 14px; bottom: 14px;
+                                width: 52px; height: 52px;
+                                background: url(../images/cart/icon_bucket.png) center no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                        .product_content {
+                            padding-left: 60px;
+                            p {
+                                margin-bottom: 15px;
+                                font-size: 1.125rem;
+                                font-weight: 600;
+                                display: flex; flex-flow: column;
+                                .origin_price {
+                                    font-size: 0.875rem;
+                                    color: #666;
+                                    text-decoration: line-through;
+                                }
+                                .order_price {
+                                    font-size: 1.375rem;
+                                    font-weight: 600;
                                 }
                             }
                         }

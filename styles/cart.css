@@ -1,5 +1,6 @@
 .all {
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 .all main {
   padding: 0 60px;
@@ -90,13 +91,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 16px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.0784313725);
-  padding-top: 16px;
+  padding: 48px 56px 40px;
   width: 400px;
+}
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p span {
+  margin-bottom: 24px;
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 500;
+}
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content .btn_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content .btn_wrap button {
+  height: 40px;
+  line-height: 40px;
+  width: calc((100% - 8px) / 2);
+  font-size: 0.938rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  color: #333;
+  text-align: center;
+  background-color: #fff;
+}
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content .btn_wrap .item_close_btn {
+  background-color: #6C801A;
+  border: #6C801A;
+  color: #fff;
+  font-weight: 600;
 }
 .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .product {
   position: relative;
@@ -129,17 +160,14 @@
   font-weight: 500;
   color: #727272;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .product .photo_text .content p {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .product .photo_text .content p, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .product_wrap .product_container .product .photo_text .content span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .product .photo_text .content .product_check .popup_bg .popup_content p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .product_container .product .photo_text .content span {
   margin: 5px 0;
   color: #666;
   font-size: 0.813rem;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .product .photo_text .content p span {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .product .photo_text .content p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .product_wrap .product_container .product .photo_text .content span span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .product_container .product .photo_text .content span span {
   font-size: 0.688rem;
   color: #666;
-}
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .today_product {
-  display: none;
 }
 .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .box {
   display: flex;
@@ -190,18 +218,18 @@
 .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .box .price_pay {
   display: flex;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .box .price_pay p {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .box .price_pay p, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .product_wrap .product_container .box .price_pay span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .box .price_pay .product_check .popup_bg .popup_content p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .product_container .box .price_pay span {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .box .price_pay p .origin_price {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .box .price_pay p .origin_price, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .product_wrap .product_container .box .price_pay span .origin_price, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .product_container .box .price_pay span .origin_price {
   color: #999;
   font-size: 0.813rem;
   text-decoration: line-through;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .box .price_pay p span {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .box .price_pay p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .product_wrap .product_container .box .price_pay span span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .product_container .box .price_pay span span {
   font-weight: 500;
 }
 .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .pay_btn {
@@ -258,7 +286,7 @@
   color: #fff;
   font-weight: 500;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container p {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container p, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .product_wrap .container span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container .product_check .popup_bg .popup_content p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .container span {
   margin: 10px auto 0;
   text-align: center;
   display: flex;
@@ -266,10 +294,10 @@
   justify-content: center;
   align-items: center;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container p img {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container p img, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .product_wrap .container span img, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container .product_check .popup_bg .popup_content p span img, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .container span img {
   margin-right: 8px;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container p span {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .product_wrap .container span span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container .product_check .popup_bg .popup_content p span span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .container span span {
   font-size: 0.875rem;
   color: #999;
 }
@@ -300,12 +328,51 @@
   width: 1px;
   height: 12px;
 }
+.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg {
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.0784313725);
+  padding: 48px 56px 40px;
+  width: 400px;
+}
+.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p span {
+  margin-bottom: 24px;
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 500;
+}
+.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content .btn_wrap button {
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  font-size: 0.938rem;
+  border-radius: 4px;
+  background-color: #6C801A;
+  border: #6C801A;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
 .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .box {
   border-bottom: 1px solid #e6e6e6;
   padding: 50px 8px;
   text-align: center;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .box p {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .box p, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .not_product_wrap .box span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .box .product_check .popup_bg .popup_content p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .box span {
   color: #555;
   font-weight: 500;
   font-size: 0.813rem;
@@ -340,7 +407,7 @@
   border: 1px solid #6C801A;
   background-color: #6C801A;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer p {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer p, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .not_product_wrap .btn_catainer span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .product_check .popup_bg .popup_content p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .btn_catainer span {
   margin: 10px auto 0;
   text-align: center;
   display: flex;
@@ -348,10 +415,10 @@
   justify-content: center;
   align-items: center;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer p img {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer p img, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .not_product_wrap .btn_catainer span img, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .product_check .popup_bg .popup_content p span img, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .btn_catainer span img {
   margin-right: 8px;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer p span {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .not_product_wrap .btn_catainer span span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .product_check .popup_bg .popup_content p span span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .btn_catainer span span {
   font-size: 0.875rem;
   color: #999;
 }
@@ -373,16 +440,72 @@
 }
 .all main .wrap .detail_cart .today_price .top .left h3 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-right: 15px;
 }
-.all main .wrap .detail_cart .today_price .top .left p {
+.all main .wrap .detail_cart .today_price .top .left p, .all main .wrap .detail_cart .today_price .top .left .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .today_price .top .left span, .all main .wrap .detail_cart .today_price .top .left .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .today_price .top .left span {
   font-size: 0.813rem;
   color: rgba(51, 51, 51, 0.9);
 }
-.all main .wrap .detail_cart .today_price .top .right p .time {
+.all main .wrap .detail_cart .today_price .top .right p .time, .all main .wrap .detail_cart .today_price .top .right .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p span .time, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .today_price .top .right span .time, .all main .wrap .detail_cart .today_price .top .right .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p span .time, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .today_price .top .right span .time {
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: 600;
+}
+.all main .wrap .detail_cart .today_price .product_detail {
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+}
+.all main .wrap .detail_cart .today_price .product_detail .photo {
+  width: 280px;
+  position: relative;
+}
+.all main .wrap .detail_cart .today_price .product_detail .photo > img {
+  width: 100%;
+  height: auto;
+}
+.all main .wrap .detail_cart .today_price .product_detail .photo span {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 1.25rem;
+  background-color: #fd5c5c;
+  border-radius: 100%;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.all main .wrap .detail_cart .today_price .product_detail .photo .cart_btn {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 52px;
+  height: 52px;
+  background: url(../images/cart/icon_bucket.png) center no-repeat;
+  background-size: cover;
+}
+.all main .wrap .detail_cart .today_price .product_detail .product_content {
+  padding-left: 60px;
+}
+.all main .wrap .detail_cart .today_price .product_detail .product_content p, .all main .wrap .detail_cart .today_price .product_detail .product_content .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .today_price .product_detail .product_content span, .all main .wrap .detail_cart .today_price .product_detail .product_content .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p span, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .today_price .product_detail .product_content span {
+  margin-bottom: 15px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: flex;
+  flex-flow: column;
+}
+.all main .wrap .detail_cart .today_price .product_detail .product_content p .origin_price, .all main .wrap .detail_cart .today_price .product_detail .product_content .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p span .origin_price, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .today_price .product_detail .product_content span .origin_price, .all main .wrap .detail_cart .today_price .product_detail .product_content .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p span .origin_price, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .today_price .product_detail .product_content span .origin_price {
+  font-size: 0.875rem;
+  color: #666;
+  text-decoration: line-through;
+}
+.all main .wrap .detail_cart .today_price .product_detail .product_content p .order_price, .all main .wrap .detail_cart .today_price .product_detail .product_content .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p span .order_price, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check .popup_bg .popup_content p .today_price .product_detail .product_content span .order_price, .all main .wrap .detail_cart .today_price .product_detail .product_content .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p span .order_price, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .product_check .popup_bg .popup_content p .today_price .product_detail .product_content span .order_price {
+  font-size: 1.375rem;
+  font-weight: 600;
 }
 .all main .wrap .detail_price {
   position: fixed;
