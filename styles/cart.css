@@ -155,7 +155,7 @@
 .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .product .photo_text .content {
   padding-left: 30px;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .product .photo_text .content a em {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .product .photo_text .content a em, .all main .wrap .detail_price .box .price_link a .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .product .photo_text .content em em {
   font-size: 0.938rem;
   font-weight: 500;
   color: #727272;
@@ -238,7 +238,7 @@
   text-align: center;
   margin-left: 40px;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .pay_btn a {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .pay_btn a, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .pay_btn .detail_price .box .price_link a em, .all main .wrap .detail_price .box .price_link a .detail_cart .cart #product_check_from fieldset .product_wrap .product_container .pay_btn em {
   display: block;
   color: #666;
   width: 100%;
@@ -262,7 +262,7 @@
   justify-content: center;
   align-items: center;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container .link_wrap .check_pay a {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container .link_wrap .check_pay a, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container .link_wrap .check_pay .detail_price .box .price_link a em, .all main .wrap .detail_price .box .price_link a .detail_cart .cart #product_check_from fieldset .product_wrap .container .link_wrap .check_pay em {
   width: 160px;
   text-align: center;
   margin: 0 4px;
@@ -272,7 +272,7 @@
   border-radius: 4px;
   font-size: 0.938rem;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container .link_wrap .all_pay a {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container .link_wrap .all_pay a, .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .container .link_wrap .all_pay .detail_price .box .price_link a em, .all main .wrap .detail_price .box .price_link a .detail_cart .cart #product_check_from fieldset .product_wrap .container .link_wrap .all_pay em {
   display: block;
   width: 328px;
   text-align: center;
@@ -391,7 +391,7 @@
   justify-content: center;
   align-items: center;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .check_pay a {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .check_pay a, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .check_pay .detail_price .box .price_link a em, .all main .wrap .detail_price .box .price_link a .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .check_pay em {
   width: 160px;
   text-align: center;
   margin: 0 4px;
@@ -402,7 +402,7 @@
   font-weight: 600;
   font-size: 0.938rem;
 }
-.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .check_pay a:last-of-type {
+.all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .check_pay a:last-of-type, .all main .wrap .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .check_pay .detail_price .box .price_link a em:last-of-type, .all main .wrap .detail_price .box .price_link a .detail_cart .cart #product_check_from fieldset .not_product_wrap .btn_catainer .check_pay em:last-of-type {
   color: #fff;
   border: 1px solid #6C801A;
   background-color: #6C801A;
@@ -508,7 +508,86 @@
   font-weight: 600;
 }
 .all main .wrap .detail_price {
+  width: 100%;
+  max-width: 1200px;
   position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.all main .wrap .detail_price .box {
+  position: absolute;
   top: 0;
   right: 0;
+  width: 280px;
+  padding: 20px 20px 0 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.all main .wrap .detail_price .box .price_wrap {
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.all main .wrap .detail_price .box .price_wrap dl {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.all main .wrap .detail_price .box .price_wrap dl dt {
+  font-size: 0.813rem;
+  color: #666;
+}
+.all main .wrap .detail_price .box .price_wrap dl dd, .all main .wrap .detail_price .box .price_wrap .amount dl dd em, .all main .wrap .detail_price .box .amount .price_wrap dl dd em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd em em, .all main .wrap .detail_price .box .amount .price_wrap dl dd em em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em em, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span em, .all main .wrap .detail_price .box .price_wrap dl dd span, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span span, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span span, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span span, .all main .wrap .detail_price .box .price_wrap .amount dl dd em em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd em em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span em span, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span em span, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span em span {
+  font-size: 0.813rem;
+  color: #666;
+}
+.all main .wrap .detail_price .box .price_wrap dl .all_price, .all main .wrap .detail_price .box .price_wrap dl .all_price span {
+  font-size: 0.875rem;
+  color: #333;
+  font-weight: 600;
+}
+.all main .wrap .detail_price .box .price_wrap dl .sale_price, .all main .wrap .detail_price .box .price_wrap dl .sale_price span {
+  font-size: 0.875rem;
+  color: #fd5c5c;
+  font-weight: 600;
+}
+.all main .wrap .detail_price .box .amount {
+  margin-bottom: 20px;
+}
+.all main .wrap .detail_price .box .amount dl {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.all main .wrap .detail_price .box .amount dl dt {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.all main .wrap .detail_price .box .amount dl dd, .all main .wrap .detail_price .box .amount dl dd em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span, .all main .wrap .detail_price .box .amount dl dd em em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em em, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd em span span, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span span, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span span, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span span, .all main .wrap .detail_price .box .amount .price_wrap dl dd em em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em em span, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span em span, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span em span, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em span, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd em span em span, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em span, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span span, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd em span span, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span span, .all main .wrap .detail_price .box .price_wrap .amount dl dd em em span, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em em span, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd em span em span, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em span, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span em span, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em span, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span em span {
+  font-size: 0.938rem;
+  color: #6C801A;
+  font-weight: 600;
+}
+.all main .wrap .detail_price .box .amount dl dd em, .all main .wrap .detail_price .box .amount dl dd em em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em em, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span em, .all main .wrap .detail_price .box .amount dl dd em em em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em em em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em em em, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span em em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span em em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em em, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span em em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span em em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd em span span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span span em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd em em span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em em span em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em em span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd em span em span em, .all main .wrap .detail_price .box .amount .price_wrap dl dd span em span em span em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em span em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd em span em span em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em span em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span span em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd em span span em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd em em span em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em em span em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd em span em span em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em span em, .all main .wrap .detail_price .box .amount .price_wrap .amount dl dd span em span em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd em span em span em, .all main .wrap .detail_price .box .price_wrap .amount .price_wrap dl dd span em span em span em, .all main .wrap .detail_price .box .price_wrap .amount dl dd span em span em span em {
+  font-size: 1.375rem;
+}
+.all main .wrap .detail_price .box .price_link {
+  display: block;
+  background-color: #6C801A;
+  text-align: center;
+  margin: 0 -20px;
+}
+.all main .wrap .detail_price .box .price_link a, .all main .wrap .detail_price .box .price_link a em {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.063rem;
 }/*# sourceMappingURL=cart.css.map */

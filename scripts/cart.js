@@ -1,0 +1,1 @@
+const product_btn_wrap = document.querySelectorAll('product_btn_wrap button')

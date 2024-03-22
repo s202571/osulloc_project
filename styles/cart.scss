@@ -450,7 +450,85 @@
                 }
             }
             .detail_price {
-                position: fixed; top: 0; right: 0;
+                width: 100%; max-width: 1200px;
+                position: fixed; top: 100px;
+                left: 50%; transform: translateX(-50%);
+                .box {
+                    position: absolute; top: 0; right: 0;
+                    width: 280px;
+                    padding: 20px 20px 0 20px;
+                    border: 1px solid #333;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    background-color: #fff;
+                    .price_wrap {
+                        margin-bottom: 15px;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #e6e6e6;
+                        dl {
+                            @include flex-rnsc;
+                            margin-bottom: 5px;
+                            dt {
+                                font-size: 0.813rem;
+                                color: #666;
+                            }
+                            dd {
+                                font-size: 0.813rem;
+                                color: #666;
+                                span {
+                                    @extend dd;
+                                }
+                            }
+                            .all_price {
+                                font-size: 0.875rem;
+                                color: #333;
+                                font-weight: 600;
+                                span {
+                                    @extend .all_price;
+                                }
+                            }
+                            .sale_price {
+                                font-size: 0.875rem;
+                                color: #fd5c5c;
+                                font-weight: 600;
+                                span {
+                                    @extend .sale_price;
+                                }
+                            }
+                        }
+                    }
+                    .amount {
+                        margin-bottom: 20px;
+                        dl {
+                            @include flex-rnsc;
+                            dt {
+                                font-size: 0.875rem;
+                                font-weight: 600;
+                            }
+                            dd {
+                                font-size: 0.938rem;
+                                color: #6C801A;
+                                font-weight: 600;
+                                em {
+                                    font-size: 1.375rem;
+                                    @extend dd;
+                                }
+                            }
+                        }
+                    }
+                    .price_link {
+                        display: block;  background-color: #6C801A;
+                        text-align: center; margin: 0 -20px;
+                        a {
+                            width: 100%; height: 50px; line-height: 50px;
+                            color: #fff; font-weight: 600;
+                            font-size:1.063rem ;
+                            em {
+                                @extend a;
+                            }
+                        }
+                    }
+                }
                 
             }
         }
