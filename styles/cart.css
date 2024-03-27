@@ -46,10 +46,12 @@
 }
 .all main .wrap .detail_cart .cart .product_btn_wrap .active {
   border-bottom: 2px solid #555;
+  font-weight: 600;
   color: #333;
 }
 .all main .wrap .detail_cart .cart .product_btn_wrap .active span {
   color: #333;
+  font-weight: 600;
 }
 .all main .wrap .detail_cart .cart #product_check_from fieldset .product_wrap .product_check {
   display: flex;
