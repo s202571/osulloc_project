@@ -1,4 +1,8 @@
 /* 1281 ~ max */
+html ,body {overflow-x:hidden; width:100%; min-width: 1470px;}
+.all {
+    position: relative;
+}
 /* main */
 .all main {}
 .all main .main_all {

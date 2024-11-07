@@ -1,197 +1,201 @@
 /* footer */
-.all footer {}
-.all footer .desk_footer {}
-.all footer .desk_footer .login_sns {
+html ,body {overflow-x:hidden; width:100%; min-width: 1470px;}
+.all {
+    position: relative;
+}
+footer {}
+footer .desk_footer {}
+footer .desk_footer .login_sns {
     background: #727272; height: 62px;
     display: flex; justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
 }
-.all footer .desk_footer .login_sns .login {
+footer .desk_footer .login_sns .login {
     background: #3f3e3c; color: #fff; text-align: center;
     width: 94px; height: 40px; line-height: 40px;
     border: 1px solid #2a2a2a;
     font-size: 0.938rem; 
     font-weight: 500;
 }
-.all footer .desk_footer .login_sns .icon a {
+footer .desk_footer .login_sns .icon a {
     margin-left: 20px; background: #2a2a2a;
     border-radius: 100%; width: 43px; height: 43px;
     display: inline-block;
 }
-.all footer .desk_footer .login_sns .icon a img {
+footer .desk_footer .login_sns .icon a img {
     max-width: 100%;
     position: relative; right: -1px; bottom: -1px;
 }
-.all footer .desk_footer .contact {
+footer .desk_footer .contact {
     background: #fafafa; height: 164px;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     padding: 0 40px; max-width: 100%;
 }
-.all footer .desk_footer .contact .left {
+footer .desk_footer .contact .left {
     display: flex; margin-top: 40px;
 }
-.all footer .desk_footer .contact .left .user_counseling {}
-.all footer .desk_footer .contact .left .user_counseling p:first-child {
+footer .desk_footer .contact .left .user_counseling {}
+footer .desk_footer .contact .left .user_counseling p:first-child {
     margin-top: 0;
 }
-.all footer .desk_footer .contact .left .user_counseling p {
+footer .desk_footer .contact .left .user_counseling p {
     font-size: 0.875rem; color: #7b7b7b;
     margin-bottom: 5px; font-weight: 400;
 }
-.all footer .desk_footer .contact .left .user_counseling p em {
+footer .desk_footer .contact .left .user_counseling p em {
     color: #595959; font-size:2.106rem ;
     font-weight: 400;
 }
-.all footer .desk_footer .contact .left .user_counseling a {
+footer .desk_footer .contact .left .user_counseling a {
     color: #595959; font-size: 1.125rem; font-weight: 500;
     font-weight: 500;
 }
-.all footer .desk_footer .contact .left .user_counseling .time {
+footer .desk_footer .contact .left .user_counseling .time {
     font-size: 0.75rem; color: #828282; font-weight: 400;
 }
-.all footer .desk_footer .contact .left .bulk_purchase {
+footer .desk_footer .contact .left .bulk_purchase {
     margin-left: 40px;
 }
-.all footer .desk_footer .contact .left .bulk_purchase p {
+footer .desk_footer .contact .left .bulk_purchase p {
     font-size: 0.875rem; color: #7b7b7b;
     font-weight: 400;
 }
-.all footer .desk_footer .contact .left .bulk_purchase a {
+footer .desk_footer .contact .left .bulk_purchase a {
     display: block;
     margin-top: 5px; font-size: 1.125rem;
     color: #585858;
     font-weight: 700;
     text-decoration: underline;
 }
-.all footer .desk_footer .contact .left .bulk_purchase .kakao_id {
+footer .desk_footer .contact .left .bulk_purchase .kakao_id {
     font-size: 0.813rem; color: #797979;
     font-weight: 700; margin-top: 3px;
 }
-.all footer .desk_footer .contact .left .bulk_purchase .time {
+footer .desk_footer .contact .left .bulk_purchase .time {
     font-size: 0.75rem; color: #6b6b6b;
     margin-top: 10px;
 }
-.all footer .desk_footer .contact .right {
+footer .desk_footer .contact .right {
     display: flex; justify-content: flex-end;
     border-left: 1px solid #efefef;
     align-items: center;
 }
-.all footer .desk_footer .contact .right a {
+footer .desk_footer .contact .right a {
     margin-left: 50px; display: block;
     display: flex; flex-flow: column nowrap;
     align-items: center;
 }
-.all footer .desk_footer .contact .right a img {
+footer .desk_footer .contact .right a img {
     width: max-content; height: auto;
 }
-.all footer .desk_footer .contact .right a span {
+footer .desk_footer .contact .right a span {
     color: #505051; margin-top: 10px;
     text-align: center; font-weight: 400;
 }
-.all footer .desk_footer .bottom {
+footer .desk_footer .bottom {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     padding: 20px 40px 35px;
 }
-.all footer .desk_footer .bottom .bottom_left {
+footer .desk_footer .bottom .bottom_left {
     display: flex; align-items: center;
 }
-.all footer .desk_footer .bottom .bottom_left .logo {
+footer .desk_footer .bottom .bottom_left .logo {
     width: 120px; text-align: center;
 }
-.all footer .desk_footer .bottom .bottom_left .logo img {}
-.all footer .desk_footer .bottom .bottom_left .company_introduction {
+footer .desk_footer .bottom .bottom_left .logo img {}
+footer .desk_footer .bottom .bottom_left .company_introduction {
     margin-left: 25px;
 }
-.all footer .desk_footer .bottom .bottom_left .company_introduction ul {
+footer .desk_footer .bottom .bottom_left .company_introduction ul {
     display: flex; flex-flow: row nowrap;
 }
-.all footer .desk_footer .bottom .bottom_left .company_introduction ul li {}
-.all footer .desk_footer .bottom .bottom_left .company_introduction ul li a {
+footer .desk_footer .bottom .bottom_left .company_introduction ul li {}
+footer .desk_footer .bottom .bottom_left .company_introduction ul li a {
     font-size: 0.75rem; color: #000;
     font-weight: 500;
 }
-.all footer .desk_footer .bottom .bottom_left .company_introduction ul li a::after {
+footer .desk_footer .bottom .bottom_left .company_introduction ul li a::after {
     content: ''; display: inline-block;
     margin:0 10px; width: 1px; height: 12px;
     background: #000; 
 }
-.all footer .desk_footer .bottom .bottom_left .company_introduction ul li:last-child a::after {
+footer .desk_footer .bottom .bottom_left .company_introduction ul li:last-child a::after {
     display: none;
 }
-.all footer .desk_footer .bottom .bottom_left .company_introduction ul li:nth-child(3) a {
+footer .desk_footer .bottom .bottom_left .company_introduction ul li:nth-child(3) a {
     font-weight: 800;
 }
-.all footer .desk_footer .bottom .bottom_left .company_introduction .last {
+footer .desk_footer .bottom .bottom_left .company_introduction .last {
     margin-top: 15px; 
 }
-.all footer .desk_footer .bottom .bottom_left .company_introduction .last address {color: #a0a0a0; font-size: 0.75rem;
+footer .desk_footer .bottom .bottom_left .company_introduction .last address {color: #a0a0a0; font-size: 0.75rem;
     line-height: 1.8; font-weight: 500;
     margin-bottom: 10px;
 }
-.all footer .desk_footer .bottom .bottom_left .company_introduction .last address a {margin-left: 5px; border: 1px solid #ededed ;
+footer .desk_footer .bottom .bottom_left .company_introduction .last address a {margin-left: 5px; border: 1px solid #ededed ;
     color: #828282; background: #fafafa;
     width: 111px; height: 28px; line-height: 28px;
     text-align: center; font-weight: 600;
     font-size: 0.75rem; display: inline-block;
 }
-.all footer .desk_footer .bottom .bottom_left .company_introduction .last p {
+footer .desk_footer .bottom .bottom_left .company_introduction .last p {
     color: #a0a0a0; font-size: 0.75rem; 
     line-height: 1.8; font-weight: 500;
 }
-.all footer .desk_footer .bottom .bottom_right {
+footer .desk_footer .bottom .bottom_right {
     width: 310px; height: max-content;
     margin-top: 35px; padding: 15px 20px;
     border: 1px solid #e8e8e8;
 }
-.all footer .desk_footer .bottom .bottom_right h3 {
+footer .desk_footer .bottom .bottom_right h3 {
     margin-bottom: 10px; color: #828282; font-size: 0.75rem;
     font-weight: 700;
 }
-.all footer .desk_footer .bottom .bottom_right .kcp {
+footer .desk_footer .bottom .bottom_right .kcp {
     display: flex; flex-flow: row nowrap;
 }
-.all footer .desk_footer .bottom .bottom_right .kcp p {
+footer .desk_footer .bottom .bottom_right .kcp p {
     color: #828282; font-size: 0.75rem;
     font-weight: 400;
 }
-.all footer .desk_footer .bottom .bottom_right .kcp p img {
+footer .desk_footer .bottom .bottom_right .kcp p img {
     width: 43px; height: auto; margin: 4px 8px;
     cursor: pointer;
 }
-.all footer .m_footer {display: none;}
-.all footer .m_footer .m_top {}
-.all footer .m_footer .m_top .m_top_left {}
-.all footer .m_footer .m_top .m_top_left a {}
-.all footer .m_footer .m_top .m_top_right {}
-.all footer .m_footer .m_top .m_top_right #m_language {}
-.all footer .m_footer .m_top .m_top_right #m_language option {}
-.all footer .m_footer .check_information {}
-.all footer .m_footer .check_information a {}
-.all footer .m_footer .check_information a p {}
-.all footer .m_footer .check_information a p img {}
-.all footer .m_footer .check_information address {}
-.all footer .m_footer .m_company_introduction {}
-.all footer .m_footer .m_company_introduction ul {}
-.all footer .m_footer .m_company_introduction ul li {}
-.all footer .m_footer .m_company_introduction ul li a {}
-.all footer .m_footer .m_company_introduction .m_last {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling p {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling a {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling p em {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling .time {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase p {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase a {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase .kakao_id {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase .time {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_right {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_right a {}
-.all footer .m_footer .m_company_introduction .m_last .m_last_right a img {}
+footer .m_footer {display: none;}
+footer .m_footer .m_top {}
+footer .m_footer .m_top .m_top_left {}
+footer .m_footer .m_top .m_top_left a {}
+footer .m_footer .m_top .m_top_right {}
+footer .m_footer .m_top .m_top_right #m_language {}
+footer .m_footer .m_top .m_top_right #m_language option {}
+footer .m_footer .check_information {}
+footer .m_footer .check_information a {}
+footer .m_footer .check_information a p {}
+footer .m_footer .check_information a p img {}
+footer .m_footer .check_information address {}
+footer .m_footer .m_company_introduction {}
+footer .m_footer .m_company_introduction ul {}
+footer .m_footer .m_company_introduction ul li {}
+footer .m_footer .m_company_introduction ul li a {}
+footer .m_footer .m_company_introduction .m_last {}
+footer .m_footer .m_company_introduction .m_last .m_last_left {}
+footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling {}
+footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling p {}
+footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling a {}
+footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling p em {}
+footer .m_footer .m_company_introduction .m_last .m_last_left .m_user_counseling .time {}
+footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase {}
+footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase p {}
+footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase a {}
+footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase .kakao_id {}
+footer .m_footer .m_company_introduction .m_last .m_last_left .m_bulk_purchase .time {}
+footer .m_footer .m_company_introduction .m_last .m_last_right {}
+footer .m_footer .m_company_introduction .m_last .m_last_right a {}
+footer .m_footer .m_company_introduction .m_last .m_last_right a img {}
 
 @media screen and (max-width:1040px){
     .desk_footer {display: none;}
