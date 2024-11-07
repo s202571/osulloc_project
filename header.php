@@ -11,52 +11,52 @@
                 <!-- 제품 -->
                 <ul>
                     <li>
-                        <a href="./product.html" class="nav_btn">제품</a>
+                        <a href="product.html" class="nav_btn">제품</a>
                         <div class="lnb">
                             <div class="all">
                                 <div class="left">
                                     <dl>
-                                        <dt><a href="./product.html">베스트</a></dt>
-                                        <dd><a href="./product.html">위클리베스트</a></dd>
-                                        <dd><a href="./product.html">베스트</a></dd>
+                                        <dt><a href="product.html">베스트</a></dt>
+                                        <dd><a href="product.html">위클리베스트</a></dd>
+                                        <dd><a href="product.html">베스트</a></dd>
                                     </dl>
                                     <dl>
-                                        <dt><a href="./product.html">티제품</a></dt>
-                                        <dd><a href="./product.html">티세트</a></dd>
-                                        <dd><a href="./product.html">명차</a></dd>
-                                        <dd><a href="./product.html">녹차/말차</a></dd>
-                                        <dd><a href="./product.html">발효차/홍차</a></dd>
-                                        <dd><a href="./product.html">블랜디드티</a></dd>
-                                        <dd><a href="./product.html">허브티</a></dd>
-                                        <dd><a href="./product.html">밀크티/아이스티</a></dd>
-                                        <dd><a href="./product.html">콤부차</a></dd>
+                                        <dt><a href="product.html">티제품</a></dt>
+                                        <dd><a href="product.html">티세트</a></dd>
+                                        <dd><a href="product.html">명차</a></dd>
+                                        <dd><a href="product.html">녹차/말차</a></dd>
+                                        <dd><a href="product.html">발효차/홍차</a></dd>
+                                        <dd><a href="product.html">블랜디드티</a></dd>
+                                        <dd><a href="product.html">허브티</a></dd>
+                                        <dd><a href="product.html">밀크티/아이스티</a></dd>
+                                        <dd><a href="product.html">콤부차</a></dd>
                                     </dl>
                                     <dl>
-                                        <dt><a href="./product.html">티푸드</a></dt>
-                                        <dd><a href="./product.html">과자/초콜릿</a></dd>
-                                        <dd><a href="./product.html">베이커리</a></dd>
-                                        <dd><a href="./product.html">아이스크림</a></dd>
+                                        <dt><a href="product.html">티푸드</a></dt>
+                                        <dd><a href="product.html">과자/초콜릿</a></dd>
+                                        <dd><a href="product.html">베이커리</a></dd>
+                                        <dd><a href="product.html">아이스크림</a></dd>
                                     </dl>
                                     <dl>
-                                        <dt><a href="./product.html">티웨어</a></dt>
-                                        <dd><a href="./product.html">용도별</a></dd>
-                                        <dd><a href="./product.html">브랜드별</a></dd>
+                                        <dt><a href="product.html">티웨어</a></dt>
+                                        <dd><a href="product.html">용도별</a></dd>
+                                        <dd><a href="product.html">브랜드별</a></dd>
                                     </dl>
                                     <dl>
-                                        <dt><a href="./product.html">라이프스타일</a></dt>
-                                        <dd><a href="./product.html">스킨케어</a></dd>
-                                        <dd><a href="./product.html">단체 및 기업 구매</a></dd>
+                                        <dt><a href="product.html">라이프스타일</a></dt>
+                                        <dd><a href="product.html">스킨케어</a></dd>
+                                        <dd><a href="product.html">단체 및 기업 구매</a></dd>
                                     </dl>
                                 </div>
                                 <div class="right">
                                     <!-- 다다일상 사이트 링크 -->
-                                    <a href="./detail.html"><img src="./images/index/bg_product.jpg" alt="12월의 다다일상"></a>
+                                    <a href="detail.html"><img src="./images/index/bg_product.jpg" alt="12월의 다다일상"></a>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li><!-- 선물추천 -->
-                        <a href="./gift_recommendation.html" class="not_btn">선물추천</a>
+                        <a href="gift_recommendation.html" class="not_btn">선물추천</a>
                     </li>
                     <li>
                         <!-- 다다일상 서브 메뉴 -->
@@ -78,29 +78,29 @@
                                     </dl>
                                 </div>
                                 <div class="right">
-                                    <a href="./detail.html"><img src="./images/index/bg_product.jpg" alt="12월의 다다일상"></a>
+                                    <a href="detail.html"><img src="./images/index/bg_product.jpg" alt="12월의 다다일상"></a>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <!-- 브랜드 서브메뉴 -->
-                        <a href="./brand.html" class="nav_btn">브랜드</a>
+                        <a href="brand.html" class="nav_btn">브랜드</a>
                         <div class="lnb">
                             <div class="all">
                                 <div class="left">
                                     <dl>
-                                        <dt><a href="./brand.html">오설록 스토리</a></dt>
+                                        <dt><a href="brand.html">오설록 스토리</a></dt>
                                     </dl>
                                     <dl>
-                                        <dt><a href="./brand.html">제주 티뮤지엄</a></dt>
+                                        <dt><a href="brand.html">제주 티뮤지엄</a></dt>
                                     </dl>
                                     <dl>
-                                        <dt><a href="./brand.html">매장 소개 및 예약</a></dt>
+                                        <dt><a href="brand.html">매장 소개 및 예약</a></dt>
                                     </dl>
                                 </div>
                                 <div class="right">
-                                    <a href="./detail.html"><img src="./images/index/bg_product.jpg" alt="12월의 다다일상"></a>
+                                    <a href="detail.html"><img src="./images/index/bg_product.jpg" alt="12월의 다다일상"></a>
                                 </div>
                             </div>
                         </div>
@@ -132,52 +132,52 @@
                             <div class="last">
                                 <div class="ranking">
                                     <span class="number">1</span>
-                                    <a href="./detail.html">세작</a>
+                                    <a href="detail.html">세작</a>
                                     <span class="state"><i class="fa-solid fa-caret-up"></i></span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">2</span>
-                                    <a href="./detail.html">스페셜 티 에디션</a>
+                                    <a href="detail.html">스페셜 티 에디션</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">3</span>
-                                    <a href="./detail.html">녹차 밀크 스프레드</a>
+                                    <a href="detail.html">녹차 밀크 스프레드</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">4</span>
-                                    <a href="./detail.html">동백이 피는 곶자왈</a>
+                                    <a href="detail.html">동백이 피는 곶자왈</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">5</span>
-                                    <a href="./detail.html">그린티 랑드샤</a>
+                                    <a href="detail.html">그린티 랑드샤</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">6</span>
-                                    <a href="./detail.html">스윗 부케향 티</a>
+                                    <a href="detail.html">스윗 부케향 티</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">7</span>
-                                    <a href="./detail.html">삼다 꿀배 티</a>
+                                    <a href="detail.html">삼다 꿀배 티</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">8</span>
-                                    <a href="./detail.html">스프레드</a>
+                                    <a href="detail.html">스프레드</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">9</span>
-                                    <a href="./detail.html">녹차 와플</a>
+                                    <a href="detail.html">녹차 와플</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">10</span>
-                                    <a href="./detail.html">티</a>
+                                    <a href="detail.html">티</a>
                                     <span class="state"><i class="fa-solid fa-caret-up"></i></span>
                                 </div>
                             </div>
@@ -226,52 +226,52 @@
                             <div class="m_search_ranking">
                                 <div class="ranking">
                                     <span class="number">1</span>
-                                    <a href="./detail.html">세작</a>
+                                    <a href="detail.html">세작</a>
                                     <span class="state"><i class="fa-solid fa-caret-up"></i></span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">2</span>
-                                    <a href="./detail.html">스페셜 티 에디션</a>
+                                    <a href="detail.html">스페셜 티 에디션</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">3</span>
-                                    <a href="./detail.html">녹차 밀크 스프레드</a>
+                                    <a href="detail.html">녹차 밀크 스프레드</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">4</span>
-                                    <a href="./detail.html">동백이 피는 곶자왈</a>
+                                    <a href="detail.html">동백이 피는 곶자왈</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">5</span>
-                                    <a href="./detail.html">그린티 랑드샤</a>
+                                    <a href="detail.html">그린티 랑드샤</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">6</span>
-                                    <a href="./detail.html">스윗 부케향 티</a>
+                                    <a href="detail.html">스윗 부케향 티</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">7</span>
-                                    <a href="./detail.html">삼다 꿀배 티</a>
+                                    <a href="detail.html">삼다 꿀배 티</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">8</span>
-                                    <a href="./detail.html">스프레드</a>
+                                    <a href="detail.html">스프레드</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">9</span>
-                                    <a href="./detail.html">녹차 와플</a>
+                                    <a href="detail.html">녹차 와플</a>
                                     <span class="state">NEW</span>
                                 </div>
                                 <div class="ranking">
                                     <span class="number">10</span>
-                                    <a href="./detail.html">티</a>
+                                    <a href="detail.html">티</a>
                                     <span class="state"><i class="fa-solid fa-caret-up"></i></span>
                                 </div>
                             </div>
@@ -301,7 +301,7 @@
                     </span>
                 </div>
                 <!-- 모바일 목록 -->
-                <a href="./product.html" class="m_list">
+                <a href="product.html" class="m_list">
                     <img src="./images/index/icon_moNav_white.png" alt="목록">
                 </a>
                 <!-- 모바일 목록 내용 -->
@@ -324,15 +324,15 @@
                         <p>제품<img src="./images/index/icon_mo_nav.png" alt=""></p>
                     </a>
                     <nav class="m_gnb">
-                        <a href="./product.html">베스트</a> 
-                        <a href="./product.html">티제품</a> 
-                        <a href="./product.html">티푸드</a>
-                        <a href="./product.html">티웨어</a>
-                        <a href="./product.html">라이프스타일</a>
+                        <a href="product.html">베스트</a> 
+                        <a href="product.html">티제품</a> 
+                        <a href="product.html">티푸드</a>
+                        <a href="product.html">티웨어</a>
+                        <a href="product.html">라이프스타일</a>
                         <a href="#">단체 및 기업 구매</a>
                     </nav>
                     <!-- 선물추천 -->
-                    <a href="./gift_recommendation.html"><p>선물 추천</p></a>
+                    <a href="gift_recommendation.html"><p>선물 추천</p></a>
                     <!-- 다다일상 서브 메뉴 -->
                     <a href="#" class="nav_tap">
                         <p>다다일상<img src="./images/index/icon_mo_nav.png" alt=""></p>
@@ -343,13 +343,13 @@
                         <a href="#">다다일상 기록</a>
                     </nav>
                     <!-- 브랜드 서브메뉴 -->
-                    <a href="./brand.html" class="nav_tap">
+                    <a href="brand.html" class="nav_tap">
                         <p>브랜드<img src="./images/index/icon_mo_nav.png" alt=""></p>
                     </a>
                     <nav class="m_gnb">
-                        <a href="./brand.html">오설록 스토리</a> 
-                        <a href="./brand.html">제주 티뮤지엄</a> 
-                        <a href="./brand.html">매장 소개 및 예약</a>
+                        <a href="brand.html">오설록 스토리</a> 
+                        <a href="brand.html">제주 티뮤지엄</a> 
+                        <a href="brand.html">매장 소개 및 예약</a>
                     </nav>
                     <p class="photo"><img src="./images/index/nav_bg.jpg" alt="12월의 다다일상"></p>
                     <!-- 마지막 메뉴 -->
