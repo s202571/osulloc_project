@@ -1,6 +1,6 @@
 const body = document.querySelector('html,body')
 const link_contents = document.querySelectorAll('.section')
-const nav_btn = document.querySelectorAll('.nav_btn')
+const detail_nav_btn = document.querySelectorAll('.detail_nav_btn')
 const nav = document.querySelector('nav')
 const top_contents = document.querySelector('.top_contents')
 
@@ -69,9 +69,9 @@ minus.addEventListener('click',()=>{
 
 // 버튼 누르면 스크롤 이동
 window.addEventListener('scroll', () => {
-    nav_btn.forEach((obj, idx) => {
+    detail_nav_btn.forEach((obj, idx) => {
         if (body.scrollTop >= link_contents[idx].offsetTop - 100) {
-            hide(nav_btn)
+            hide(detail_nav_btn)
             obj.classList.add('active');
             nav.style.position = 'fixed'
             nav.style.top = '0'
@@ -82,7 +82,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-nav_btn.forEach((t, i) => {
+detail_nav_btn.forEach((t, i) => {
     t.addEventListener('click', (e) => {
         e.preventDefault();
         window.scrollTo(0, link_contents[i].offsetTop - 50);

@@ -1,10 +1,10 @@
 const body = document.querySelector('html,body')
 const link_contents = document.querySelectorAll('section')
-const nav_btn = document.querySelectorAll('nav button')
+const gift_nav_btn = document.querySelectorAll('nav button')
 const nav = document.querySelector('nav')
 const bg = document.querySelector('.bg')
 
-console.log(link_contents,nav_btn,nav)
+console.log(link_contents,gift_nav_btn,nav)
 
 hide = (name)=>{
     for(let i of name){
@@ -32,9 +32,9 @@ var mySwiper = new Swiper('.swiper-container', {
 
 // 버튼을 누르면 스크롤 이동
 window.addEventListener('scroll', () => {
-    nav_btn.forEach((obj, idx) => {
+    gift_nav_btn.forEach((obj, idx) => {
         if (body.scrollTop >= link_contents[idx].offsetTop - 100) {
-            hide(nav_btn)
+            hide(gift_nav_btn)
             obj.classList.add('active');
             nav.style.position = 'fixed'
         }else if (body.scrollTop >= bg.offsetTop && body.scrollTop < bg.offsetTop + bg.offsetHeight) {
@@ -44,7 +44,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-nav_btn.forEach((t, i) => {
+gift_nav_btn.forEach((t, i) => {
     t.addEventListener('click', (e) => {
         e.preventDefault();
         window.scrollTo(0, link_contents[i].offsetTop - 100);

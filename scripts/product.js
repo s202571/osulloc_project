@@ -1,5 +1,5 @@
 const nav_tap = document.querySelectorAll('.nav_tap')
-const nav_content = document.querySelectorAll('.gnb')
+const product_nav = document.querySelectorAll('.gnb')
 const nav_name = document.querySelectorAll('.gnb p')
 const contents_wrap = document.querySelector('.contents_wrap')
 const price_btn = document.querySelectorAll('.price_btn button')
@@ -10,7 +10,7 @@ const cart = document.querySelectorAll('.cart')
 const cart_filled = document.querySelectorAll('.cart_filled')
 const cart_filled_over = document.querySelectorAll('.cart_filled_over')
 const number = document.querySelectorAll('.number')
-console.log(nav_tap,nav_content,nav_name,price_btn)
+console.log(nav_tap,product_nav,nav_name,price_btn)
 console.log(type_btn,type_all,photo,cart)
 
 hide = (name)=>{
@@ -25,7 +25,7 @@ hide_content = (name)=>{
     }
 }
 
-hide_content(nav_content)
+hide_content(product_nav)
 
 // nav
 nav_tap.forEach((t,i)=>{
@@ -34,13 +34,13 @@ nav_tap.forEach((t,i)=>{
         nav_tap[i].classList.add('active')
     })
     t.addEventListener('mouseover',()=>{
-        hide_content(nav_content)
-        nav_content[i].style.display = 'block'
+        hide_content(product_nav)
+        product_nav[i].style.display = 'block'
     })
 })
 
 contents_wrap.addEventListener('mouseover',()=>{
-    hide_content(nav_content)
+    hide_content(product_nav)
 })
 
 for(let i of nav_name){
